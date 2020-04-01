@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat | Login</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/135304375/cdn/css/brook.chat.css" /-->
+
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #32b5a1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #32b5a1;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>    
+    
+    
+</head>
+<body>
+<script>    
+   function mostrar(){
+document.getElementById('respuesta-ej1').style.display = 'block';
+document.getElementById('respuesta-ej2').style.display = 'block';}
+
+</script>
+    
+<script type="text/javascript">
+function ocultar(){
+document.getElementById('respuesta-ej1').style.display = 'none';
+document.getElementById('respuesta-ej2').style.display = 'none';}
+</script>
+    
+<span class="error">%s</span>
+<div id="login">
+	<!--form action="https://brookframework.org/cgi-bin/chat.bf/login" method="post"-->
+    
+
+	<form action="http://localhost/cgi-bin/chat.bf/login" method="post">    
+		<p>Please enter the values</p>
+        <label > Secante or Newton</label>
+		<br>
+        <label for="name">Value A:</label>
+		<input type="text" name="name" id="name" required=""/>    
+        <br>
+        <label for="function">Function</label>
+		<input type="text" name="function" id="name" required=""/>
+        <br>
+        <label for="error">Error:</label>        
+        <input type="text"  name="error" id="error" required=""/><br>
+        <br>
+        <label id="respuesta-ej2" for="respuesta-ej1" style="display:none" >Derivada:</label>
+        <input type="text"  name="functionderiv" id="respuesta-ej1" style="display:none" /><br>
+        
+        <input type="radio" name="gender" value="newton" id="radionew"  onclick="mostrar()" > Newton<br>  
+        <input type="radio" name="gender" value="secante" id="radiob"  onclick="ocultar()" checked> Secante<br>       
+            
+        
+		<input type="submit" name="enter" id="enter" value="Enter" />
+	</form>
+</div>
+
+</body>
+</html>

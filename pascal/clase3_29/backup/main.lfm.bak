@@ -1,0 +1,112 @@
+object Form1: TForm1
+  Left = 108
+  Height = 302
+  Top = 130
+  Width = 407
+  Caption = 'Form1'
+  ClientHeight = 302
+  ClientWidth = 407
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.6.4.0'
+  object ediName: TEdit
+    Left = 48
+    Height = 23
+    Top = 48
+    Width = 176
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 49
+    Height = 15
+    Top = 31
+    Width = 32
+    Caption = 'Name'
+    ParentColor = False
+  end
+  object btnAdd: TButton
+    Left = 236
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'Add'
+    OnClick = btnAddClick
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox
+    Left = 48
+    Height = 160
+    Top = 88
+    Width = 279
+    Caption = 'Datos'
+    ClientHeight = 140
+    ClientWidth = 275
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 24
+      Height = 15
+      Top = 8
+      Width = 85
+      Caption = 'Primer Nombre:'
+      ParentColor = False
+    end
+    object lblFirstName: TLabel
+      Left = 128
+      Height = 15
+      Top = 8
+      Width = 67
+      Caption = 'lblFirstName'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 23
+      Height = 15
+      Top = 30
+      Width = 86
+      Caption = 'Último Nombre:'
+      ParentColor = False
+    end
+    object lblLastName: TLabel
+      Left = 128
+      Height = 15
+      Top = 30
+      Width = 66
+      Caption = 'lblLastName'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 8
+      Height = 15
+      Top = 56
+      Width = 101
+      Caption = 'Cantidad Personas:'
+      ParentColor = False
+    end
+    object lblCount: TLabel
+      Left = 129
+      Height = 15
+      Top = 54
+      Width = 46
+      Caption = 'lblCount'
+      ParentColor = False
+    end
+    object cboPerson: TComboBox
+      Left = 9
+      Height = 23
+      Top = 88
+      Width = 100
+      ItemHeight = 15
+      OnChange = cboPersonChange
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object lblName: TLabel
+      Left = 129
+      Height = 15
+      Top = 93
+      Width = 45
+      Caption = 'lblName'
+      ParentColor = False
+    end
+  end
+end

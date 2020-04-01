@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="97"/>
+        <CursorPos X="49" Y="117"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="matriz.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="311"/>
+        <CursorPos X="73" Y="324"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\AppData\Local\Temp\Rar$DI25.976\matrices.pas"/>
+        <UnitName Value="Matrices"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="U:\matrices.pas"/>
+        <UnitName Value="Matrices"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\AppData\Local\Temp\Rar$DI37.384\project1.lpr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\AppData\Local\Temp\Rar$DI55.384\unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\AppData\Local\Temp\Rar$DI76.384\unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="31" Y="31"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\serie taylero\serie_taylor.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="45" Y="6"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="121" Column="28" TopLine="105"/>
+      </Position1>
+      <Position2>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="130" Column="11" TopLine="112"/>
+      </Position2>
+      <Position3>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="121" Column="41" TopLine="105"/>
+      </Position3>
+      <Position4>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="123" Column="32" TopLine="107"/>
+      </Position4>
+      <Position5>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="125" Column="15" TopLine="109"/>
+      </Position5>
+      <Position6>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="130" Column="34" TopLine="105"/>
+      </Position6>
+      <Position7>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="106" Column="32" TopLine="88"/>
+      </Position7>
+      <Position8>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="105" Column="37" TopLine="89"/>
+      </Position8>
+      <Position9>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="98" Column="3" TopLine="89"/>
+      </Position9>
+      <Position10>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="105" Column="15" TopLine="89"/>
+      </Position10>
+      <Position11>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="108" Column="50" TopLine="86"/>
+      </Position11>
+      <Position12>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="111" Column="49" TopLine="93"/>
+      </Position12>
+      <Position13>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="329" Column="21" TopLine="308"/>
+      </Position13>
+      <Position14>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="110" Column="12" TopLine="93"/>
+      </Position14>
+      <Position15>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="312" Column="69" TopLine="308"/>
+      </Position15>
+      <Position16>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="123" Column="28" TopLine="114"/>
+      </Position16>
+      <Position17>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="121" Column="28" TopLine="112"/>
+      </Position17>
+      <Position18>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="125" Column="15" TopLine="114"/>
+      </Position18>
+      <Position19>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="123" Column="26" TopLine="107"/>
+      </Position19>
+      <Position20>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="132" Column="34" TopLine="115"/>
+      </Position20>
+      <Position21>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="115" Column="15" TopLine="104"/>
+      </Position21>
+      <Position22>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="117" Column="19" TopLine="111"/>
+      </Position22>
+      <Position23>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="125" Column="32" TopLine="115"/>
+      </Position23>
+      <Position24>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="123" Column="41" TopLine="115"/>
+      </Position24>
+      <Position25>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="132" Column="19" TopLine="114"/>
+      </Position25>
+      <Position26>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="333" Column="34" TopLine="318"/>
+      </Position26>
+      <Position27>
+        <Filename Value="matriz.pas"/>
+        <Caret Line="127" Column="19" TopLine="117"/>
+      </Position27>
+      <Position28>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="103" Column="46" TopLine="77"/>
+      </Position28>
+      <Position29>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="120" Column="31" TopLine="100"/>
+      </Position29>
+      <Position30>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="119" Column="23" TopLine="98"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

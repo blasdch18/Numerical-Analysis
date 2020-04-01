@@ -1,0 +1,42 @@
+object Form1: TForm1
+  Left = 228
+  Height = 448
+  Top = 107
+  Width = 653
+  Caption = 'Form1'
+  ClientHeight = 448
+  ClientWidth = 653
+  LCLVersion = '1.8.0.6'
+  object Panel1: TPanel
+    Left = 0
+    Height = 448
+    Top = 0
+    Width = 120
+    Align = alLeft
+    ClientHeight = 448
+    ClientWidth = 120
+    TabOrder = 0
+    object Button1: TButton
+      Tag = 1
+      Left = 1
+      Height = 25
+      Top = 1
+      Width = 118
+      Align = alTop
+      Caption = 'Frame1'
+      OnClick = TheButtonClic
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Tag = 2
+      Left = 1
+      Height = 25
+      Top = 26
+      Width = 118
+      Align = alTop
+      Caption = 'Frame2'
+      OnClick = TheButtonClic
+      TabOrder = 1
+    end
+  end
+end

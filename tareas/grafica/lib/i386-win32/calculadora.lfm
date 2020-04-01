@@ -1,0 +1,544 @@
+object frmCaluladora: TfrmCaluladora
+  Left = 780
+  Height = 512
+  Top = 35
+  Width = 419
+  Caption = 'Calculadora'
+  ClientHeight = 491
+  ClientWidth = 419
+  Menu = mMenu
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object memDatos: TMemo
+    Left = 2
+    Height = 138
+    Top = 2
+    Width = 415
+    Align = alTop
+    Alignment = taRightJustify
+    BorderSpacing.Around = 2
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 0
+  end
+  object pnlTop: TPanel
+    Left = 2
+    Height = 58
+    Top = 142
+    Width = 415
+    Align = alTop
+    BorderSpacing.Around = 2
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    ClientHeight = 58
+    ClientWidth = 415
+    TabOrder = 1
+    object sbtnConversiones: TSpeedButton
+      AnchorSideLeft.Control = pnlTop
+      AnchorSideTop.Control = pnlTop
+      AnchorSideTop.Side = asrCenter
+      Left = 12
+      Height = 32
+      Top = 13
+      Width = 112
+      BorderSpacing.Left = 10
+      Caption = 'Conversiones'
+      Flat = True
+      Transparent = False
+      OnClick = sbtnConversionesClick
+    end
+    object sbtnConversiones1: TSpeedButton
+      AnchorSideLeft.Control = sbtnConversiones
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = pnlTop
+      AnchorSideTop.Side = asrCenter
+      Left = 134
+      Height = 32
+      Top = 13
+      Width = 112
+      BorderSpacing.Left = 10
+      Caption = 'Funciones'
+      Flat = True
+      Transparent = False
+      OnClick = sbtnConversiones1Click
+    end
+  end
+  object Panel2: TPanel
+    Left = 302
+    Height = 287
+    Top = 202
+    Width = 115
+    Align = alRight
+    BorderSpacing.Around = 2
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    ClientHeight = 287
+    ClientWidth = 115
+    TabOrder = 2
+    object bbtn10: TBitBtn
+      Left = 64
+      Height = 36
+      Top = 222
+      Width = 40
+      Caption = 'M+'
+      OnClick = AddTextExecute
+      TabOrder = 0
+    end
+    object bbtn11: TBitBtn
+      Left = 16
+      Height = 36
+      Top = 222
+      Width = 40
+      Caption = '+/-'
+      OnClick = AddTextExecute
+      TabOrder = 1
+    end
+    object bbtn12: TBitBtn
+      Left = 63
+      Height = 36
+      Top = 182
+      Width = 40
+      Caption = 'MR'
+      Enabled = False
+      OnClick = AddTextExecute
+      TabOrder = 2
+    end
+    object bbtn13: TBitBtn
+      Left = 16
+      Height = 36
+      Top = 182
+      Width = 40
+      Caption = ')'
+      OnClick = AddTextExecute
+      TabOrder = 3
+    end
+    object bbtn14: TBitBtn
+      Left = 16
+      Height = 36
+      Top = 104
+      Width = 40
+      Caption = 'AC'
+      OnClick = AddTextExecute
+      TabOrder = 4
+    end
+    object bbtn15: TBitBtn
+      Left = 64
+      Height = 36
+      Top = 104
+      Width = 40
+      Caption = 'MS'
+      OnClick = AddTextExecute
+      TabOrder = 5
+    end
+    object bbtn16: TBitBtn
+      Left = 64
+      Height = 36
+      Top = 144
+      Width = 40
+      Caption = 'MC'
+      OnClick = AddTextExecute
+      TabOrder = 6
+    end
+    object bbtn17: TBitBtn
+      Left = 16
+      Height = 36
+      Top = 144
+      Width = 40
+      Caption = '('
+      OnClick = AddTextExecute
+      TabOrder = 7
+    end
+    object bbtn20: TBitBtn
+      Left = 64
+      Height = 36
+      Top = 64
+      Width = 40
+      Caption = '<-'
+      OnClick = AddTextExecute
+      TabOrder = 8
+    end
+    object bbtn21: TBitBtn
+      Left = 16
+      Height = 36
+      Top = 64
+      Width = 40
+      Caption = 'C'
+      OnClick = AddTextExecute
+      TabOrder = 9
+    end
+    object bbtn22: TBitBtn
+      Left = 16
+      Height = 36
+      Top = 24
+      Width = 87
+      Caption = '2'
+      OnClick = AddTextExecute
+      TabOrder = 10
+    end
+  end
+  object Panel3: TPanel
+    Left = 2
+    Height = 287
+    Top = 202
+    Width = 298
+    Align = alClient
+    BorderSpacing.Around = 2
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    ClientHeight = 287
+    ClientWidth = 298
+    TabOrder = 3
+    object bbtn3: TBitBtn
+      Left = 193
+      Height = 36
+      Top = 182
+      Width = 40
+      Caption = '3'
+      OnClick = AddTextExecute
+      TabOrder = 0
+    end
+    object bbtn2: TBitBtn
+      Left = 144
+      Height = 36
+      Top = 182
+      Width = 40
+      Caption = '2'
+      OnClick = AddTextExecute
+      TabOrder = 1
+    end
+    object bbtn1: TBitBtn
+      Left = 96
+      Height = 36
+      Top = 182
+      Width = 40
+      Caption = '1'
+      OnClick = AddTextExecute
+      TabOrder = 2
+    end
+    object bbtnCero6: TBitBtn
+      Left = 96
+      Height = 36
+      Top = 222
+      Width = 88
+      Caption = '0'
+      OnClick = AddTextExecute
+      TabOrder = 3
+    end
+    object bbtnCero2: TBitBtn
+      Left = 193
+      Height = 36
+      Top = 222
+      Width = 40
+      Caption = '.'
+      OnClick = AddTextExecute
+      TabOrder = 4
+    end
+    object bbtnIgual: TBitBtn
+      Left = 240
+      Height = 76
+      Top = 182
+      Width = 40
+      Caption = '='
+      TabOrder = 5
+    end
+    object bbtnSuma: TBitBtn
+      Left = 240
+      Height = 76
+      Top = 104
+      Width = 40
+      Caption = '+'
+      OnClick = AddTextExecute
+      TabOrder = 6
+    end
+    object bbtn4: TBitBtn
+      Left = 96
+      Height = 36
+      Top = 144
+      Width = 40
+      Caption = '4'
+      OnClick = AddTextExecute
+      TabOrder = 7
+    end
+    object bbtn5: TBitBtn
+      Left = 144
+      Height = 36
+      Top = 144
+      Width = 40
+      Caption = '5'
+      OnClick = AddTextExecute
+      TabOrder = 8
+    end
+    object bbtn6: TBitBtn
+      Left = 192
+      Height = 36
+      Top = 144
+      Width = 40
+      Caption = '6'
+      OnClick = AddTextExecute
+      TabOrder = 9
+    end
+    object bbtn7: TBitBtn
+      Left = 96
+      Height = 36
+      Top = 104
+      Width = 40
+      Caption = '7'
+      OnClick = AddTextExecute
+      TabOrder = 10
+    end
+    object bbtn8: TBitBtn
+      Left = 144
+      Height = 36
+      Top = 104
+      Width = 40
+      Caption = '8'
+      OnClick = AddTextExecute
+      TabOrder = 11
+    end
+    object bbtn9: TBitBtn
+      Left = 192
+      Height = 36
+      Top = 104
+      Width = 40
+      Caption = '9'
+      OnClick = AddTextExecute
+      TabOrder = 12
+    end
+    object bbtnPorCentaje: TBitBtn
+      Left = 96
+      Height = 36
+      Top = 64
+      Width = 40
+      Caption = '%'
+      OnClick = AddTextExecute
+      TabOrder = 13
+    end
+    object bbtnDividir: TBitBtn
+      Left = 144
+      Height = 36
+      Top = 64
+      Width = 40
+      Caption = '/'
+      OnClick = AddTextExecute
+      TabOrder = 14
+    end
+    object bbtnMultiplicacion: TBitBtn
+      Left = 192
+      Height = 36
+      Top = 64
+      Width = 40
+      Caption = 'x'
+      OnClick = AddTextExecute
+      TabOrder = 15
+    end
+    object bbtnResta: TBitBtn
+      Left = 240
+      Height = 36
+      Top = 64
+      Width = 40
+      Caption = '-'
+      OnClick = AddTextExecute
+      TabOrder = 16
+    end
+  end
+  object mMenu: TMainMenu
+    left = 224
+    top = 72
+    object MenuItem1: TMenuItem
+      Caption = 'Aplicación'
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Constantes'
+    end
+    object mitemCalculadora: TMenuItem
+      Caption = 'Graficadora'
+      OnClick = mitemCalculadoraClick
+    end
+  end
+  object ppupMenu: TPopupMenu
+    left = 144
+    top = 72
+    object MenuItem4: TMenuItem
+      Caption = 'Ángulo'
+      object MenuItem12: TMenuItem
+        Caption = 'Grados'
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Radianes'
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'Gradianes'
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Longitud'
+      object MenuItem15: TMenuItem
+        Caption = 'Parsecs'
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'Añoz luz'
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'Unidades astronómicas'
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'Millas naúticas'
+      end
+      object MenuItem19: TMenuItem
+        Caption = 'Millas'
+      end
+      object MenuItem20: TMenuItem
+        Caption = 'Kilómetros'
+      end
+      object MenuItem21: TMenuItem
+        Caption = 'Cables'
+      end
+      object MenuItem22: TMenuItem
+        Caption = 'Brazas'
+      end
+      object MenuItem23: TMenuItem
+        Caption = 'Metros'
+      end
+      object MenuItem24: TMenuItem
+        Caption = 'Yardas'
+      end
+      object MenuItem25: TMenuItem
+        Caption = 'Pies'
+      end
+      object MenuItem26: TMenuItem
+        Caption = 'Inverso'
+      end
+      object MenuItem27: TMenuItem
+        Caption = 'Centímetro'
+      end
+      object MenuItem28: TMenuItem
+        Caption = 'Milímetros'
+      end
+      object MenuItem29: TMenuItem
+        Caption = 'Micrómetros'
+      end
+      object MenuItem30: TMenuItem
+        Caption = 'Nanómetros'
+      end
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Área'
+      object MenuItem31: TMenuItem
+        Caption = 'Hectáreas'
+      end
+      object MenuItem32: TMenuItem
+        Caption = 'Acres'
+      end
+      object MenuItem33: TMenuItem
+        Caption = 'Metros cuadrados'
+      end
+      object MenuItem34: TMenuItem
+        Caption = 'Centímetros cuadrados'
+      end
+      object MenuItem35: TMenuItem
+        Caption = 'Milimetros cuadrados'
+      end
+    end
+    object MenuItem7: TMenuItem
+      Caption = 'Volúmen'
+      object MenuItem36: TMenuItem
+        Caption = 'Metro cúbico'
+      end
+      object MenuItem41: TMenuItem
+        Caption = 'Galones'
+      end
+      object MenuItem42: TMenuItem
+        Caption = 'Litros'
+      end
+      object MenuItem43: TMenuItem
+        Caption = 'Cuartos'
+      end
+      object MenuItem44: TMenuItem
+        Caption = 'Pintas'
+      end
+      object MenuItem45: TMenuItem
+        Caption = 'Mililitros'
+      end
+      object MenuItem46: TMenuItem
+        Caption = 'Microlitros'
+      end
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Peso'
+      object MenuItem37: TMenuItem
+        Caption = 'Toneladas'
+      end
+      object MenuItem47: TMenuItem
+        Caption = 'Kilogramos'
+      end
+      object MenuItem48: TMenuItem
+        Caption = 'Libras'
+      end
+      object MenuItem49: TMenuItem
+        Caption = 'Onzas'
+      end
+      object MenuItem50: TMenuItem
+        Caption = 'Gramos'
+      end
+    end
+    object MenuItem9: TMenuItem
+      Caption = 'Duración'
+      object MenuItem38: TMenuItem
+        Caption = 'Años'
+      end
+      object MenuItem51: TMenuItem
+        Caption = 'Días'
+      end
+      object MenuItem52: TMenuItem
+        Caption = 'Horas'
+      end
+      object MenuItem53: TMenuItem
+        Caption = 'Minutos'
+      end
+      object MenuItem54: TMenuItem
+        Caption = 'Segundos'
+      end
+      object MenuItem55: TMenuItem
+        Caption = 'Milisegundos'
+      end
+      object MenuItem56: TMenuItem
+        Caption = 'Microsegundos'
+      end
+    end
+    object MenuItem10: TMenuItem
+      Caption = 'Temperatura'
+      object MenuItem39: TMenuItem
+        Caption = 'Celcius'
+      end
+      object MenuItem57: TMenuItem
+        Caption = 'Farenheit'
+      end
+      object MenuItem58: TMenuItem
+        Caption = 'Kelvin'
+      end
+      object MenuItem59: TMenuItem
+        Caption = 'Rankine'
+      end
+    end
+    object MenuItem11: TMenuItem
+      Caption = 'Divisa'
+      object MenuItem40: TMenuItem
+        Caption = 'Dólares'
+      end
+      object MenuItem60: TMenuItem
+        Caption = 'Soles'
+      end
+      object MenuItem61: TMenuItem
+        Caption = 'Euros'
+      end
+    end
+  end
+  object aclFunciones: TActionList
+    left = 304
+    top = 72
+    object AddText: TAction
+      Caption = 'AddText'
+      OnExecute = AddTextExecute
+    end
+  end
+end

@@ -1,0 +1,125 @@
+object Form1: TForm1
+  Left = 96
+  Height = 523
+  Top = 125
+  Width = 1025
+  Caption = 'Form1'
+  ClientHeight = 523
+  ClientWidth = 1025
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '1.6.4.0'
+  WindowState = wsMaximized
+  object Chart1: TChart
+    Left = 168
+    Height = 523
+    Top = 0
+    Width = 655
+    AntialiasingMode = amOn
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Align = alClient
+  end
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 523
+    Top = 0
+    Width = 168
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    Align = alLeft
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 823
+    Height = 523
+    Top = 0
+    Width = 202
+    Align = alRight
+    ClientHeight = 523
+    ClientWidth = 202
+    TabOrder = 2
+    object ediMin: TEdit
+      Left = 60
+      Height = 23
+      Top = 17
+      Width = 80
+      TabOrder = 0
+      Text = '-5'
+    end
+    object ediMax: TEdit
+      Left = 60
+      Height = 23
+      Top = 53
+      Width = 80
+      TabOrder = 1
+      Text = '5'
+    end
+    object colorbtnFunction: TColorButton
+      Left = 60
+      Height = 25
+      Top = 88
+      Width = 76
+      BorderWidth = 2
+      ButtonColorSize = 16
+      ButtonColor = clBlack
+    end
+    object Label1: TLabel
+      Left = 23
+      Height = 15
+      Top = 33
+      Width = 21
+      Caption = 'Min'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 21
+      Height = 15
+      Top = 60
+      Width = 22
+      Caption = 'Max'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 15
+      Top = 91
+      Width = 29
+      Caption = 'Color'
+      ParentColor = False
+    end
+    object ediStep: TEdit
+      Left = 60
+      Height = 23
+      Top = 120
+      Width = 80
+      TabOrder = 2
+      Text = '0.1'
+    end
+    object TrackBar1: TTrackBar
+      Left = 40
+      Height = 25
+      Top = 184
+      Width = 100
+      Max = 4
+      Min = 1
+      Position = 1
+      TabOrder = 3
+    end
+  end
+end

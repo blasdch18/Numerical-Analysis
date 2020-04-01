@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="graphics.css">
+    <script type="text/javascript" src="ajax2.js"></script>
+    <script type="text/javascript" src="graphic.js"></script>
+    <script type="text/javascript" src="gf.js"></script>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="578" height="300"></canvas> <br>
+    <label>f(x)=</label>
+    <input id="fx" type="text" value="Math.sin(x)"><br>
+
+    <label>a=</label>
+    <input type="text" id="x"><br>
+    <label>f(a)=</label>
+    <input type="text" id="fdx"><br>
+
+
+    <label>Funciones</label>
+    <select name="funciones" id="f">
+        <option value="0">Seno</option>
+        <option value="1">Raiz cuadrada</option>
+        <option value="2">Cuadrado</option>
+        <option value="3">Polinomio</option>
+      </select>
+
+    <br>
+    <button onclick="OnclicGraph()"> Graficar </button> <br>
+    <button onclick="OnclicGraphPoints()"> Graficar por puntos</button>
+
+
+</body>
+
+</html>

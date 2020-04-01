@@ -1,0 +1,87 @@
+unit Unit1;
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  SysUtils, Classes, httpdefs, fpHTTP, fpWeb, Unit2, math, DMatrix;
+
+type
+
+  { TFPWebModule1 }
+
+  TFPWebModule1 = class(TFPWebModule)
+    procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleRequest(Sender: TObject; ARequest: TRequest;
+      AResponse: TResponse; Var Handled: Boolean);
+  private
+
+  public
+    rMethods: TMetodos;
+    function makeTable(Base: String;NDatosX:Integer): String;
+    function StringToDMatriz(Base_String:String;N_Datos_X:Integer): TDMatrix;
+  end;
+
+var
+  FPWebModule1: TFPWebModule1;
+
+implementation
+
+{$R *.lfm}
+
+{ TFPWebModule1 }
+
+procedure TFPWebModule1.DataModuleCreate(Sender: TObject);
+begin
+  rMethods:= TMetodos.Create();
+end;
+
+procedure TFPWebModule1.DataModuleRequest(Sender: TObject; ARequest: TRequest;
+  AResponse: TResponse; Var Handled: Boolean);
+var
+  Base: String;
+  NDatosX:Integer;
+begin
+  Base:=(ARequest.QueryFields.Values[ 'Base' ]);
+  NDatosX:=StrToInt(ARequest.QueryFields.Values[ 'NDatosX' ]);
+  AResponse.ContentType:= 'text/html; charset= utf-8' ;
+  AResponse.Contents.Text := makeTable(Base,NDatosX);
+  Handled := true;
+end;
+function TFPWebModule1.StringToDMatriz(Base_String:String;N_Datos_X:Integer): TDMatrix;
+var
+  i,tmpIni,tmpEnd: Integer;
+  matrix_Base: TDMatrix;
+begin
+  i:= 0;
+  matrix_Base := TDMatrix.Create(N_Datos_X,2);
+  while Base_String <> '}' do begin
+    tmpIni:= pos('(',Base_String);
+    tmpEnd:= pos(',',Base_String);
+    matrix_Base.Matrix[i,0]:= StrToFloat( Base_String.Substring(tmpIni,tmpEnd - tmpIni - 1) );  //(COLUMNA,FILA)
+    tmpIni:= tmpEnd;
+    tmpEnd:= pos(')',Base_String);
+    matrix_Base.Matrix[i,1]:= StrToFloat( Base_String.Substring(tmpIni,tmpEnd - tmpIni - 1) );
+    Base_String:= Base_String.Substring(tmpEnd,Base_String.Length - tmpEnd);
+    i:= i + 1;
+  end;
+  Result:=matrix_Base;
+end;
+
+function TFPWebModule1.makeTable(Base: String;NDatosX:Integer): String;
+var
+  Result2:TStringlist;
+begin
+    Result2:=TStringList.Create;
+    ///http://localhost/cgi-bin/cgiproject1.exe?Base={(2,3);(4,1);(3,5)}&NDatosX=3
+    ///http://localhost/cgi-bin/cgiproject1.exe?Base={(0,0);(0.4,0.3894);(0.9,0.7833);(1.5,0.9974)}&NDatosX=4
+    Result2:=rMethods.Polinomio_Newton(StringToDMatriz(Base,NDatosX),NDatosX);
+    Result:=Result + Result2[0] + '</br>';
+end;
+
+initialization
+  RegisterHTTPModule('TFPWebModule1', TFPWebModule1);
+end.
+
+
+

@@ -1,0 +1,431 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Graphics,
+  FileUtil, Forms, Controls, ComCtrls,
+  StdCtrls, ExtCtrls, Spin, Types,
+  Grids,Dialogs, Parce, ParseMath, MetNum, Matriz ;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    ComboBox1: TComboBox;
+    Edit1: TEdit;
+    Edit10: TEdit;
+    Edit11: TEdit;
+    Edit12: TEdit;
+    Edit13: TEdit;
+    Edit14: TEdit;
+    Edit15: TEdit;
+    Edit16: TEdit;
+    Edit2: TEdit;
+    Edit24: TEdit;
+    Edit25: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Edit9: TEdit;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    Label1: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label2: TLabel;
+    Label20: TLabel;
+    Label24: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
+    Label3: TLabel;
+    Label30: TLabel;
+    Label31: TLabel;
+    Label32: TLabel;
+    Label33: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Memo1: TMemo;
+    PageControl1: TPageControl;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    SpinEdit2: TSpinEdit;
+    SpinEdit3: TSpinEdit;
+    SpinEdit4: TSpinEdit;
+    SpinEdit5: TSpinEdit;
+    SpinEdit6: TSpinEdit;
+    StaticText1: TStaticText;
+    StringGrid1: TStringGrid;
+    StringGrid2: TStringGrid;
+    StringGrid3: TStringGrid;
+    StringGrid4: TStringGrid;
+    StringGrid5: TStringGrid;
+    StringGrid6: TStringGrid;
+    StringGrid7: TStringGrid;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    TabSheet5: TTabSheet;
+    procedure Button6Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+
+    function f(x:Real;s: String):Real;
+    procedure SpinEdit2Change(Sender: TObject);
+    procedure SpinEdit3Change(Sender: TObject);
+    procedure SpinEdit4Change(Sender: TObject);
+    procedure SpinEdit6Change(Sender: TObject);
+
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  mn: TMetNum;
+  check: Boolean;
+  i,j,u,v,cont1,cont2: Integer;
+  mat : TMatriz;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+
+function TForm1.f(x : Real;s: String):Real;
+var MiParse: TParseMath;
+begin
+  MiParse:= TParseMath.create();
+  MiParse.AddVariable('x',x);
+  MiParse.Expression:= s;
+  check:=false;
+  try
+    result:=MiParse.Evaluate();
+  except
+    begin
+    ShowMessage('La funcion no es continua en el punto '+FloatToStr(x));
+    check:=true;
+    end;
+  end;
+
+  MiParse.destroy;
+  //f:=power(x,2)-(ln(x)*exp(x));
+  //f:=(x*ln(x))-x;
+end;
+
+procedure TForm1.SpinEdit2Change(Sender: TObject);
+begin
+  cont1:=0; i:=0;j:=0;
+  StringGrid6.Clear;
+  StringGrid6.ColCount:=SpinEdit2.Value;
+end;
+
+procedure TForm1.SpinEdit3Change(Sender: TObject);
+begin
+  cont1:=0; i:=0;j:=0;
+  StringGrid6.Clear;
+  StringGrid6.RowCount:=SpinEdit3.Value;
+end;
+
+procedure TForm1.SpinEdit4Change(Sender: TObject);
+begin
+  cont2:=0; u:=0;v:=0;
+  StringGrid7.Clear;
+  StringGrid7.RowCount:=SpinEdit4.Value;
+end;
+
+procedure TForm1.SpinEdit6Change(Sender: TObject);
+begin
+  cont2:=0; u:=0;v:=0;
+  StringGrid7.Clear;
+  StringGrid7.ColCount:=SpinEdit6.Value;
+end;
+
+procedure TForm1.TabSheet5ContextPopup(Sender: TObject; MousePos: TPoint;
+  var Handled: Boolean);
+begin
+
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+   mn.Newton(StrToFloat(Edit2.Text),Edit15.Text,Edit1.Text,StrToFloat(Edit3.Text),StringGrid1);
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  if RadioButton1.Checked=true then
+     mn.Secante1(StrToFloat(Edit5.Text),Edit4.Text,StrToFloat(Edit6.Text),StringGrid2);
+  if RadioButton2.Checked=true then
+     mn.Secante2(StrToFloat(Edit5.Text),Edit4.Text,StrToFloat(Edit6.Text),StringGrid2);
+  if RadioButton3.Checked=true then
+     mn.Secante3(StrToFloat(Edit5.Text),Edit4.Text,StrToFloat(Edit6.Text),StringGrid2);
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+var
+  fun: String;
+  parce: TParce;
+begin
+  parce:=TParce.create;
+  fun:=parce.convertir(Edit1.Text);
+  Memo1.Clear;
+  Memo1.Lines.Add(FloatToStr(parce.evaluar(fun)));
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+  a,b,fa,fb :Real;
+  s:String;
+begin
+   s:=Edit7.Text;
+   a:=StrToFloat(Edit8.Text);
+   b:=StrToFloat(Edit10.Text);
+
+   fa:=f(a,s);
+   if check=true then exit;
+
+   fb:=f(b,s);
+   if check=true then exit;
+
+   if fa*fb<0 then
+       mn.Biseccion(a,b,s,StrToFloat(Edit9.Text),StringGrid5);
+   if fa=0 then
+   begin
+      StringGrid5.Cells[1,1]:=FormatFloat('0.0000',a);
+      StringGrid5.Cells[2,1]:=FormatFloat('0.0000',b);
+      StringGrid5.Cells[3,1]:=FormatFloat('0.0000',a);
+      StringGrid5.Cells[5,1]:='0';
+   end;
+   if fb=0 then
+   begin
+      StringGrid5.Cells[1,1]:=FormatFloat('0.0000',a);
+      StringGrid5.Cells[2,1]:=FormatFloat('0.0000',b);
+      StringGrid5.Cells[3,1]:=FormatFloat('0.0000',b);
+      StringGrid5.Cells[5,1]:='0';
+   end;
+   if  fa*fb>0 then
+       ShowMessage('No cumple Bolzano');
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+var
+  a,b,fa,fb :Real;
+  s:String;
+begin
+   s:=Edit11.Text;
+   a:=StrToFloat(Edit12.Text);
+   b:=StrToFloat(Edit13.Text);
+   fa:=f(a,s);
+   if check=true then exit;
+   fb:=f(b,s);
+   if check=true then exit;
+
+   if fa*fb<0 then
+      mn.FalsaPosicion(a,b,s,StrToFloat(Edit14.Text),StringGrid4);
+   if fa=0 then
+   begin
+      StringGrid4.Cells[1,1]:=FormatFloat('0.0000',a);
+      StringGrid4.Cells[2,1]:=FormatFloat('0.0000',b);
+      StringGrid4.Cells[3,1]:=FormatFloat('0.0000',a);
+      StringGrid4.Cells[5,1]:='0';
+   end;
+   if fb=0 then
+   begin
+      StringGrid4.Cells[1,1]:=FormatFloat('0.0000',a);
+      StringGrid4.Cells[2,1]:=FormatFloat('0.0000',b);
+      StringGrid4.Cells[3,1]:=FormatFloat('0.0000',b);
+      StringGrid4.Cells[5,1]:='0';
+   end;
+   if  fa*fb>0 then
+       ShowMessage('No cumple Bolzano');
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  i:=0;
+  j:=0;
+  cont1:=0;
+  cont2:=0;
+  u:=0;
+  v:=0;
+  ComboBox1.Items.Clear;
+  ComboBox1.Items.Add('Suma');
+  ComboBox1.Items.Add('Resta');
+  ComboBox1.Items.Add('Escalar');
+  ComboBox1.Items.Add('Multiplicar');
+  ComboBox1.Items.Add('Inversa');
+  ComboBox1.Items.Add('Transpuesta');
+  ComboBox1.Items.Add('Determinante');
+  ComboBox1.Items.Add('Jacobiana');
+  GroupBox1.Enabled:=False;
+  GroupBox2.Enabled:=False;
+  Edit16.Enabled:=False;
+end;
+
+procedure TForm1.Button8Click(Sender: TObject);
+var
+  n,m:Integer;
+begin
+  n:=SpinEdit4.Value;
+  m:=SpinEdit6.Value;
+
+  if cont2=n*m then
+  begin
+    ShowMessage('La matriz esta llena');
+    Exit;
+  end;
+
+  if u<m then
+  begin
+    StringGrid7.Cells[u,v]:=Edit25.Text;
+    u:=u+1;
+    cont2:=cont2+1;
+    Exit;
+  end;
+
+  if (u=m) and (v<n) then
+  begin
+    u:=0;
+    v:=v+1;
+    StringGrid7.Cells[u,v]:=Edit25.Text;
+    u:=u+1;
+    cont2:=cont2+1;
+    Exit;
+  end;
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  if ComboBox1.Text='Suma' then
+  begin
+    mat.suma(StringGrid6,StringGrid7,StringGrid3);
+  end;
+  if ComboBox1.Text='Resta' then
+  begin
+    mat.resta(StringGrid6,StringGrid7,StringGrid3);
+  end;
+
+  if ComboBox1.Text='Multiplicar' then
+  begin
+    mat.multiplicar(StringGrid6,StringGrid7,StringGrid3);
+  end;
+  if ComboBox1.Text='Escalar' then
+  begin
+    mat.escalar(StringGrid6,StrToFloat(Edit16.Text),StringGrid3);
+  end;
+
+  if ComboBox1.Text='Inversa' then
+  begin
+
+  end;
+  if ComboBox1.Text='Transpuesta' then
+  begin
+    mat.transpuesta(StringGrid6,StringGrid3);
+  end;
+
+  if ComboBox1.Text='Determinante' then
+  begin
+    mat.determinante(StringGrid6,StaticText1);
+  end;
+  if ComboBox1.Text='Jacobiana' then
+  begin
+
+  end;
+
+end;
+
+procedure TForm1.ComboBox1Change(Sender: TObject);
+begin
+  Edit16.Enabled:=False;
+  GroupBox2.Enabled:=False;
+  GroupBox1.Enabled:=True;
+
+  if (ComboBox1.Text='Suma')or(ComboBox1.Text='Resta')or(ComboBox1.Text='Multiplicar') then
+  begin
+    GroupBox2.Enabled:=True;
+  end;
+
+  if ComboBox1.Text='Escalar' then
+  begin
+    Edit16.Enabled:=True;
+  end;
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+var
+  n,m:Integer;
+begin
+  n:=SpinEdit3.Value;
+  m:=SpinEdit2.Value;
+
+  if cont1=n*m then
+  begin
+    ShowMessage('La matriz esta llena');
+    Exit;
+  end;
+
+  if i<m then
+  begin
+    StringGrid6.Cells[i,j]:=Edit24.Text;
+    i:=i+1;
+    cont1:=cont1+1;
+    Exit;
+  end;
+
+  if (i=m) and (j<n) then
+  begin
+    i:=0;
+    j:=j+1;
+    StringGrid6.Cells[i,j]:=Edit24.Text;
+    i:=i+1;
+    cont1:=cont1+1;
+    Exit;
+  end;
+end;
+
+
+
+end.
+

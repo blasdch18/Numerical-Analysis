@@ -1,0 +1,117 @@
+object Form1: TForm1
+  Left = 2283
+  Height = 355
+  Top = 579
+  Width = 829
+  Anchors = [akTop, akLeft, akBottom]
+  Caption = 'Form1'
+  ClientHeight = 355
+  ClientWidth = 829
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 355
+    Top = 0
+    Width = 208
+    Align = alCustom
+    Anchors = [akTop, akLeft, akBottom]
+    Caption = 'Panel1'
+    ClientHeight = 355
+    ClientWidth = 208
+    TabOrder = 0
+    object tvwHistory: TTreeView
+      Left = 1
+      Height = 353
+      Top = 1
+      Width = 206
+      Align = alClient
+      DefaultItemHeight = 18
+      TabOrder = 0
+      Items.Data = {
+        F9FFFFFF020001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+        00000015000000486973746F7269616C20646520636F6D616E646F73
+      }
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 576
+    Height = 358
+    Top = 0
+    Width = 264
+    ActivePage = TabSheet1
+    Align = alCustom
+    Anchors = [akTop, akRight, akBottom]
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Variables'
+      ClientHeight = 330
+      ClientWidth = 256
+      object VAriableGrid: TValueListEditor
+        Left = 0
+        Height = 331
+        Top = 0
+        Width = 249
+        Align = alCustom
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        FixedCols = 0
+        RowCount = 2
+        TabOrder = 0
+        OnClick = VAriableGridClick
+        Strings.Strings = (
+          ''
+        )
+        ColWidths = (
+          64
+          181
+        )
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+    end
+  end
+  object Panel2: TPanel
+    Left = 208
+    Height = 360
+    Top = 0
+    Width = 369
+    Align = alCustom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Panel2'
+    ClientHeight = 360
+    ClientWidth = 369
+    TabOrder = 2
+    object CmdBox1: TCmdBox
+      Left = 0
+      Height = 348
+      Top = 1
+      Width = 384
+      Align = alCustom
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      CaretColor = clWhite
+      CaretType = cartUser
+      CaretWidth = 1
+      CaretHeight = 12
+      CaretYShift = 3
+      OnInput = CmdBox1Input
+      LineCount = 1000
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clSilver
+      Font.Height = -13
+      Font.Name = 'Consolas'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      BackGroundColor = clBlue
+      TabWidth = 60
+      HistoryMax = 10
+      InputSelColor = clBlue
+      InputSelBackGround = clWhite
+      CaretInterval = 500
+      EscapeCodeType = esctCmdBox
+      GraphicalCharacterWidth = 10
+      OnClick = CmdBox1Click
+    end
+  end
+end

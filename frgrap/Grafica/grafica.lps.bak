@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="grafica.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="34"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGraficadora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="112"/>
+        <CursorPos X="20" Y="121"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Parse\parsemath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ParseMath"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="4" Y="148"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="calculadora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCaluladora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="52" Y="151"/>
+        <UsageCount Value="23"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="funciones.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFunciones"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="5" Y="44"/>
+        <UsageCount Value="22"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="Parse\clase1.pas"/>
+        <TopLine Value="22"/>
+        <CursorPos X="15" Y="33"/>
+        <UsageCount Value="24"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="Parse\t_pila1.pas"/>
+        <UnitName Value="t_Pila1"/>
+        <CursorPos Y="47"/>
+        <UsageCount Value="24"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="Parse\t_pila2.pas"/>
+        <TopLine Value="23"/>
+        <CursorPos X="27" Y="41"/>
+        <UsageCount Value="24"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="clase1.pas"/>
+        <CursorPos X="44" Y="10"/>
+        <UsageCount Value="20"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <TopLine Value="2698"/>
+        <CursorPos Y="2713"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="t_pila2.pas"/>
+        <TopLine Value="6"/>
+        <CursorPos X="34" Y="32"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="D:\usr\share\fpcsrc\2.6.4\rtl\unix\crt.pp"/>
+        <UnitName Value="Crt"/>
+        <TopLine Value="76"/>
+        <UsageCount Value="11"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\gBox\common\units\stsql.pas"/>
+        <UnitName Value="STsql"/>
+        <TopLine Value="111"/>
+        <CursorPos X="22" Y="52"/>
+        <UsageCount Value="11"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="D:\usr\share\fpcsrc\2.6.4\packages\fcl-base\src\fpexprpars.pp"/>
+        <TopLine Value="83"/>
+        <CursorPos X="3" Y="97"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="D:\usr\share\lazarus\1.2.6\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2172"/>
+        <CursorPos Y="2183"/>
+        <UsageCount Value="12"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="D:\usr\share\fpcsrc\3.0.0\packages\fcl-base\src\fpexprpars.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="596"/>
+        <CursorPos X="14" Y="614"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+    </Units>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="main.pas"/>
+        <Caret Line="176" Column="3" TopLine="174"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="38" Column="13" TopLine="28"/>
+      </Position2>
+      <Position3>
+        <Filename Value="main.pas"/>
+        <Caret Line="134" Column="22" TopLine="97"/>
+      </Position3>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

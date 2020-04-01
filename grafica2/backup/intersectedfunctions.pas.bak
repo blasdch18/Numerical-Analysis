@@ -1,0 +1,141 @@
+unit IntersectedFunctions;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, ParseMath, Dialogs, MetodosCerrados;
+type
+  TIntersectedFunctions = class
+    public
+      check : boolean;
+      XLst , YLst , RootsLst : TStringList;
+      constructor create();
+      function intersections ( fun1: String ; fun2 : String ;
+                               min: double ; max :double ;
+                              error : double) :TStringList;
+      function concatenarFx ( fun1: String ; fun2 : String  ) : String;
+    private
+
+      MetodoCerrado: TMetodosCerrados;
+
+      function BolzanoTheory ( a: double; b: double ; funcion: String ): double;
+      function f(x : Real;s: String):Real;
+
+
+  end;
+
+  const
+    Intervalo =0.1;
+implementation
+constructor TIntersectedFunctions.create();
+begin
+  XLst := TStringList.Create();
+  YLst := TStringList.Create();
+  RootsLst := TStringList.Create();
+end;
+
+function TIntersectedFunctions.concatenarFx( fun1: String ; fun2 : String ): String;
+begin
+  result:= fun1 + '-' + fun2;
+  end;
+
+function TIntersectedFunctions.f(x : Real;s: String):Real;
+var MiParse: TParseMath;
+begin
+  MiParse:= TParseMath.create();
+  MiParse.AddVariable('x',x);
+  MiParse.Expression:= s;
+  check:=false;
+  try
+    result:=MiParse.Evaluate();
+  except
+    begin
+    ShowMessage('La funcion no es continua '+FloatToStr(x));
+    check:=true;
+    end;
+  end;
+
+  MiParse.destroy;
+end;
+
+function TIntersectedFunctions.BolzanoTheory ( a: double; b: double ; funcion: String ): double;
+begin
+
+  if( f(a,funcion) = 0) then
+      Result := a
+  else begin
+       if( f(b,funcion) = 0) then
+           Result := b
+       else begin
+            if ( (f(a,funcion)*f(b,funcion)) < 0 ) then
+               Result := 3
+            else
+               Result := 0
+            end;
+       end;
+end;
+
+function TintersectedFunctions.intersections ( fun1: String ; fun2 : String ;
+                               min: double ; max :double ;
+                               error : double) :TStringList;
+var
+  funExpression: String;
+  xa, xb: Double;
+  thereSolution : Integer;
+  resultTemp: String;
+  leastOneSolution:Boolean;
+
+  tmpLst : TStringList;
+begin
+ { leastOneSolution:=False;
+  tmpLst := TStringList.Create;
+  //Result.result.Sorted := True;
+  //Result.result.Duplicates := dupIgnore;
+  funExpression := fun1 + '-(' + fun2 + ')';
+  xa:= min;
+  while( xa <= max )do begin
+    xb := xa + Intervalo ;
+    try
+      thereSolution:= BolzanoTheory(xa,xb,funExpression);
+    except
+       thereSolution:=0;
+    end;
+
+    Xlst.Add( FloatToStr( xa ));
+    Ylst.Add( FloatToStr( xb ));
+    RootsLst.Add( IntToStr(thereSolution));
+
+    MetodoCerrado.funcion:= funExpresion;
+    case thereSolution of
+     0:
+       leastOneSolution:= (leastOneSolution or False);
+       //Result.result.Add( 'No bolzano' );
+     1: begin
+       leastOneSolution:= (leastOneSolution or True);
+       tmplst.add(  FloatToStr(xa) );
+//       Result.result.Add( FloatToStr(xa) );
+     end;
+     2: begin
+       leastOneSolution:= (leastOneSolution or True);
+       tmplst.add(  FloatToStr(xb) );
+//       Result.result.Add( FloatToStr(xb) );
+     end;
+     3:
+       begin
+         leastOneSolution:= (leastOneSolution or True);
+         resultTemp := FloatToStr( MetodoCerrado.biseccion() );
+         resultTemp := open.secante(StrToFloat(resultTemp),funExpression, e ).result;
+
+         Result.result.Add( resultTemp );
+       end;
+    end;
+    xa := xb;
+  end;
+  Result.thereIsResult := leastOneSolution;
+  Result.result := clearPointsOutOfRange(Result.result, xmin, xmax);    }
+end;
+
+end.
+

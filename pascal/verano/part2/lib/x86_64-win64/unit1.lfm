@@ -1,0 +1,1672 @@
+object Form1: TForm1
+  Left = 734
+  Height = 644
+  Top = 35
+  Width = 616
+  Caption = 'Form1'
+  ClientHeight = 644
+  ClientWidth = 616
+  Color = clSilver
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 627
+    Top = 0
+    Width = 613
+    ActivePage = TabSheet5
+    TabIndex = 4
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Biseccion'
+      ClientHeight = 599
+      ClientWidth = 605
+      object Label9: TLabel
+        Left = 232
+        Height = 21
+        Top = 16
+        Width = 147
+        Caption = 'Método de Biseccion'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label10: TLabel
+        Left = 16
+        Height = 21
+        Top = 56
+        Width = 52
+        Caption = 'F(x):'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit7: TEdit
+        Left = 80
+        Height = 23
+        Top = 56
+        Width = 200
+        TabOrder = 0
+        Text = 'x'
+      end
+      object Label11: TLabel
+        Left = 312
+        Height = 21
+        Top = 56
+        Width = 17
+        Caption = 'a :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit8: TEdit
+        Left = 336
+        Height = 23
+        Top = 56
+        Width = 80
+        TabOrder = 1
+        Text = '0'
+      end
+      object Label12: TLabel
+        Left = 16
+        Height = 21
+        Top = 96
+        Width = 43
+        Caption = 'Error: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit9: TEdit
+        Left = 80
+        Height = 23
+        Top = 94
+        Width = 80
+        TabOrder = 2
+        Text = '0'
+      end
+      object Label13: TLabel
+        Left = 440
+        Height = 21
+        Top = 56
+        Width = 21
+        Caption = 'b : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit10: TEdit
+        Left = 472
+        Height = 23
+        Top = 56
+        Width = 80
+        TabOrder = 3
+        Text = '0'
+      end
+      object Button4: TButton
+        Left = 448
+        Height = 25
+        Top = 92
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button4Click
+        TabOrder = 4
+      end
+      object StringGrid5: TStringGrid
+        Left = 16
+        Height = 296
+        Top = 152
+        Width = 536
+        ColCount = 6
+        FixedCols = 0
+        ParentBiDiMode = False
+        RowCount = 2
+        TabOrder = 5
+        ColWidths = (
+          36
+          110
+          113
+          105
+          59
+          116
+        )
+        Cells = (
+          6
+          0
+          0
+          'n'
+          1
+          0
+          'a'
+          2
+          0
+          'b'
+          3
+          0
+          'Xn'
+          4
+          0
+          'Signo'
+          5
+          0
+          'Error'
+        )
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'FalsaPosicion'
+      ClientHeight = 599
+      ClientWidth = 605
+      object Label14: TLabel
+        Left = 232
+        Height = 21
+        Top = 16
+        Width = 147
+        Caption = 'Método de Biseccion'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label15: TLabel
+        Left = 16
+        Height = 21
+        Top = 56
+        Width = 52
+        Caption = 'F(x):'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit11: TEdit
+        Left = 80
+        Height = 23
+        Top = 56
+        Width = 192
+        TabOrder = 0
+        Text = 'x'
+      end
+      object Label16: TLabel
+        Left = 296
+        Height = 21
+        Top = 58
+        Width = 17
+        Caption = 'a :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit12: TEdit
+        Left = 320
+        Height = 23
+        Top = 56
+        Width = 80
+        TabOrder = 1
+        Text = '0'
+      end
+      object Label17: TLabel
+        Left = 440
+        Height = 21
+        Top = 56
+        Width = 21
+        Caption = 'b : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit13: TEdit
+        Left = 472
+        Height = 23
+        Top = 56
+        Width = 80
+        TabOrder = 2
+        Text = '0'
+      end
+      object Label18: TLabel
+        Left = 16
+        Height = 21
+        Top = 96
+        Width = 43
+        Caption = 'Error: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit14: TEdit
+        Left = 80
+        Height = 23
+        Top = 94
+        Width = 80
+        TabOrder = 3
+        Text = '0'
+      end
+      object Button5: TButton
+        Left = 448
+        Height = 25
+        Top = 104
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button5Click
+        TabOrder = 4
+      end
+      object StringGrid4: TStringGrid
+        Left = 16
+        Height = 296
+        Top = 152
+        Width = 536
+        ColCount = 6
+        FixedCols = 0
+        ParentBiDiMode = False
+        RowCount = 2
+        TabOrder = 5
+        ColWidths = (
+          36
+          110
+          113
+          105
+          59
+          116
+        )
+        Cells = (
+          6
+          0
+          0
+          'n'
+          1
+          0
+          'a'
+          2
+          0
+          'b'
+          3
+          0
+          'Xn'
+          4
+          0
+          'Signo'
+          5
+          0
+          'Error'
+        )
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Newton'
+      ClientHeight = 599
+      ClientWidth = 605
+      object StringGrid1: TStringGrid
+        Left = 16
+        Height = 296
+        Top = 168
+        Width = 416
+        ColCount = 4
+        FixedCols = 0
+        RowCount = 2
+        TabOrder = 0
+        ColWidths = (
+          44
+          115
+          127
+          129
+        )
+        Cells = (
+          4
+          0
+          0
+          'n'
+          1
+          0
+          'Xn'
+          2
+          0
+          'Xn+1'
+          3
+          0
+          'Error'
+        )
+      end
+      object Label1: TLabel
+        Left = 232
+        Height = 21
+        Top = 16
+        Width = 134
+        Caption = 'Método de Newton'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 16
+        Height = 21
+        Top = 56
+        Width = 52
+        Caption = 'F(x):'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit1: TEdit
+        Left = 80
+        Height = 23
+        Top = 56
+        Width = 168
+        TabOrder = 1
+        Text = '(x*ln(x))-x'
+      end
+      object Label3: TLabel
+        Left = 16
+        Height = 21
+        Top = 88
+        Width = 28
+        Caption = 'Xo: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit2: TEdit
+        Left = 80
+        Height = 23
+        Top = 88
+        Width = 80
+        TabOrder = 2
+        Text = '0'
+      end
+      object Label4: TLabel
+        Left = 16
+        Height = 21
+        Top = 120
+        Width = 43
+        Caption = 'Error: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit3: TEdit
+        Left = 80
+        Height = 23
+        Top = 120
+        Width = 80
+        TabOrder = 3
+        Text = '0'
+      end
+      object Button1: TButton
+        Left = 328
+        Height = 25
+        Top = 120
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button3: TButton
+        Left = 447
+        Height = 25
+        Top = 240
+        Width = 75
+        Caption = 'Parce'
+        OnClick = Button3Click
+        TabOrder = 5
+      end
+      object Memo1: TMemo
+        Left = 447
+        Height = 56
+        Top = 168
+        Width = 137
+        Lines.Strings = (
+          'Memo1'
+        )
+        TabOrder = 6
+      end
+      object Label19: TLabel
+        Left = 320
+        Height = 21
+        Top = 56
+        Width = 55
+        Caption = 'F''(x):'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit15: TEdit
+        Left = 376
+        Height = 23
+        Top = 56
+        Width = 168
+        TabOrder = 7
+        Text = '(ln(x)+1)-1'
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Secante'
+      ClientHeight = 599
+      ClientWidth = 605
+      object Label5: TLabel
+        Left = 224
+        Height = 21
+        Top = 8
+        Width = 154
+        Caption = 'Método de la Secante'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 200
+        Height = 21
+        Top = 60
+        Width = 52
+        Caption = 'F(x):'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit4: TEdit
+        Left = 264
+        Height = 23
+        Top = 58
+        Width = 168
+        TabOrder = 0
+        Text = '(x*ln(x))-x'
+      end
+      object Label7: TLabel
+        Left = 200
+        Height = 21
+        Top = 96
+        Width = 28
+        Caption = 'Xo: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit5: TEdit
+        Left = 264
+        Height = 23
+        Top = 94
+        Width = 80
+        TabOrder = 1
+        Text = '0'
+      end
+      object Label8: TLabel
+        Left = 200
+        Height = 21
+        Top = 128
+        Width = 43
+        Caption = 'Error: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit6: TEdit
+        Left = 264
+        Height = 23
+        Top = 128
+        Width = 80
+        TabOrder = 2
+        Text = '0'
+      end
+      object Button2: TButton
+        Left = 448
+        Height = 25
+        Top = 128
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button2Click
+        TabOrder = 3
+      end
+      object StringGrid2: TStringGrid
+        Left = 16
+        Height = 296
+        Top = 168
+        Width = 536
+        FixedCols = 0
+        ParentBiDiMode = False
+        RowCount = 2
+        TabOrder = 4
+        ColWidths = (
+          44
+          116
+          129
+          129
+          125
+        )
+        Cells = (
+          5
+          0
+          0
+          'n'
+          1
+          0
+          'Xn-1'
+          2
+          0
+          'Xn'
+          3
+          0
+          'Xn+1'
+          4
+          0
+          'Error'
+        )
+      end
+      object RadioButton1: TRadioButton
+        Left = 40
+        Height = 25
+        Top = 58
+        Width = 86
+        Caption = 'Método 1'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 5
+      end
+      object RadioButton2: TRadioButton
+        Left = 40
+        Height = 25
+        Top = 88
+        Width = 86
+        Caption = 'Método 2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 6
+      end
+      object RadioButton3: TRadioButton
+        Left = 40
+        Height = 25
+        Top = 120
+        Width = 86
+        Caption = 'Método 3'
+        Font.CharSet = SHIFTJIS_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 7
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Matriz'
+      ClientHeight = 599
+      ClientWidth = 605
+      object Label20: TLabel
+        Left = 208
+        Height = 21
+        Top = 16
+        Width = 183
+        Caption = 'Operaciones con Matrices'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object StringGrid3: TStringGrid
+        Left = 88
+        Height = 168
+        Top = 384
+        Width = 424
+        ColCount = 1
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 1
+        TabOrder = 0
+        TitleFont.CharSet = ANSI_CHARSET
+        TitleFont.Height = -13
+        TitleFont.Name = '@Arial Unicode MS'
+        TitleFont.Pitch = fpVariable
+        TitleFont.Quality = fqDraft
+      end
+      object Label24: TLabel
+        Left = 24
+        Height = 21
+        Top = 48
+        Width = 90
+        Caption = 'Operaciones'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object ComboBox1: TComboBox
+        Left = 160
+        Height = 23
+        Top = 48
+        Width = 124
+        ItemHeight = 15
+        OnChange = ComboBox1Change
+        TabOrder = 1
+      end
+      object GroupBox1: TGroupBox
+        Left = 24
+        Height = 256
+        Top = 88
+        Width = 272
+        Caption = 'Matriz A'
+        ClientHeight = 236
+        ClientWidth = 268
+        TabOrder = 2
+        object Label28: TLabel
+          Left = 16
+          Height = 21
+          Top = 8
+          Width = 13
+          Caption = 'n:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label29: TLabel
+          Left = 104
+          Height = 21
+          Top = 8
+          Width = 17
+          Caption = 'm:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object SpinEdit2: TSpinEdit
+          Left = 128
+          Height = 23
+          Top = 8
+          Width = 50
+          MinValue = 1
+          OnChange = SpinEdit2Change
+          TabOrder = 0
+          Value = 1
+        end
+        object SpinEdit3: TSpinEdit
+          Left = 40
+          Height = 23
+          Top = 8
+          Width = 50
+          MinValue = 1
+          OnChange = SpinEdit3Change
+          TabOrder = 1
+          Value = 1
+        end
+      end
+      object Button6: TButton
+        Left = 24
+        Height = 25
+        Top = 352
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button6Click
+        TabOrder = 3
+      end
+      object GroupBox2: TGroupBox
+        Left = 312
+        Height = 256
+        Top = 88
+        Width = 272
+        Caption = 'Matriz B'
+        ClientHeight = 236
+        ClientWidth = 268
+        TabOrder = 4
+        object Label30: TLabel
+          Left = 16
+          Height = 21
+          Top = 8
+          Width = 13
+          Caption = 'n:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label31: TLabel
+          Left = 104
+          Height = 21
+          Top = 8
+          Width = 17
+          Caption = 'm:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object StringGrid7: TStringGrid
+          Left = 16
+          Height = 176
+          Top = 48
+          Width = 240
+          ColCount = 1
+          FixedCols = 0
+          FixedRows = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+          RowCount = 1
+          TabOrder = 0
+          TitleFont.CharSet = ANSI_CHARSET
+          TitleFont.Height = -13
+          TitleFont.Name = '@Arial Unicode MS'
+          TitleFont.Pitch = fpVariable
+          TitleFont.Quality = fqDraft
+        end
+        object SpinEdit4: TSpinEdit
+          Left = 40
+          Height = 23
+          Top = 8
+          Width = 50
+          MinValue = 1
+          OnChange = SpinEdit4Change
+          TabOrder = 1
+          Value = 1
+        end
+        object SpinEdit6: TSpinEdit
+          Left = 128
+          Height = 23
+          Top = 8
+          Width = 50
+          MinValue = 1
+          OnChange = SpinEdit6Change
+          TabOrder = 2
+          Value = 1
+        end
+      end
+      object Label25: TLabel
+        Left = 40
+        Height = 21
+        Top = 563
+        Width = 108
+        Caption = 'El resultado es:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object StaticText1: TStaticText
+        Left = 168
+        Height = 18
+        Top = 563
+        Width = 216
+        TabOrder = 5
+      end
+      object StringGrid6: TStringGrid
+        Left = 40
+        Height = 176
+        Top = 152
+        Width = 240
+        ColCount = 1
+        FixedCols = 0
+        FixedRows = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        RowCount = 1
+        TabOrder = 6
+        TitleFont.CharSet = ANSI_CHARSET
+        TitleFont.Height = -13
+        TitleFont.Name = '@Arial Unicode MS'
+        TitleFont.Pitch = fpVariable
+        TitleFont.Quality = fqDraft
+      end
+      object Label26: TLabel
+        Left = 320
+        Height = 21
+        Top = 48
+        Width = 57
+        Caption = 'Escalar:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit16: TEdit
+        Left = 384
+        Height = 23
+        Top = 49
+        Width = 80
+        TabOrder = 7
+        Text = '1'
+      end
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'Lagrange'
+      ClientHeight = 599
+      ClientWidth = 605
+      object Label21: TLabel
+        Left = 224
+        Height = 21
+        Top = 16
+        Width = 163
+        Caption = 'Polinómio de Lagrange'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label22: TLabel
+        Left = 32
+        Height = 21
+        Top = 96
+        Width = 52
+        Caption = 'Rango:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object StringGrid9: TStringGrid
+        Left = 32
+        Height = 48
+        Top = 232
+        Width = 528
+        ColCount = 3
+        FixedRows = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        RowCount = 2
+        TabOrder = 0
+        TitleFont.CharSet = ANSI_CHARSET
+        TitleFont.Height = -13
+        TitleFont.Name = '@Arial Unicode MS'
+        TitleFont.Pitch = fpVariable
+        TitleFont.Quality = fqDraft
+        Cells = (
+          2
+          0
+          0
+          'X'
+          0
+          1
+          'Y'
+        )
+      end
+      object SpinEdit5: TSpinEdit
+        Left = 102
+        Height = 23
+        Top = 96
+        Width = 74
+        MinValue = 2
+        OnChange = SpinEdit5Change
+        TabOrder = 1
+        Value = 2
+      end
+      object Label34: TLabel
+        Left = 30
+        Height = 21
+        Top = 192
+        Width = 54
+        Caption = 'Puntos:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button10: TButton
+        Left = 30
+        Height = 22
+        Top = 304
+        Width = 96
+        Caption = 'Calcular'
+        OnClick = Button10Click
+        TabOrder = 2
+      end
+      object Label35: TLabel
+        Left = 32
+        Height = 21
+        Top = 136
+        Width = 46
+        Caption = 'Punto:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit20: TEdit
+        Left = 96
+        Height = 23
+        Top = 134
+        Width = 80
+        TabOrder = 3
+        Text = '0'
+      end
+      object Label36: TLabel
+        Left = 30
+        Height = 21
+        Top = 512
+        Width = 76
+        Caption = 'Resultado:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object StaticText2: TStaticText
+        Left = 129
+        Height = 21
+        Top = 512
+        Width = 431
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 4
+      end
+      object Label48: TLabel
+        Left = 32
+        Height = 21
+        Top = 408
+        Width = 67
+        Caption = 'PL(x)='
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object StaticText4: TStaticText
+        Left = 120
+        Height = 61
+        Top = 392
+        Width = 441
+        TabOrder = 5
+      end
+    end
+    object TabSheet7: TTabSheet
+      Caption = 'NewtonGeneralizado'
+      ClientHeight = 599
+      ClientWidth = 605
+      object Label37: TLabel
+        Left = 232
+        Height = 21
+        Top = 16
+        Width = 153
+        Caption = 'Newton Generalizado'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label38: TLabel
+        Left = 32
+        Height = 21
+        Top = 80
+        Width = 82
+        Caption = 'F(X,Y)='
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit17: TEdit
+        Left = 152
+        Height = 23
+        Top = 56
+        Width = 178
+        TabOrder = 0
+        Text = 'exp(x)+(x*y)-32.086'
+      end
+      object Edit21: TEdit
+        Left = 152
+        Height = 23
+        Top = 96
+        Width = 178
+        TabOrder = 1
+        Text = 'ln(y)+(3*x*power(y,2))-149.386'
+      end
+      object Label39: TLabel
+        Left = 96
+        Height = 85
+        Top = 40
+        Width = 60
+        Caption = '{'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -64
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label40: TLabel
+        Left = 360
+        Height = 21
+        Top = 80
+        Width = 32
+        Caption = 'Xo='
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label41: TLabel
+        Left = 376
+        Height = 85
+        Top = 40
+        Width = 60
+        Caption = '('
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -64
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label42: TLabel
+        Left = 528
+        Height = 85
+        Top = 40
+        Width = 60
+        Caption = ')'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -64
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit22: TEdit
+        Left = 432
+        Height = 23
+        Top = 64
+        Width = 80
+        TabOrder = 2
+        Text = '0'
+      end
+      object Edit23: TEdit
+        Left = 432
+        Height = 23
+        Top = 96
+        Width = 80
+        TabOrder = 3
+        Text = '0'
+      end
+      object Label43: TLabel
+        Left = 32
+        Height = 21
+        Top = 152
+        Width = 43
+        Caption = 'Error: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit26: TEdit
+        Left = 80
+        Height = 23
+        Top = 152
+        Width = 80
+        TabOrder = 4
+        Text = '0'
+      end
+      object StringGrid8: TStringGrid
+        Left = 32
+        Height = 296
+        Top = 200
+        Width = 512
+        ColCount = 4
+        FixedCols = 0
+        RowCount = 2
+        TabOrder = 5
+        ColWidths = (
+          44
+          169
+          167
+          129
+        )
+        Cells = (
+          4
+          0
+          0
+          'n'
+          1
+          0
+          'Xn'
+          2
+          0
+          '- JF(Xn)^-1 F(Xn) '
+          3
+          0
+          'Error'
+        )
+      end
+      object Button11: TButton
+        Left = 440
+        Height = 25
+        Top = 148
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button11Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet8: TTabSheet
+      Caption = 'Trapecio'
+      ClientHeight = 599
+      ClientWidth = 605
+      OnContextPopup = TabSheet8ContextPopup
+      object Label44: TLabel
+        Left = 232
+        Height = 21
+        Top = 16
+        Width = 141
+        Caption = 'Método de Trapecio'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label45: TLabel
+        Left = 24
+        Height = 21
+        Top = 56
+        Width = 52
+        Caption = 'F(x):'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit27: TEdit
+        Left = 88
+        Height = 23
+        Top = 56
+        Width = 352
+        TabOrder = 0
+        Text = 'x'
+      end
+      object Button12: TButton
+        Left = 152
+        Height = 25
+        Top = 344
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button12Click
+        TabOrder = 1
+      end
+      object GroupBox4: TGroupBox
+        Left = 16
+        Height = 105
+        Top = 96
+        Width = 313
+        Caption = 'Rapson'
+        ClientHeight = 85
+        ClientWidth = 309
+        TabOrder = 2
+        object Label46: TLabel
+          Left = 16
+          Height = 21
+          Top = 10
+          Width = 17
+          Caption = 'a :'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Edit28: TEdit
+          Left = 40
+          Height = 23
+          Top = 8
+          Width = 80
+          TabOrder = 0
+          Text = '0'
+        end
+        object Label47: TLabel
+          Left = 144
+          Height = 21
+          Top = 10
+          Width = 21
+          Caption = 'b : '
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Edit29: TEdit
+          Left = 168
+          Height = 23
+          Top = 8
+          Width = 80
+          TabOrder = 1
+          Text = '0'
+        end
+        object Edit30: TEdit
+          Left = 40
+          Height = 23
+          Top = 48
+          Width = 80
+          TabOrder = 2
+          Text = '0'
+        end
+        object Label49: TLabel
+          Left = 16
+          Height = 21
+          Top = 50
+          Width = 17
+          Caption = 'n :'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object GroupBox5: TGroupBox
+        Left = 16
+        Height = 106
+        Top = 216
+        Width = 312
+        Caption = 'Integrales'
+        ClientHeight = 86
+        ClientWidth = 308
+        TabOrder = 3
+        object ComboBox2: TComboBox
+          Left = 16
+          Height = 23
+          Top = 24
+          Width = 128
+          ItemHeight = 15
+          TabOrder = 0
+        end
+        object Label51: TLabel
+          Left = 168
+          Height = 21
+          Top = 26
+          Width = 61
+          Caption = 'tamaño :'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object SpinEdit7: TSpinEdit
+          Left = 240
+          Height = 23
+          Top = 26
+          Width = 58
+          MinValue = 2
+          OnChange = SpinEdit7Change
+          TabOrder = 1
+          Value = 2
+        end
+      end
+      object Label50: TLabel
+        Left = 16
+        Height = 21
+        Top = 384
+        Width = 80
+        Caption = 'Resultado: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object StaticText3: TStaticText
+        Left = 104
+        Height = 21
+        Top = 384
+        Width = 431
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 4
+      end
+      object StringGrid10: TStringGrid
+        Left = 366
+        Height = 222
+        Top = 101
+        Width = 200
+        ColCount = 2
+        FixedCols = 0
+        FixedRows = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        RowCount = 2
+        TabOrder = 5
+        ColWidths = (
+          96
+          100
+        )
+        Cells = (
+          1
+          0
+          0
+          'X0'
+        )
+      end
+      object Button7: TButton
+        Left = 16
+        Height = 25
+        Top = 344
+        Width = 104
+        Caption = 'Libre'
+        OnClick = Button7Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet9: TTabSheet
+      Caption = 'Simpson'
+      ClientHeight = 599
+      ClientWidth = 605
+      object Label52: TLabel
+        Left = 240
+        Height = 21
+        Top = 32
+        Width = 141
+        Caption = 'Método de Simpson'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label53: TLabel
+        Left = 40
+        Height = 21
+        Top = 72
+        Width = 52
+        Caption = 'F(x):'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit31: TEdit
+        Left = 104
+        Height = 23
+        Top = 72
+        Width = 448
+        TabOrder = 0
+        Text = '4*x*ln(x)'
+      end
+      object StringGrid11: TStringGrid
+        Left = 288
+        Height = 240
+        Top = 129
+        Width = 248
+        ColCount = 2
+        FixedCols = 0
+        FixedRows = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        RowCount = 2
+        TabOrder = 1
+        ColWidths = (
+          121
+          132
+        )
+      end
+      object Button13: TButton
+        Left = 40
+        Height = 25
+        Top = 344
+        Width = 104
+        Caption = 'Calcular'
+        OnClick = Button13Click
+        TabOrder = 2
+      end
+      object Label57: TLabel
+        Left = 40
+        Height = 21
+        Top = 403
+        Width = 80
+        Caption = 'Resultado: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object StaticText5: TStaticText
+        Left = 144
+        Height = 21
+        Top = 403
+        Width = 408
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 3
+      end
+      object GroupBox6: TGroupBox
+        Left = 40
+        Height = 168
+        Top = 128
+        Width = 201
+        Caption = 'Rapson'
+        ClientHeight = 148
+        ClientWidth = 197
+        TabOrder = 4
+        object Label58: TLabel
+          Left = 16
+          Height = 21
+          Top = 10
+          Width = 17
+          Caption = 'a :'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Edit35: TEdit
+          Left = 40
+          Height = 23
+          Top = 8
+          Width = 80
+          TabOrder = 0
+          Text = '0'
+        end
+        object Label59: TLabel
+          Left = 16
+          Height = 21
+          Top = 58
+          Width = 21
+          Caption = 'b : '
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Edit36: TEdit
+          Left = 40
+          Height = 23
+          Top = 56
+          Width = 80
+          TabOrder = 1
+          Text = '0'
+        end
+        object Edit37: TEdit
+          Left = 40
+          Height = 23
+          Top = 104
+          Width = 80
+          TabOrder = 2
+          Text = '0'
+        end
+        object Label60: TLabel
+          Left = 16
+          Height = 21
+          Top = 106
+          Width = 17
+          Caption = 'n :'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = '@Arial Unicode MS'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+    end
+  end
+end

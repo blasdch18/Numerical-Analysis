@@ -1,0 +1,84 @@
+unit Frame1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, TAGraph, TASeries, Forms, Controls, StdCtrls,
+  Grids, ExtCtrls, Dialogs, ComCtrls;
+
+type
+
+  { TFrame1 }
+
+  TFrame1 = class(TFrame)
+    //Xmax, XMin, UseMax, UseMin: Real;
+    Button1: TButton;
+    Button2: TButton;
+    Chart1: TChart;
+    Chart1ConstantLine1: TConstantLine;
+    Chart1ConstantLine2: TConstantLine;
+    Chart1LineSeries1: TLineSeries;
+    colorbtnFunction: TColorButton;
+    ediMax: TEdit;
+    ediMin: TEdit;
+    ediStep: TEdit;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    TrackBar1: TTrackBar;
+
+  private
+    { private declarations }
+    procedure ploteo;
+    function f( x: Real ): Real;
+    procedure FuncionCartesiana(const AX: Double; out AY:Double);
+  public
+    { public declarations }
+  end;
+
+implementation
+
+{$R *.lfm}
+
+{ TFrame1 }
+function TFrame1.f( x: Real ): Real;
+begin
+  //func:= TEdit( EditList[ ActiveFunction ] ).Text;
+ { Parse.Expression:= TEdit( EditList[ ActiveFunction ] ).Text;
+  Parse.NewValue('x', x);
+  Result:= Parse.Evaluate();
+                               }
+end;
+procedure TFrame1.Ploteo;
+//var TheArguments: TReadArg;
+begin
+ {   PlotLines.Clear;
+    TheArguments:= TReadArg.Create( command );
+    pnlPlot.Visible:= true;
+    spkcheckSeePlot.Checked:= true;
+
+    with FuncionCartesiana, TheArguments do begin
+      ParsePlot.Expression:= Arguments[ 0 ];
+      Active:= False;
+
+      Extent.XMax:= StrToFloat( Arguments[ 1 ] );
+      Extent.XMin:= StrToFloat( Arguments[ 2 ] );
+
+      Extent.UseXMax:= true;
+      Extent.UseXMin:= true;
+      FuncionCartesiana.Pen.Color:= clBlue;
+
+      Active:= True;
+
+  end;
+    TheArguments.Destroy;  }
+end;
+
+
+
+
+end.
+

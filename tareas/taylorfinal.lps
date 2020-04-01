@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="taylorfinal.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="24"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="form_taylor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="165"/>
+        <CursorPos X="34" Y="180"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\Users\ideaPad\AppData\Local\Temp\Rar$DI54.400\class_taylor.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="5"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="25" Column="6" TopLine="8"/>
+      </Position1>
+      <Position2>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="124" Column="20" TopLine="98"/>
+      </Position2>
+      <Position3>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="132" Column="54" TopLine="96"/>
+      </Position3>
+      <Position4>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="134" Column="54" TopLine="98"/>
+      </Position4>
+      <Position5>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="137" Column="15" TopLine="109"/>
+      </Position5>
+      <Position6>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="136" Column="31" TopLine="109"/>
+      </Position6>
+      <Position7>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="135" Column="5" TopLine="109"/>
+      </Position7>
+      <Position8>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="136" Column="7" TopLine="109"/>
+      </Position8>
+      <Position9>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="153" Column="3" TopLine="141"/>
+      </Position9>
+      <Position10>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="152" Column="3" TopLine="140"/>
+      </Position10>
+      <Position11>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="151" Column="3" TopLine="139"/>
+      </Position11>
+      <Position12>
+        <Filename Value="form_taylor.pas"/>
+        <Caret Line="160" Column="5" TopLine="142"/>
+      </Position12>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

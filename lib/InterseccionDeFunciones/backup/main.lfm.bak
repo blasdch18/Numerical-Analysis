@@ -1,0 +1,236 @@
+object Form1: TForm1
+  Left = 1694
+  Height = 568
+  Top = 126
+  Width = 764
+  AlphaBlend = True
+  AlphaBlendValue = 250
+  Caption = 'Form1'
+  ClientHeight = 568
+  ClientWidth = 764
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.6.4.0'
+  WindowState = wsMaximized
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 568
+    Top = 0
+    Width = 224
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    Align = alLeft
+    TabOrder = 0
+  end
+  object Chart1: TChart
+    Left = 224
+    Height = 568
+    Top = 0
+    Width = 338
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Toolset = ChartToolset1
+    Align = alClient
+    object intersectionPoints: TLineSeries
+      Marks.Format = '%0:.9g'
+      Marks.Style = smsValue
+      LinePen.Width = 5
+      Pointer.Brush.Color = clHotLight
+      Pointer.HorizSize = 5
+      Pointer.Style = psCircle
+      Pointer.VertSize = 5
+      ShowPoints = True
+    end
+  end
+  object Panel1: TPanel
+    Left = 562
+    Height = 568
+    Top = 0
+    Width = 202
+    Align = alRight
+    ClientHeight = 568
+    ClientWidth = 202
+    TabOrder = 2
+    object ediMin: TEdit
+      Left = 56
+      Height = 23
+      Top = 17
+      Width = 80
+      TabOrder = 0
+      Text = '-5'
+    end
+    object ediMax: TEdit
+      Left = 56
+      Height = 23
+      Top = 53
+      Width = 80
+      TabOrder = 1
+      Text = '5'
+    end
+    object colorbtnFunction: TColorButton
+      Left = 56
+      Height = 25
+      Top = 88
+      Width = 76
+      BorderWidth = 2
+      ButtonColorSize = 16
+      ButtonColor = clBlack
+    end
+    object Label1: TLabel
+      Left = 21
+      Height = 15
+      Top = 25
+      Width = 21
+      Caption = 'Min'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 21
+      Height = 15
+      Top = 56
+      Width = 22
+      Caption = 'Max'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 15
+      Top = 91
+      Width = 29
+      Caption = 'Color'
+      ParentColor = False
+    end
+    object ediStep: TEdit
+      Left = 56
+      Height = 23
+      Top = 120
+      Width = 80
+      TabOrder = 2
+      Text = '0.1'
+    end
+    object TrackBar1: TTrackBar
+      Left = 56
+      Height = 25
+      Top = 152
+      Width = 100
+      Max = 4
+      Min = 1
+      Position = 1
+      TabOrder = 3
+    end
+    object trbarVisible: TTrackBar
+      Left = 1
+      Height = 25
+      Top = 519
+      Width = 200
+      Max = 255
+      Min = 200
+      OnChange = trbarVisibleChange
+      Position = 250
+      Align = alBottom
+      TabOrder = 4
+    end
+    object StatusBar1: TStatusBar
+      Left = 1
+      Height = 23
+      Top = 544
+      Width = 200
+      Panels = <>
+    end
+    object LBoxIntersection: TListBox
+      Left = 8
+      Height = 35
+      Top = 256
+      Width = 185
+      ItemHeight = 0
+      TabOrder = 6
+    end
+    object BtnIntersection: TButton
+      Left = 80
+      Height = 23
+      Top = 295
+      Width = 112
+      Caption = 'Get Intersection'
+      OnClick = BtnIntersectionClick
+      TabOrder = 7
+    end
+    object BtnClearLBox: TButton
+      Left = 8
+      Height = 22
+      Top = 296
+      Width = 62
+      Caption = 'Clear'
+      OnClick = BtnClearLBoxClick
+      TabOrder = 8
+    end
+    object EdtPrecision: TEdit
+      Left = 64
+      Height = 23
+      Top = 224
+      Width = 93
+      TabOrder = 9
+      Text = '0.000001'
+    end
+    object LblPrecision: TLabel
+      Left = 8
+      Height = 15
+      Top = 232
+      Width = 48
+      Caption = 'Precision'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 22
+      Height = 15
+      Top = 125
+      Width = 13
+      Caption = 'h :'
+      ParentColor = False
+    end
+    object LblInterseccionTitle: TLabel
+      Left = 29
+      Height = 21
+      Top = 192
+      Width = 107
+      Caption = 'INTERSECCIÓN'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object StrGridResIntersection: TStringGrid
+      Left = 8
+      Height = 108
+      Top = 326
+      Width = 185
+      ColCount = 2
+      DefaultColWidth = 90
+      RowCount = 1
+      TabOrder = 10
+    end
+  end
+  object ChartToolset1: TChartToolset
+    left = 264
+    top = 16
+    object ChartToolset1DataPointClickTool1: TDataPointClickTool
+      Shift = [ssLeft]
+      OnPointClick = ChartToolset1DataPointClickTool1PointClick
+    end
+    object ChartToolset1ZoomMouseWheelTool1: TZoomMouseWheelTool
+      ZoomFactor = 1.1
+    end
+  end
+end

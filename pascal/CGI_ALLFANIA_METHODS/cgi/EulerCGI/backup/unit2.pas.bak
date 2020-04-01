@@ -1,0 +1,64 @@
+unit Unit2;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, ParseMath, Math;
+type
+  TEuler= class
+    public
+      function f(x : real ; s : string) :Extended;
+      function dx( x : real ; h : real) : Extended;
+      function euler( Funcion : string; h, x, y: Extended): Extended ;
+      constructor create();
+      destructor Destroy ; override;
+  end;
+var
+  check: boolean;
+implementation
+constructor TEuler.create();
+begin
+  end;
+
+destructor TEuler.Destroy;
+begin
+  end;
+
+function TEuler.f(x : Real;s: String):Extended;
+var MiParse: TParseMath;
+begin
+  MiParse:= TParseMath.create();
+  MiParse.AddVariable('x',x);
+  MiParse.Expression:= s;
+  check:=false;
+  try
+    result:=MiParse.Evaluate();
+  except
+    begin
+    //ShowMessage('La funcion no es continua en el punto '+FloatToStr(x));
+    check:=true;
+    end;
+  end;
+  MiParse.destroy;
+end;
+
+function TEuler.dx(x : real ; h :real ) : Extended;
+begin
+  result := (f(x + h ,Funcion) - f(x ,Funcion) )/h;
+end;
+
+function TEuler.euler(Funcion : String ; h , x , y : Extended) : Extended;
+var
+  yn1 : real;
+  yn : real;
+
+
+
+begin
+
+end;
+
+end.
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="BISECCION.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="24" Y="16"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="BISECCION.pas"/>
+        <Caret Line="18" Column="25" TopLine="4"/>
+      </Position1>
+      <Position2>
+        <Filename Value="BISECCION.pas"/>
+        <Caret Line="16" Column="18"/>
+      </Position2>
+      <Position3>
+        <Filename Value="BISECCION.pas"/>
+        <Caret Line="98" Column="16" TopLine="72"/>
+      </Position3>
+      <Position4>
+        <Filename Value="BISECCION.pas"/>
+        <Caret Line="99" Column="18" TopLine="67"/>
+      </Position4>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

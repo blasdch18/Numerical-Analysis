@@ -1,0 +1,3 @@
+http://localhost/cgi-bin/cgiproject1.exe?Funcion=power(x,2)&Pinicial=3&Pfinal=4&NumeroSecciones=8
+http://localhost/cgi-bin/cgiproject1.exe?Funcion=exp(2*x)-x&Pinicial=-2&Pfinal=1&NumeroSecciones=300
+http://localhost/cgi-bin/cgiproject1.exe?Funcion=0.4*exp(-(power(x,2))/(2))&Pinicial=0.4&Pfinal=0.6&NumeroSecciones=6

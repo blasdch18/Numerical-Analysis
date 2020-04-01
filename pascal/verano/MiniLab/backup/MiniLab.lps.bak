@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="MiniLab.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="455"/>
+        <CursorPos X="6" Y="460"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="datamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="DataModule"/>
+        <EditorIndex Value="11"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="plot.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="framePlot"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="9"/>
+        <CursorPos X="5" Y="9"/>
+        <UsageCount Value="108"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Parse\parsemath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ParseMath"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1029"/>
+        <CursorPos X="50" Y="1047"/>
+        <UsageCount Value="107"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="lagrange.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="21"/>
+        <CursorPos X="30" Y="62"/>
+        <UsageCount Value="80"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\fpc\3.0.0\source\packages\fcl-base\src\fpexprpars.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3409"/>
+        <CursorPos X="5" Y="3432"/>
+        <UsageCount Value="29"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\fpc\3.0.0\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="431"/>
+        <CursorPos X="3" Y="443"/>
+        <UsageCount Value="3"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="datamodule.lfm"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="10"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <EditorIndex Value="-1"/>
+        </ExtraEditor1>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="main.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="MiniLab.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="plot.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\prof minilabconnewton\Grafica\calculadora.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\components\tachart\tachartaxis.pas"/>
+        <UnitName Value="TAChartAxis"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1218"/>
+        <CursorPos Y="1221"/>
+        <UsageCount Value="6"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="integral.pas"/>
+        <UnitName Value="Integral"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="91"/>
+        <CursorPos X="16" Y="63"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="parsestring.pas"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="67"/>
+        <CursorPos X="13" Y="79"/>
+        <UsageCount Value="38"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="newtong.pas"/>
+        <UnitName Value="NewtonG"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="22"/>
+        <CursorPos X="50" Y="8"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7020"/>
+        <CursorPos Y="7032"/>
+        <UsageCount Value="9"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\lcl\colorbox.pas"/>
+        <UnitName Value="ColorBox"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="442"/>
+        <CursorPos Y="454"/>
+        <UsageCount Value="9"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="cmatriz.pas"/>
+        <EditorIndex Value="8"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="conversor.pas"/>
+        <UnitName Value="Conversor"/>
+        <EditorIndex Value="9"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="edo.pas"/>
+        <UnitName Value="EDO"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="32"/>
+        <CursorPos Y="103"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="inversa.pas"/>
+        <UnitName Value="Inversa"/>
+        <EditorIndex Value="14"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="jacobiana.pas"/>
+        <UnitName Value="Jacobiana"/>
+        <EditorIndex Value="15"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="parsemath1.pas"/>
+        <UnitName Value="ParseMath1"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="matrizx.pas"/>
+        <UnitName Value="matrizX"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="19"/>
+        <CursorPos X="29" Y="33"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit25>
+    </Units>
+    <JumpHistory Count="29" HistoryIndex="28">
+      <Position1>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="949" Column="21" TopLine="945"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="955" Column="25" TopLine="938"/>
+      </Position2>
+      <Position3>
+        <Filename Value="edo.pas"/>
+        <Caret Line="37" Column="29" TopLine="79"/>
+      </Position3>
+      <Position4>
+        <Filename Value="edo.pas"/>
+        <Caret Line="28" Column="31" TopLine="7"/>
+      </Position4>
+      <Position5>
+        <Filename Value="edo.pas"/>
+        <Caret Line="37" Column="14" TopLine="25"/>
+      </Position5>
+      <Position6>
+        <Filename Value="edo.pas"/>
+        <Caret Line="8" Column="34"/>
+      </Position6>
+      <Position7>
+        <Filename Value="edo.pas"/>
+        <Caret Line="28" TopLine="8"/>
+      </Position7>
+      <Position8>
+        <Filename Value="edo.pas"/>
+        <Caret Line="30" Column="52" TopLine="17"/>
+      </Position8>
+      <Position9>
+        <Filename Value="edo.pas"/>
+        <Caret Line="88" Column="86" TopLine="75"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main.pas"/>
+        <Caret Line="413" Column="43" TopLine="153"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="27" Column="18" TopLine="1006"/>
+      </Position11>
+      <Position12>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="56" Column="17" TopLine="44"/>
+      </Position12>
+      <Position13>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="960" Column="41" TopLine="946"/>
+      </Position13>
+      <Position14>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="941" Column="7" TopLine="935"/>
+      </Position14>
+      <Position15>
+        <Filename Value="main.pas"/>
+        <Caret Line="183" Column="44" TopLine="174"/>
+      </Position15>
+      <Position16>
+        <Filename Value="main.pas"/>
+        <Caret Line="105" Column="27" TopLine="92"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="956" Column="25" TopLine="951"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="1047" Column="50" TopLine="1044"/>
+      </Position18>
+      <Position19>
+        <Filename Value="main.pas"/>
+        <Caret Line="356" Column="89" TopLine="350"/>
+      </Position19>
+      <Position20>
+        <Filename Value="edo.pas"/>
+        <Caret Line="123" Column="38" TopLine="111"/>
+      </Position20>
+      <Position21>
+        <Filename Value="MiniLab.lpr"/>
+      </Position21>
+      <Position22>
+        <Filename Value="main.pas"/>
+        <Caret Line="372" Column="23" TopLine="361"/>
+      </Position22>
+      <Position23>
+        <Filename Value="main.pas"/>
+        <Caret Line="373" Column="23" TopLine="362"/>
+      </Position23>
+      <Position24>
+        <Filename Value="edo.pas"/>
+        <Caret Line="123" TopLine="117"/>
+      </Position24>
+      <Position25>
+        <Filename Value="edo.pas"/>
+        <Caret Line="146" Column="4" TopLine="97"/>
+      </Position25>
+      <Position26>
+        <Filename Value="edo.pas"/>
+        <Caret Line="181" Column="10" TopLine="169"/>
+      </Position26>
+      <Position27>
+        <Filename Value="edo.pas"/>
+        <Caret Line="104" Column="23" TopLine="17"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="967" Column="4" TopLine="945"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Parse\parsemath.pas"/>
+        <Caret Line="1019" TopLine="1017"/>
+      </Position29>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

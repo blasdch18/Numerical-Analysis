@@ -1,0 +1,48 @@
+unit Unit2;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils;
+
+type
+  TsumaN=class
+  public
+    n: integer;
+  function sum():integer;
+  function sum_par():integer;
+  function sum_impar():integer;
+end;
+implementation
+function TsumaN.sum()  :integer;
+var i: integer;
+begin
+  Result:=0;
+  for i:=1 to n do
+     result:= result + i;
+end;
+
+function TsumaN.sum_par()  :integer;
+var i: integer;
+begin
+  Result:=0;
+  for i:=0 to n do
+     if i mod 2=0 then
+        result:= result + i;
+end;
+function TsumaN.sum_impar()  :integer;
+var i: integer;
+begin
+  Result:=0;
+  for i:=1 to n do
+     if i mod 2=1 then
+        result:= result + i;
+
+end;
+
+
+
+end.
+

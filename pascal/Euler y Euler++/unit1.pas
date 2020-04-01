@@ -1,0 +1,127 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, Grids, math, ParseMath,
+  StdCtrls, Spin;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    StringGrid1: TStringGrid;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+function evaluar(valorX : float ; valorY: float;  funcion : String ) : float;
+var
+   MiParse : TParseMath;
+begin
+  Miparse := TParseMath.create();
+  MiParse.AddVariable('x',valorX);
+  MiParse.AddVariable('y',valorY);
+  MiParse.Expression:=funcion;
+  evaluar := MiParse.Evaluate();
+end;
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  h,y_n1,y_n, x_n: float;
+  i,j,n : Integer;
+
+begin
+
+
+  if( (StringGrid1.Cells[1,1] <>'' ) and (StringGrid1.Cells[2,1] <>'') )then
+  begin
+    n := StrToInt(Edit4.Text);
+    h := (StrToFloat(Edit3.Text)-StrToFloat(Edit2.Text))/StrToFloat(Edit4.Text);
+
+    StringGrid1.RowCount := 2+n;
+    x_n := StrToFloat(StringGrid1.Cells[1,1]);
+    y_n := StrToFloat(StringGrid1.Cells[2,1]);
+
+
+    for i:= 2 to n+1 do
+    begin
+        y_n1 := y_n+h*evaluar(x_n,y_n,Edit1.Text);
+        x_n := x_n+h;
+        StringGrid1.Cells[0,i]:=IntToStr(i-1);
+        StringGrid1.Cells[1,i]:=FloatToStr(x_n);
+        StringGrid1.Cells[2,i]:=FloatToStr(y_n1);
+        y_n := y_n1;
+
+    end;
+
+  end
+  else
+     ShowMessage('Escribir en la tabla los valores para x_0 y y_0');
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+  h,y_nE,y_n1,y_n, x_n, resp1: float;
+  i,j,n : Integer;
+
+begin
+
+  if( (StringGrid1.Cells[1,1] <>'' ) and (StringGrid1.Cells[2,1] <>'') )then
+  begin
+    n := StrToInt(Edit4.Text);
+    h := (StrToFloat(Edit3.Text)-StrToFloat(Edit2.Text))/StrToFloat(Edit4.Text);
+
+    StringGrid1.RowCount := 2+n;
+    x_n := StrToFloat(StringGrid1.Cells[1,1]);
+    y_n := StrToFloat(StringGrid1.Cells[2,1]);
+
+
+    for i:= 2 to n+1 do
+    begin
+        resp1 := evaluar(x_n,y_n,Edit1.Text);
+        y_nE := y_n+h*resp1; //Hallo Euler
+        x_n := x_n+h;
+        //y_n := y_nE;
+        y_n1 := y_n+h*(resp1+evaluar(x_n,y_nE,Edit1.Text))/2;
+        StringGrid1.Cells[0,i] := IntToStr(i-1);
+        StringGrid1.Cells[1,i] := FloatToStr(x_n);
+        StringGrid1.Cells[2,i] := FloatToStr(y_n1);
+        y_n := y_n1;
+    end;
+
+  end
+  else
+     ShowMessage('Escribir en la tabla los valores para x0 & y0');
+end;
+
+
+end.
+

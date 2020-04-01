@@ -1,0 +1,9 @@
+object Frame2: TFrame2
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  TabOrder = 0
+  DesignLeft = 454
+  DesignTop = 449
+end

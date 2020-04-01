@@ -1,0 +1,149 @@
+unit Matriz;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Grids, Dialogs,
+  FileUtil, Forms, Controls, ComCtrls,StdCtrls, ExtCtrls, Spin, Types;
+
+type
+    TMatriz=class
+    public
+      procedure suma(ma: TStringGrid;mb: TStringGrid; res:TStringGrid);
+      procedure resta(ma: TStringGrid;mb: TStringGrid; res:TStringGrid);
+      procedure escalar(ma: TStringGrid; x:Real; res:TStringGrid);
+      procedure multiplicar(ma: TStringGrid;mb: TStringGrid; res:TStringGrid);
+      procedure transpuesta(ma: TStringGrid; res:TStringGrid);
+      procedure determinante(ma: TStringGrid; res :TStaticText);
+
+    end;
+
+implementation
+
+procedure TMatriz.suma(ma: TStringGrid;mb: TStringGrid; res:TStringGrid);
+var
+  i,j:Integer;
+begin
+  if (ma.RowCount=mb.RowCount) and (ma.ColCount=mb.ColCount) then
+  begin
+    res.RowCount:=ma.RowCount;
+    res.ColCount:=ma.ColCount;
+    for j:=0 to res.RowCount-1 do
+    begin
+      for i:=0 to res.ColCount-1 do
+      begin
+          res.Cells[i,j]:=FloatToStr(StrToFloat(ma.Cells[i,j])+StrToFloat(mb.Cells[i,j]));
+      end;
+    end;
+    Exit;
+  end;
+  ShowMessage('Las matrices no son de igual tamaño');
+end;
+
+procedure TMatriz.resta(ma: TStringGrid;mb: TStringGrid; res:TStringGrid);
+var
+  i,j:Integer;
+begin
+  if (ma.RowCount=mb.RowCount) and (ma.ColCount=mb.ColCount) then
+  begin
+    res.RowCount:=ma.RowCount;
+    res.ColCount:=ma.ColCount;
+    for j:=0 to res.RowCount-1 do
+    begin
+      for i:=0 to res.ColCount-1 do
+      begin
+          res.Cells[i,j]:=FloatToStr(StrToFloat(ma.Cells[i,j])-StrToFloat(mb.Cells[i,j]));
+      end;
+    end;
+    Exit;
+  end;
+  ShowMessage('Las matrices no son de igual tamaño');
+end;
+
+procedure TMatriz.multiplicar(ma: TStringGrid;mb: TStringGrid; res:TStringGrid);
+var
+  i,j,l:Integer;
+begin
+  if (ma.ColCount=mb.RowCount) then
+  begin
+    res.RowCount:=ma.RowCount;
+    res.ColCount:=mb.ColCount;
+    for i:=0 to res.RowCount-1 do
+    begin
+      for j:=0 to res.ColCount-1 do
+      begin
+        res.Cells[j,i]:=FloatToStr(0);
+        for l:=0 to ma.ColCount-1 do
+        begin
+            res.Cells[j,i]:=FloatToStr(StrToFloat(res.Cells[j,i])+(StrToFloat(ma.Cells[l,i])*StrToFloat(mb.Cells[j,l])));
+        end;
+      end;
+    end;
+    Exit;
+  end;
+  ShowMessage('Las matrices no se pueden multiplicar');
+end;
+
+procedure TMatriz.escalar(ma: TStringGrid;x: Real; res:TStringGrid);
+var
+  i,j:Integer;
+begin
+  res.RowCount:=ma.RowCount;
+  res.ColCount:=ma.ColCount;
+  for j:=0 to res.RowCount-1 do
+  begin
+      for i:=0 to res.ColCount-1 do
+      begin
+          res.Cells[i,j]:=FloatToStr(StrToFloat(ma.Cells[i,j])*x);
+      end;
+  end;
+
+end;
+
+procedure TMatriz.transpuesta(ma: TStringGrid; res:TStringGrid);
+var
+  i,j:Integer;
+begin
+  res.RowCount:=ma.ColCount;
+  res.ColCount:=ma.RowCount;
+  for j:=0 to res.RowCount-1 do
+  begin
+      for i:=0 to res.ColCount-1 do
+      begin
+          res.Cells[i,j]:=ma.Cells[j,i];
+      end;
+  end;
+
+end;
+
+procedure TMatriz.determinante(ma: TStringGrid;res: TStaticText);
+var
+  i,j,k,l:Integer;
+  det:Real;
+begin
+  if ma.RowCount=ma.ColCount then
+  begin
+    det:=StrToFloat(ma.Cells[0,0]);
+    for k:=0 to ma.RowCount-2 do
+    begin
+       l:=k+1;
+       for i:=l to ma.RowCount-1 do
+       begin
+         for j:=l to ma.RowCount-1 do
+            ma.Cells[j,i]:= FloatToStr((StrToFloat(ma.Cells[k,k])*StrToFloat(ma.Cells[j,i])-StrToFloat(ma.Cells[j,k])*StrToFloat(ma.Cells[k,i]))/StrToFloat(ma.Cells[k,k]));
+       end;
+       det:=det*StrToFloat(ma.Cells[k+1,k+1]);
+    end;
+    res.Caption:=FloatToStr(det);
+    Exit;
+  end;
+  ShowMessage('Las matriz no es cuadrada');
+
+end;
+
+
+
+end.
+

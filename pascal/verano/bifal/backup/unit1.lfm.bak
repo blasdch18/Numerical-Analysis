@@ -1,0 +1,272 @@
+object Form1: TForm1
+  Left = 27
+  Height = 528
+  Top = 104
+  Width = 509
+  Caption = 'Form1'
+  ClientHeight = 528
+  ClientWidth = 509
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 528
+    Top = 0
+    Width = 509
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      ClientHeight = 500
+      ClientWidth = 501
+      object RadioGroup1: TRadioGroup
+        Left = 8
+        Height = 104
+        Top = 40
+        Width = 113
+        AutoFill = True
+        Caption = 'Metodos Cerrados'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 84
+        ClientWidth = 109
+        Items.Strings = (
+          'Biseccion'
+          'Falsa Posicion'
+          'Newton'
+          'Secante'
+        )
+        OnClick = RadioGroup1Click
+        TabOrder = 0
+      end
+      object Execute: TButton
+        Left = 408
+        Height = 48
+        Top = 136
+        Width = 72
+        Caption = 'Execute'
+        OnClick = ExecuteClick
+        TabOrder = 1
+      end
+      object Label1: TLabel
+        Left = 124
+        Height = 15
+        Top = 162
+        Width = 33
+        Caption = 'Xn = ?'
+        ParentColor = False
+      end
+      object Edit2: TEdit
+        Left = 176
+        Height = 23
+        Top = 72
+        Width = 40
+        TabOrder = 2
+      end
+      object Edit3: TEdit
+        Left = 224
+        Height = 23
+        Top = 72
+        Width = 40
+        TabOrder = 3
+      end
+      object StringGrid1: TStringGrid
+        Left = 116
+        Height = 288
+        Top = 184
+        Width = 360
+        AlternateColor = clDefault
+        ColCount = 6
+        Columns = <        
+          item
+            Title.Caption = 'Title'
+            Width = 36
+          end        
+          item
+            Title.Caption = 'Title'
+          end        
+          item
+            Title.Caption = 'Title'
+          end        
+          item
+            Title.Caption = 'Title'
+          end        
+          item
+            Title.Caption = 'Title'
+          end        
+          item
+            Title.Caption = 'Title'
+          end>
+        FixedColor = clNone
+        FixedCols = 0
+        TabOrder = 4
+        ColWidths = (
+          36
+          64
+          64
+          64
+          64
+          64
+        )
+      end
+      object Edit4: TEdit
+        Left = 416
+        Height = 23
+        Top = 72
+        Width = 64
+        TabOrder = 5
+      end
+      object Intervalo: TLabel
+        Left = 120
+        Height = 15
+        Top = 72
+        Width = 46
+        Caption = 'Intervalo'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 376
+        Height = 15
+        Top = 72
+        Width = 25
+        Caption = 'Error'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 120
+        Height = 15
+        Top = 48
+        Width = 37
+        Caption = 'f ( x ) ='
+        ParentColor = False
+      end
+      object Edit1: TEdit
+        Left = 160
+        Height = 23
+        Top = 48
+        Width = 320
+        TabOrder = 6
+      end
+      object Label4: TLabel
+        Left = 120
+        Height = 15
+        Top = 104
+        Width = 37
+        Caption = 'f''( x ) ='
+        ParentColor = False
+      end
+      object Edit7: TEdit
+        Left = 160
+        Height = 23
+        Top = 104
+        Width = 320
+        TabOrder = 7
+      end
+      object Label5: TLabel
+        Left = 124
+        Height = 15
+        Top = 136
+        Width = 24
+        Caption = 'X0 ='
+        ParentColor = False
+      end
+      object Edit8: TEdit
+        Left = 163
+        Height = 23
+        Top = 131
+        Width = 49
+        TabOrder = 8
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+      ClientHeight = 500
+      ClientWidth = 692
+      object Chart1: TChart
+        Left = 168
+        Height = 392
+        Top = 24
+        Width = 449
+        AxisList = <        
+          item
+            Minors = <>
+            Title.LabelFont.Orientation = 900
+          end        
+          item
+            Alignment = calBottom
+            Minors = <>
+          end>
+        Foot.Brush.Color = clBtnFace
+        Foot.Font.Color = clBlue
+        Title.Brush.Color = clBtnFace
+        Title.Font.Color = clBlue
+        Title.Text.Strings = (
+          'TAChart'
+        )
+      end
+      object Panel1: TPanel
+        Left = 24
+        Height = 393
+        Top = 32
+        Width = 121
+        Caption = 'Panel1'
+        ClientHeight = 393
+        ClientWidth = 121
+        TabOrder = 1
+        OnClick = Panel1Click
+        object Edit5: TEdit
+          Left = 32
+          Height = 23
+          Top = 8
+          Width = 80
+          TabOrder = 0
+          Text = 'Edit5'
+        end
+        object Edit6: TEdit
+          Left = 32
+          Height = 23
+          Top = 32
+          Width = 80
+          TabOrder = 1
+          Text = 'Edit6'
+        end
+        object ColorButton1: TColorButton
+          Left = 8
+          Height = 32
+          Top = 64
+          Width = 104
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBlack
+        end
+        object TrackBar1: TTrackBar
+          Left = -392
+          Height = 32
+          Top = 112
+          Width = 104
+          Position = 0
+          TabOrder = 2
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'TabSheet3'
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'TabSheet4'
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'TabSheet5'
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'TabSheet6'
+    end
+  end
+end

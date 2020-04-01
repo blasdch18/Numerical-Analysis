@@ -1,0 +1,51 @@
+object frmFunciones: TfrmFunciones
+  Left = 456
+  Height = 400
+  Top = 112
+  Width = 415
+  Caption = 'Funciones'
+  ClientHeight = 400
+  ClientWidth = 415
+  OnResize = FormResize
+  LCLVersion = '1.2.6.0'
+  object StringGrid1: TStringGrid
+    Left = 2
+    Height = 396
+    Top = 2
+    Width = 411
+    Align = alClient
+    BorderSpacing.Around = 2
+    ColCount = 2
+    Columns = <    
+      item
+        Alignment = taRightJustify
+        Title.Caption = 'Nombre'
+        Width = 60
+      end    
+      item
+        Title.Caption = 'Función'
+        Width = 203
+      end>
+    FixedCols = 0
+    Options = [goFixedHorzLine, goRangeSelect, goEditing, goAutoAddRows, goSmoothScroll]
+    RowCount = 2
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+    TitleStyle = tsNative
+    OnKeyPress = StringGrid1KeyPress
+    OnKeyUp = StringGrid1KeyUp
+    ColWidths = (
+      60
+      203
+    )
+    Cells = (
+      2
+      0
+      0
+      'Nombre'
+      0
+      1
+      'f(x)='
+    )
+  end
+end

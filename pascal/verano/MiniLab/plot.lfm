@@ -1,0 +1,87 @@
+object framePlot: TframePlot
+  Left = 0
+  Height = 511
+  Top = 0
+  Width = 787
+  ClientHeight = 511
+  ClientWidth = 787
+  TabOrder = 0
+  DesignLeft = 366
+  DesignTop = 164
+  object pnlPlot: TPanel
+    Left = 0
+    Height = 511
+    Top = 0
+    Width = 194
+    Align = alLeft
+    ClientHeight = 511
+    ClientWidth = 194
+    TabOrder = 0
+    object edifuntion: TEdit
+      Left = 16
+      Height = 23
+      Top = 32
+      Width = 168
+      TabOrder = 0
+      Text = 'edifuntion'
+    end
+    object lblfuncion: TLabel
+      Left = 16
+      Height = 15
+      Top = 11
+      Width = 43
+      Caption = 'Función'
+      ParentColor = False
+    end
+    object Label1: TLabel
+      Left = 19
+      Height = 15
+      Top = 74
+      Width = 46
+      Caption = 'Intervalo'
+      ParentColor = False
+    end
+    object ediInterval: TEdit
+      Left = 16
+      Height = 23
+      Top = 96
+      Width = 168
+      TabOrder = 1
+      Text = '[2, 5]'
+    end
+  end
+  object Chart1: TChart
+    Left = 199
+    Height = 511
+    Top = 0
+    Width = 588
+    AxisList = <    
+      item
+        Grid.Color = clSilver
+        AxisPen.Color = clSilver
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Grid.Color = clSilver
+        Alignment = calBottom
+        AxisPen.Color = clSilver
+        Minors = <>
+      end>
+    BackColor = clWhite
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Align = alClient
+  end
+  object Splitter1: TSplitter
+    Left = 194
+    Height = 511
+    Top = 0
+    Width = 5
+  end
+end

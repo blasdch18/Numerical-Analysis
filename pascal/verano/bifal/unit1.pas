@@ -1,0 +1,173 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, TAGraph, Forms, Controls, Graphics, Dialogs,
+  ExtCtrls, StdCtrls, Grids, ComCtrls, Unit2, MetodosAbiertos;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Chart1: TChart;
+    ColorButton1: TColorButton;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Execute: TButton;
+    Intervalo: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    PageControl1: TPageControl;
+    Panel1: TPanel;
+    RadioGroup1: TRadioGroup;
+    StringGrid1: TStringGrid;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    TabSheet5: TTabSheet;
+    TabSheet6: TTabSheet;
+    TrackBar1: TTrackBar;
+    procedure Biseccion_radioChange(Sender: TObject);
+    procedure ExecuteClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
+    procedure RadioGroup1Click(Sender: TObject);
+  private
+    { private declarations }
+    FunctionList, EditList: TList;
+    procedure CleanStringGrid;
+    procedure execute_MCerrados;
+    procedure execute_MAbiertos;
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+const
+     col_n = 0;
+     col_a = 1;
+     col_b = 2;
+     col_sgn = 3;
+     col_Xn = 4;
+     col_error = 5;
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Biseccion_radioChange(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.CleanStringGrid;
+begin
+  with StringGrid1 do begin
+    Clean;
+    RowCount:= 1;
+    Columns[ col_n ].Title.Caption:= 'n';
+    Columns[ col_a ].Title.Caption:= 'a';
+    Columns[ col_b ].Title.Caption:= 'b';
+    Columns[ col_sgn ].Title.Caption:= 'Sgn';
+    Columns[ col_Xn ].Title.Caption:= 'Xn';
+    Columns[ col_error ].Title.Caption:= 'Error';
+  end;
+end;
+
+procedure TForm1.ExecuteClick(Sender: TObject);
+
+begin
+   if (RadioGroup1.ItemIndex=0) or (RadioGroup1.ItemIndex=1) then
+     execute_MCerrados;
+  if (RadioGroup1.ItemIndex=2) or (RadioGroup1.ItemIndex=3) then
+     execute_MAbiertos;
+
+end;
+
+procedure TForm1.execute_MCerrados;
+var Metodo: TMetodosCerrados;
+begin
+  Metodo := TMetodosCerrados.create;
+  //Metodo.casotype:= RadioGroup1.ItemIndex;
+  Metodo.funcion:= Edit1.Text;
+  Metodo.a:= StrToFloat( Edit2.Text );
+  Metodo.b:= StrToFloat( Edit3.Text );
+  Metodo.Error1:= StrToFloat( Edit4.Text );
+  Label1.Caption:= RadioGroup1.Items [ RadioGroup1.ItemIndex ]
+                   + ' Xn = ' +
+                   FloatToStr( Metodo.execute );
+
+  StringGrid1.RowCount:= Metodo.Lxn.Count;
+  StringGrid1.RowCount:= Metodo.La.Count;
+  StringGrid1.RowCount:= Metodo.Lb.Count;
+  StringGrid1.RowCount:= Metodo.Lsgn.Count;
+  StringGrid1.RowCount:= Metodo.Lerr.Count;
+
+  StringGrid1.Cols[ col_Xn ].Assign( Metodo.Lxn );
+  StringGrid1.Cols[ col_n ].Assign( Metodo.Li );
+  StringGrid1.Cols[ col_a ].Assign( Metodo.La );
+  StringGrid1.Cols[ col_b ].Assign( Metodo.Lb );
+  StringGrid1.Cols[ col_sgn ].Assign( Metodo.Lsgn );
+  StringGrid1.Cols[ col_error ].Assign( Metodo.Lerr );
+
+  Metodo.Destroy;
+
+end;
+
+procedure TForm1.execute_MAbiertos;
+var Metodo2: TMetodosAbiertos;
+begin
+  Metodo2 := TMetodosAbiertos.create;
+  //Metodo2.casotype := RadioGroup1.ItemIndex;
+  Metodo2.funcion:= edit1.text;
+  Metodo2.error1:= StrToFloat( edit4.text );
+  Label1.Caption:= RadioGroup1.Items [ RadioGroup1.ItemIndex ]
+                   + ' Xn = ' +
+                   FloatToStr( Metodo2.execute );
+
+
+  ShowMessage( IntToStr(Metodo2.Lerr.Count) );
+  StringGrid1.RowCount:= Metodo2.Lxn.Count;
+  StringGrid1.RowCount:= Metodo2.Lerr.Count;
+
+  StringGrid1.Cols[ col_Xn ].Assign( Metodo2.Lxn );
+  StringGrid1.Cols[ col_error ].Assign( Metodo2.Lerr );
+
+  metodo2.destroy;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  CleanStringGrid;
+
+end;
+
+procedure TForm1.Panel1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.RadioGroup1Click(Sender: TObject);
+begin
+
+end;
+
+end.
+

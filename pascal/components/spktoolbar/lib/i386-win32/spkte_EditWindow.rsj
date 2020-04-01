@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":236836385,"name":"spkte_editwindow.rscannotmoveabovefirstelement","sourcebytes":[89,111,117,32,99,97,110,32,110,111,116,32,109,111,118,101,32,97,98,111,118,101,32,116,104,101,32,116,111,112,32,111,102,32,116,104,101,32,102,105,114,115,116,32,101,108,101,109,101,110,116,33],"value":"You can not move above the top of the first element!"},
+{"hash":262912641,"name":"spkte_editwindow.rscannotmovebeyondlastelement","sourcebytes":[89,111,117,32,99,97,110,32,110,111,116,32,109,111,118,101,32,98,101,121,111,110,100,32,116,104,101,32,108,97,115,116,32,101,108,101,109,101,110,116,33],"value":"You can not move beyond the last element!"},
+{"hash":220240657,"name":"spkte_editwindow.rsdamagedtreestructure","sourcebytes":[68,97,109,97,103,101,100,32,116,114,101,101,32,115,116,114,117,99,116,117,114,101,33],"value":"Damaged tree structure!"},
+{"hash":117248417,"name":"spkte_editwindow.rsincorrectfielddata","sourcebytes":[73,110,99,111,114,114,101,99,116,32,100,97,116,97,32,105,110,32,116,104,101,32,102,105,101,108,100,33],"value":"Incorrect data in the field!"},
+{"hash":263501041,"name":"spkte_editwindow.rsincorrectobjectintree","sourcebytes":[73,110,99,111,114,114,101,99,116,32,111,98,106,101,99,116,32,97,116,116,97,99,104,101,100,32,116,111,32,116,104,101,32,116,114,101,101,33],"value":"Incorrect object attached to the tree!"},
+{"hash":202083217,"name":"spkte_editwindow.rsnoobjectselected","sourcebytes":[78,111,32,111,98,106,101,99,116,32,115,101,108,101,99,116,101,100,33],"value":"No object selected!"},
+{"hash":184154049,"name":"spkte_editwindow.rsnoobjectselectedtomove","sourcebytes":[78,111,32,111,98,106,101,99,116,32,115,101,108,101,99,116,101,100,32,116,111,32,109,111,118,101,33],"value":"No object selected to move!"}
+]}

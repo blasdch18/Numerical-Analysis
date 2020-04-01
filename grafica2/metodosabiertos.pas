@@ -1,0 +1,282 @@
+unit MetodosAbiertos;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Math, ParseMath, Dialogs;
+type
+  TMetodosAbiertos = class
+  casotype : integer;
+  x0, tracker : real;
+  error1, error2 : real;
+  funcion, funcionDerivada  : String;
+  check: boolean;
+  function execute : real ;
+
+
+  public
+  Li: TStringList;
+    Lxn: TStringList;
+    Lerr: TStringList;
+    constructor create() ;
+
+//    function fx(x: double): double;
+    function gx(x: double): double;
+    function dx1(x: double): double;
+    function dx1_manual(x : Real;s: String):Real;
+    function dx2(x: double): double;
+    function dx3(x: double): double;
+    function evaluar_dx(x: double): boolean;
+    function evaluar_dx_gx(x: double): boolean;
+
+    function punto_fijo( x: double ): double;
+
+  private
+    function f(x : Real;s: String):Real;
+    function newton(): real;
+    function secante(): real;
+
+end;
+
+const
+  M_NEW = 2;
+  M_SEC = 3;
+
+implementation
+
+constructor TMetodosAbiertos.create();
+begin
+  Li:= TStringList.Create; Li.Add('');
+  Lxn:= TStringList.Create; Lxn.Add('');
+  Lerr:= TStringList.Create; Lerr.Add('');
+end;
+
+function TMetodosAbiertos.execute : real;
+begin
+  case casotype of
+
+  M_NEW: result:= newton();
+  M_SEC: result:= secante();
+
+  end;
+end;
+
+function TMetodosAbiertos.f(x : Real;s: String):Real;
+var MiParse: TParseMath;
+begin
+  MiParse:= TParseMath.create();
+  MiParse.AddVariable('x',x);
+  MiParse.Expression:= s;
+  check:=false;
+  try
+    result:=MiParse.Evaluate();
+  except
+    begin
+    ShowMessage('La funcion no es derivable '+FloatToStr(x));
+    check:=true;
+    end;
+  end;
+
+  MiParse.destroy;
+end;
+                                      {
+function TMetodosAbiertos.fx(x: double): double;
+var
+  fn:     string;
+  f_x:   double;
+begin
+     {funcion}
+  //f_x:=power(x,2) - 2*x - 3;
+  f_x:=ln(x)*sin(x);                                           //newton1
+  //f_x:=ln(((power(x,2))+1)*(power(((2*x)+1),0.5 )));
+  //f_x:=power(x,3) - 2*x + 2;        //newton
+  //f_x:=x*sin (x);
+  //f_x:= -(power (25-x , 0.5 ));
+
+// f_x:=power(x,2) - 2*x -3;      // punto fijo
+
+ //f_x:= Ln( power(x,2)+1 ) - exp(x/2)*(cos(3.1416*x));
+  // f_x:= cos(3*x) - x;
+
+  {f_x:= ( (Ln(x))/x )
+        + ( (exp(x))/( power(2,x) ))
+        + ( (power(2,x))/x )
+        - ( (power(3,x))/(x-1) )
+        - power(x,4) + 3*power(x,3) ;
+   }
+
+  Result:= f_x;
+end;                                 }
+
+function TMetodosAbiertos.dx1_manual(x : Real;s: String):Real;
+ var MiParse: TParseMath;
+begin
+
+  MiParse:= TParseMath.create();
+  MiParse.AddVariable('x',x);
+  MiParse.Expression:= s;
+  check:=false;
+  try
+    result:=MiParse.Evaluate();
+  except
+    begin
+    ShowMessage('La funcion no es derivable '+FloatToStr(x));
+    check:=true;
+    end;
+  end;
+
+  MiParse.destroy;
+end;
+
+function TMetodosAbiertos.gx(x: double): double;
+var
+  g_x:   double;
+begin
+  //g_x:= fx(x) + x;
+  //g_x:={function}
+  g_x:=power( (2*x + 3) , 0.5 );
+  Result:=g_x;
+end;
+
+function TMetodosAbiertos.dx1(x: double): double;
+var
+  h: double;
+  //error1: double;
+begin
+  error1:= 0.01;
+  h:=error1/10;
+  dx1:=abs ( f( x+h,funcion )- f( x,funcion ))/h;
+end;
+
+
+function TMetodosAbiertos.dx2(x: double): double;
+var
+  h: double;
+  //error1: double;
+  begin
+    //error1:= 0.001;
+  h:=error1/10;                                                                                                                                                                        x:= x + 0.1;
+  dx2:=( f(x+h,funcion)- f(x-h,funcion))/(2*h);
+  if dx2=0 then
+     writeln('fx`(x) Esta en el extremo');
+     exit;
+end;
+
+function TMetodosAbiertos.dx3(x: double): double;
+var
+  h: double;
+  //error1: double;
+  begin
+    error1:= 0.01;
+  h:=error1/10;
+  dx3:=(gx(x+h)-gx(x)/h);
+end;
+
+function TMetodosAbiertos.evaluar_dx(x: double): boolean;
+var
+  tmp: double;
+begin
+  //tmp:=dx1(x);
+  //if tmp=0 then exit;
+  evaluar_dx:= (dx1(x)=0);
+end;
+
+function TMetodosAbiertos.newton(): real;
+var
+  derivada, xn_1: double;
+  i: integer;
+begin
+  i:= 0;
+  error2:= 50;
+  derivada:=dx1_manual( x0 ,funcionDerivada);
+
+  if (derivada=0) then
+     begin
+       ShowMessage('No converge') ;
+       exit;
+     end;
+  try
+    while (error2 > error1) do
+    begin
+         Lxn.Add( FormatFloat ('0.000000',X0));
+         Xn_1:= x0 -( f( x0 , funcion )/dx1_manual( x0, funcionDErivada ) );
+         Lerr.Add ( FormatFloat ('0.000000',error2) );
+
+         if i=0 then
+            error2:=50
+         else
+            error2:=abs(Xn_1 - x0);
+         i:= i+1;
+         X0:= Xn_1;
+    end;
+   Except
+          on E: EDivByZero  do begin
+          ShowMessage( 'Error: '+ E.Message );
+
+          end
+  end;
+
+  Result:= X0;
+end;
+
+function TMetodosAbiertos.secante(): real;
+var
+  xn_1: real;
+  i: integer;
+begin
+  i:= 0;
+  error2:= 50;
+  try
+    while (error2 > error1) do
+    begin
+         ShowMessage('whil'+ IntToStr (i))   ;
+         Li.Add ( IntToStr (i) );
+         Xn_1:=x0-(f(x0,funcion))/(dx2(x0));
+         Lxn.Add( FormatFloat ('0.000000',x0));
+
+         Lerr.Add ( FormatFloat ('0.000000',error2) );
+         if i=0 then
+            error2:=50
+         else
+            error2:= abs(Xn_1 - x0);
+         i:= i+1;
+         X0:= Xn_1;
+    end;
+  finally
+  end;
+  secante:=Xn_1;
+end;
+
+function TMetodosAbiertos.evaluar_dx_gx(x : double): boolean;
+var
+  tmp1, derivada, tmp2 , uno ,zero:  double;
+begin
+//  tmp1:= dx1_manual(x);
+  derivada:= dx2(x);
+  tmp2:=f(derivada,funcion);
+
+  //writeln(FloatToStr(tmp2));
+  uno:=1;
+  zero:=0;
+  evaluar_dx_gx:= (derivada >zero) and (derivada <uno);
+end;
+
+function TMetodosAbiertos.punto_fijo( x: double ): double;
+begin
+  if (evaluar_dx_gx( x )) then
+     begin
+      punto_fijo := gx( x )
+     end
+  else
+      begin
+           writeln('g(x) !E [0,1]');
+           exit;
+      end;
+end;
+
+
+end.
+
+

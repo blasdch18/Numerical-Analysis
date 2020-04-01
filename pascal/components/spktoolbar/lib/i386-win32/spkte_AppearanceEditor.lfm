@@ -1,0 +1,2723 @@
+object frmAppearanceEditWindow: TfrmAppearanceEditWindow
+  Left = 664
+  Height = 555
+  Top = 224
+  Width = 552
+  Caption = 'Toolbar appearance editor'
+  ClientHeight = 555
+  ClientWidth = 552
+  Color = clBtnFace
+  Font.Color = clWindowText
+  OnActivate = FormActivate
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  ShowHint = True
+  LCLVersion = '1.9.0.0'
+  object gbPreview: TGroupBox
+    Left = 0
+    Height = 132
+    Top = 0
+    Width = 552
+    Align = alTop
+    AutoSize = True
+    Caption = ' Preview '
+    ClientHeight = 112
+    ClientWidth = 548
+    TabOrder = 0
+    object tbPreview: TSpkToolbar
+      Left = 0
+      Top = 0
+      Width = 548
+      Color = clBtnFace
+      Appearance.Tab.TabHeaderFont.Color = 9126421
+      Appearance.Tab.TabHeaderFont.Height = -13
+      Appearance.Tab.TabHeaderFont.Name = 'Calibri'
+      Appearance.Tab.BorderColor = 14922381
+      Appearance.Tab.GradientFromColor = 16115934
+      Appearance.Tab.GradientToColor = 15587527
+      Appearance.Tab.GradientType = bkConcave
+      Appearance.Tab.InactiveTabHeaderFontColor = 9126421
+      Appearance.Pane.BorderDarkColor = 14335646
+      Appearance.Pane.BorderLightColor = 16315117
+      Appearance.Pane.CaptionBgColor = 15849922
+      Appearance.Pane.CaptionFont.Color = 11168318
+      Appearance.Pane.CaptionFont.Height = -12
+      Appearance.Pane.CaptionFont.Name = 'Calibri'
+      Appearance.Pane.GradientFromColor = 16115934
+      Appearance.Pane.GradientToColor = 15587527
+      Appearance.Pane.GradientType = bkConcave
+      Appearance.Element.CaptionFont.Color = 9126421
+      Appearance.Element.CaptionFont.Height = -12
+      Appearance.Element.CaptionFont.Name = 'Calibri'
+      Appearance.Element.IdleFrameColor = 14727067
+      Appearance.Element.IdleGradientFromColor = 15653832
+      Appearance.Element.IdleGradientToColor = 15323324
+      Appearance.Element.IdleGradientType = bkConcave
+      Appearance.Element.IdleInnerLightColor = 15852501
+      Appearance.Element.IdleInnerDarkColor = 15520702
+      Appearance.Element.IdleCaptionColor = 11631958
+      Appearance.Element.HotTrackFrameColor = 10211293
+      Appearance.Element.HotTrackGradientFromColor = 14351615
+      Appearance.Element.HotTrackGradientToColor = 5101567
+      Appearance.Element.HotTrackGradientType = bkConcave
+      Appearance.Element.HotTrackInnerLightColor = 12972543
+      Appearance.Element.HotTrackInnerDarkColor = 8045272
+      Appearance.Element.HotTrackCaptionColor = 8864367
+      Appearance.Element.HotTrackBrightnessChange = 40
+      Appearance.Element.ActiveFrameColor = 5535371
+      Appearance.Element.ActiveGradientFromColor = 7126014
+      Appearance.Element.ActiveGradientToColor = 4035324
+      Appearance.Element.ActiveGradientType = bkConcave
+      Appearance.Element.ActiveInnerLightColor = 961020
+      Appearance.Element.ActiveInnerDarkColor = 961020
+      Appearance.Element.ActiveCaptionColor = 8405614
+      Appearance.Element.Style = esRounded
+      TabIndex = 0
+      Images = SmallImages
+      LargeImages = LargeImages
+      Tabs = (
+        'SpkTab1'
+        'SpkTab2'
+      )
+      object SpkTab1: TSpkTab
+        CustomAppearance.Tab.TabHeaderFont.Color = 9126421
+        CustomAppearance.Tab.TabHeaderFont.Height = -13
+        CustomAppearance.Tab.TabHeaderFont.Name = 'Calibri'
+        CustomAppearance.Tab.BorderColor = 14922381
+        CustomAppearance.Tab.GradientFromColor = 16115934
+        CustomAppearance.Tab.GradientToColor = 15587527
+        CustomAppearance.Tab.GradientType = bkConcave
+        CustomAppearance.Tab.InactiveTabHeaderFontColor = 9126421
+        CustomAppearance.Pane.BorderDarkColor = 14335646
+        CustomAppearance.Pane.BorderLightColor = 16315117
+        CustomAppearance.Pane.CaptionBgColor = 15849922
+        CustomAppearance.Pane.CaptionFont.Color = 11168318
+        CustomAppearance.Pane.CaptionFont.Height = -12
+        CustomAppearance.Pane.CaptionFont.Name = 'Calibri'
+        CustomAppearance.Pane.GradientFromColor = 16115934
+        CustomAppearance.Pane.GradientToColor = 15587527
+        CustomAppearance.Pane.GradientType = bkConcave
+        CustomAppearance.Element.CaptionFont.Color = 9126421
+        CustomAppearance.Element.CaptionFont.Height = -12
+        CustomAppearance.Element.CaptionFont.Name = 'Calibri'
+        CustomAppearance.Element.IdleFrameColor = 14727067
+        CustomAppearance.Element.IdleGradientFromColor = 15653832
+        CustomAppearance.Element.IdleGradientToColor = 15323324
+        CustomAppearance.Element.IdleGradientType = bkConcave
+        CustomAppearance.Element.IdleInnerLightColor = 15852501
+        CustomAppearance.Element.IdleInnerDarkColor = 15520702
+        CustomAppearance.Element.IdleCaptionColor = 11631958
+        CustomAppearance.Element.HotTrackFrameColor = 10211293
+        CustomAppearance.Element.HotTrackGradientFromColor = 14351615
+        CustomAppearance.Element.HotTrackGradientToColor = 5101567
+        CustomAppearance.Element.HotTrackGradientType = bkConcave
+        CustomAppearance.Element.HotTrackInnerLightColor = 12972543
+        CustomAppearance.Element.HotTrackInnerDarkColor = 8045272
+        CustomAppearance.Element.HotTrackCaptionColor = 8864367
+        CustomAppearance.Element.HotTrackBrightnessChange = 40
+        CustomAppearance.Element.ActiveFrameColor = 5535371
+        CustomAppearance.Element.ActiveGradientFromColor = 7126014
+        CustomAppearance.Element.ActiveGradientToColor = 4035324
+        CustomAppearance.Element.ActiveGradientType = bkConcave
+        CustomAppearance.Element.ActiveInnerLightColor = 961020
+        CustomAppearance.Element.ActiveInnerDarkColor = 961020
+        CustomAppearance.Element.ActiveCaptionColor = 8405614
+        CustomAppearance.Element.Style = esRounded
+        Caption = 'Sample toolbar'
+        OverrideAppearance = False
+        Visible = True
+        Panes = (
+          'SpkPane1'
+          'SpkPane2'
+          'SpkPane3'
+        )
+        object SpkPane1: TSpkPane
+          Caption = 'Sample large buttons'
+          Visible = True
+          Items = (
+            'SpkLargeButton1'
+            'SpkLargeButton3'
+            'SpkLargeButton2'
+          )
+          object SpkLargeButton1: TSpkLargeButton
+            Visible = True
+            Enabled = True
+            Caption = 'Default'
+            LargeImageIndex = 0
+            ButtonKind = bkButton
+          end
+          object SpkLargeButton3: TSpkLargeButton
+            Visible = True
+            Enabled = True
+            Caption = 'Button and dropdown'
+            LargeImageIndex = 0
+            ButtonKind = bkButtonDropdown
+          end
+          object SpkLargeButton2: TSpkLargeButton
+            Visible = True
+            Enabled = True
+            Caption = 'Dropdown'
+            LargeImageIndex = 0
+            ButtonKind = bkDropdown
+          end
+        end
+        object SpkPane2: TSpkPane
+          Caption = 'Sample small buttons'
+          Visible = True
+          Items = (
+            'SpkSmallButton1'
+            'SpkSmallButton2'
+            'SpkSmallButton3'
+          )
+          object SpkSmallButton1: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Default'
+            GroupBehaviour = gbSingleItem
+            HideFrameWhenIdle = True
+            ImageIndex = 0
+            ShowCaption = True
+            TableBehaviour = tbBeginsRow
+            ButtonKind = bkButton
+          end
+          object SpkSmallButton2: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Button and dropdown'
+            GroupBehaviour = gbSingleItem
+            HideFrameWhenIdle = True
+            ImageIndex = 0
+            ShowCaption = True
+            TableBehaviour = tbBeginsRow
+            ButtonKind = bkButtonDropdown
+          end
+          object SpkSmallButton3: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Dropdown'
+            GroupBehaviour = gbSingleItem
+            HideFrameWhenIdle = True
+            ImageIndex = 0
+            ShowCaption = True
+            TableBehaviour = tbBeginsRow
+            ButtonKind = bkDropdown
+          end
+        end
+        object SpkPane3: TSpkPane
+          Caption = 'Tool buttons'
+          Visible = True
+          Items = (
+            'SpkSmallButton4'
+            'SpkSmallButton5'
+            'SpkSmallButton6'
+            'SpkSmallButton7'
+            'SpkSmallButton8'
+          )
+          object SpkSmallButton4: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Button'
+            GroupBehaviour = gbBeginsGroup
+            HideFrameWhenIdle = False
+            ImageIndex = 0
+            ShowCaption = False
+            TableBehaviour = tbContinuesRow
+            ButtonKind = bkButton
+          end
+          object SpkSmallButton5: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Button'
+            GroupBehaviour = gbContinuesGroup
+            HideFrameWhenIdle = False
+            ImageIndex = 0
+            ShowCaption = False
+            TableBehaviour = tbContinuesRow
+            ButtonKind = bkButton
+          end
+          object SpkSmallButton6: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Button'
+            GroupBehaviour = gbEndsGroup
+            HideFrameWhenIdle = False
+            ImageIndex = 0
+            ShowCaption = False
+            TableBehaviour = tbContinuesRow
+            ButtonKind = bkButton
+          end
+          object SpkSmallButton7: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Btn1'
+            GroupBehaviour = gbSingleItem
+            HideFrameWhenIdle = False
+            ImageIndex = 0
+            ShowCaption = True
+            TableBehaviour = tbBeginsRow
+            ButtonKind = bkButton
+          end
+          object SpkSmallButton8: TSpkSmallButton
+            Visible = True
+            Enabled = True
+            Caption = 'Btn2'
+            GroupBehaviour = gbSingleItem
+            HideFrameWhenIdle = False
+            ImageIndex = 0
+            ShowCaption = True
+            TableBehaviour = tbContinuesRow
+            ButtonKind = bkButton
+          end
+        end
+      end
+      object SpkTab2: TSpkTab
+        CustomAppearance.Tab.TabHeaderFont.Color = 9126421
+        CustomAppearance.Tab.TabHeaderFont.Height = -13
+        CustomAppearance.Tab.TabHeaderFont.Name = 'Calibri'
+        CustomAppearance.Tab.BorderColor = 14922381
+        CustomAppearance.Tab.GradientFromColor = 16115934
+        CustomAppearance.Tab.GradientToColor = 15587527
+        CustomAppearance.Tab.GradientType = bkConcave
+        CustomAppearance.Tab.InactiveTabHeaderFontColor = 9126421
+        CustomAppearance.Pane.BorderDarkColor = 14335646
+        CustomAppearance.Pane.BorderLightColor = 16315117
+        CustomAppearance.Pane.CaptionBgColor = 15849922
+        CustomAppearance.Pane.CaptionFont.Color = 11168318
+        CustomAppearance.Pane.CaptionFont.Height = -12
+        CustomAppearance.Pane.CaptionFont.Name = 'Calibri'
+        CustomAppearance.Pane.GradientFromColor = 16115934
+        CustomAppearance.Pane.GradientToColor = 15587527
+        CustomAppearance.Pane.GradientType = bkConcave
+        CustomAppearance.Element.CaptionFont.Color = 9126421
+        CustomAppearance.Element.CaptionFont.Height = -12
+        CustomAppearance.Element.CaptionFont.Name = 'Calibri'
+        CustomAppearance.Element.IdleFrameColor = 14727067
+        CustomAppearance.Element.IdleGradientFromColor = 15653832
+        CustomAppearance.Element.IdleGradientToColor = 15323324
+        CustomAppearance.Element.IdleGradientType = bkConcave
+        CustomAppearance.Element.IdleInnerLightColor = 15852501
+        CustomAppearance.Element.IdleInnerDarkColor = 15520702
+        CustomAppearance.Element.IdleCaptionColor = 11631958
+        CustomAppearance.Element.HotTrackFrameColor = 10211293
+        CustomAppearance.Element.HotTrackGradientFromColor = 14351615
+        CustomAppearance.Element.HotTrackGradientToColor = 5101567
+        CustomAppearance.Element.HotTrackGradientType = bkConcave
+        CustomAppearance.Element.HotTrackInnerLightColor = 12972543
+        CustomAppearance.Element.HotTrackInnerDarkColor = 8045272
+        CustomAppearance.Element.HotTrackCaptionColor = 8864367
+        CustomAppearance.Element.HotTrackBrightnessChange = 40
+        CustomAppearance.Element.ActiveFrameColor = 5535371
+        CustomAppearance.Element.ActiveGradientFromColor = 7126014
+        CustomAppearance.Element.ActiveGradientToColor = 4035324
+        CustomAppearance.Element.ActiveGradientType = bkConcave
+        CustomAppearance.Element.ActiveInnerLightColor = 961020
+        CustomAppearance.Element.ActiveInnerDarkColor = 961020
+        CustomAppearance.Element.ActiveCaptionColor = 8405614
+        CustomAppearance.Element.Style = esRounded
+        Caption = 'Another tab'
+        OverrideAppearance = False
+        Visible = True
+        Panes = (        )
+      end
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 382
+    Top = 132
+    Width = 552
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Tab'
+      ClientHeight = 360
+      ClientWidth = 544
+      object sTabRectangle: TShape
+        AnchorSideLeft.Control = LblInactiveTabHeaderFontColor
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = cbLinkTab
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabHSpacer
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabVSpacer
+        AnchorSideBottom.Side = asrBottom
+        Left = 183
+        Height = 133
+        Top = 27
+        Width = 141
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 12
+        BorderSpacing.Top = 4
+        Visible = False
+      end
+      object Label2: TLabel
+        AnchorSideTop.Control = pTabFrame
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblInactiveTabHeaderFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 138
+        Height = 15
+        Top = 41
+        Width = 33
+        Anchors = [akTop, akRight]
+        Caption = 'Frame'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        AnchorSideTop.Control = pTabGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblInactiveTabHeaderFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 97
+        Height = 15
+        Top = 72
+        Width = 74
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient from'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        AnchorSideTop.Control = pTabGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblInactiveTabHeaderFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 112
+        Height = 15
+        Top = 103
+        Width = 59
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient to'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        AnchorSideTop.Control = cbTabGradientKind
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblInactiveTabHeaderFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 100
+        Height = 15
+        Top = 133
+        Width = 71
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient kind'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        AnchorSideTop.Control = pTabHeaderFont
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblInactiveTabHeaderFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 88
+        Height = 15
+        Top = 235
+        Width = 83
+        Anchors = [akTop, akRight]
+        Caption = 'Tab header font'
+        ParentColor = False
+      end
+      object pTabFrame: TPanel
+        AnchorSideLeft.Control = cbLinkTab
+        AnchorSideTop.Control = cbLinkTab
+        AnchorSideTop.Side = asrBottom
+        Left = 191
+        Height = 25
+        Top = 36
+        Width = 100
+        BorderSpacing.Top = 13
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 0
+        OnClick = pTabFrameClick
+      end
+      object pTabGradientFrom: TPanel
+        AnchorSideLeft.Control = pTabFrame
+        AnchorSideTop.Control = pTabFrame
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pTabFrame
+        AnchorSideRight.Side = asrBottom
+        Left = 191
+        Height = 25
+        Top = 67
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 1
+        OnClick = pTabGradientFromClick
+      end
+      object pTabGradientTo: TPanel
+        AnchorSideLeft.Control = pTabGradientFrom
+        AnchorSideTop.Control = pTabGradientFrom
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pTabGradientFrom
+        AnchorSideRight.Side = asrBottom
+        Left = 191
+        Height = 25
+        Top = 98
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 2
+        OnClick = pTabGradientToClick
+      end
+      object cbTabGradientKind: TComboBox
+        AnchorSideLeft.Control = pTabGradientTo
+        AnchorSideTop.Control = pTabGradientTo
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pTabGradientTo
+        AnchorSideRight.Side = asrBottom
+        Left = 191
+        Height = 23
+        Top = 129
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'None'
+          'Horizontal'
+          'Vertical'
+          'Concave'
+        )
+        OnChange = cbTabGradientKindChange
+        Style = csDropDownList
+        TabOrder = 3
+        Text = 'None'
+      end
+      object pTabHeaderFont: TPanel
+        AnchorSideLeft.Control = pInactiveTabHeaderFont
+        AnchorSideTop.Control = pInactiveTabHeaderFont
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = bInactiveTabHeaderFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 191
+        Height = 25
+        Top = 230
+        Width = 127
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Font'
+        TabOrder = 4
+        OnClick = pTabHeaderFontClick
+      end
+      object pActiveTabHeaderFont: TPanel
+        AnchorSideLeft.Control = cbTabGradientKind
+        AnchorSideTop.Control = cbTabGradientKind
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = cbTabGradientKind
+        AnchorSideRight.Side = asrBottom
+        Left = 191
+        Height = 25
+        Top = 168
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 16
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 5
+        OnClick = pActiveTabHeaderFontClick
+      end
+      object cbLinkTab: TCheckBox
+        AnchorSideLeft.Control = LblInactiveTabHeaderFontColor
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TabSheet1
+        Left = 191
+        Height = 19
+        Top = 4
+        Width = 169
+        BorderSpacing.Left = 20
+        BorderSpacing.Top = 4
+        Caption = 'Link with pane and idle item'
+        OnClick = cbLinkTabClick
+        TabOrder = 6
+      end
+      object Label18: TLabel
+        AnchorSideTop.Control = pActiveTabHeaderFont
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblInactiveTabHeaderFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 24
+        Height = 15
+        Top = 173
+        Width = 147
+        Anchors = [akTop, akRight]
+        Caption = 'Active tab header font color'
+        ParentColor = False
+      end
+      object LblInactiveTabHeaderFontColor: TLabel
+        AnchorSideLeft.Control = TabSheet1
+        AnchorSideTop.Control = pInactiveTabHeaderFont
+        AnchorSideTop.Side = asrCenter
+        Left = 16
+        Height = 15
+        Top = 204
+        Width = 155
+        BorderSpacing.Left = 16
+        Caption = 'Inactive tab header font color'
+        ParentColor = False
+      end
+      object pInactiveTabHeaderFont: TPanel
+        AnchorSideLeft.Control = pActiveTabHeaderFont
+        AnchorSideTop.Control = pActiveTabHeaderFont
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pActiveTabHeaderFont
+        AnchorSideRight.Side = asrBottom
+        Left = 191
+        Height = 25
+        Top = 199
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        Color = clBtnFace
+        ParentColor = False
+        TabOrder = 7
+        OnClick = pInactiveTabHeaderFontClick
+      end
+      object bTabFrameColor: TSpeedButton
+        AnchorSideLeft.Control = pTabFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pTabFrame
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 293
+        Height = 25
+        Top = 36
+        Width = 25
+        AllowAllUp = True
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bTabBorderColorClick
+      end
+      object bTabGradientFromColor: TSpeedButton
+        AnchorSideLeft.Control = pTabFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pTabGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 293
+        Height = 25
+        Top = 67
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bTabGradientFromColorClick
+      end
+      object bTabGradientToColor: TSpeedButton
+        AnchorSideLeft.Control = pTabFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pTabGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 293
+        Height = 25
+        Top = 98
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bTabGradientToColorClick
+      end
+      object bActiveTabHeaderFontColor: TSpeedButton
+        AnchorSideLeft.Control = pTabFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pActiveTabHeaderFont
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 293
+        Height = 25
+        Top = 168
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bActiveTabHeaderFontColorClick
+      end
+      object bInactiveTabHeaderFontColor: TSpeedButton
+        AnchorSideLeft.Control = pTabFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pInactiveTabHeaderFont
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 293
+        Height = 25
+        Top = 199
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bInactiveTabHeaderFontColorClick
+      end
+      object TabVSpacer: TBevel
+        AnchorSideTop.Control = cbTabGradientKind
+        AnchorSideTop.Side = asrBottom
+        Left = 192
+        Height = 8
+        Top = 152
+        Width = 50
+        Shape = bsSpacer
+      end
+      object TabHSpacer: TBevel
+        AnchorSideLeft.Control = bTabFrameColor
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pTabFrame
+        AnchorSideBottom.Control = cbTabGradientKind
+        AnchorSideBottom.Side = asrBottom
+        Left = 318
+        Height = 116
+        Top = 36
+        Width = 6
+        Anchors = [akTop, akLeft, akBottom]
+        Shape = bsSpacer
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Pane'
+      ClientHeight = 354
+      ClientWidth = 544
+      ImageIndex = 1
+      object Label8: TLabel
+        AnchorSideTop.Control = pPaneBorderDark
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 60
+        Height = 15
+        Top = 41
+        Width = 61
+        Anchors = [akTop, akRight]
+        Caption = 'Border dark'
+        ParentColor = False
+      end
+      object Label21: TLabel
+        AnchorSideTop.Control = pPaneBorderLight
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 59
+        Height = 15
+        Top = 72
+        Width = 62
+        Anchors = [akTop, akRight]
+        Caption = 'Border light'
+        ParentColor = False
+      end
+      object Label9: TLabel
+        AnchorSideTop.Control = pPaneGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 47
+        Height = 15
+        Top = 103
+        Width = 74
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient from'
+        ParentColor = False
+      end
+      object Label10: TLabel
+        AnchorSideTop.Control = pPaneGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 62
+        Height = 15
+        Top = 134
+        Width = 59
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient to'
+        ParentColor = False
+      end
+      object Label11: TLabel
+        AnchorSideTop.Control = cbPaneGradientKind
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 50
+        Height = 15
+        Top = 164
+        Width = 71
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient kind'
+        ParentColor = False
+      end
+      object LblPaneCaptionBackground: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = pPaneCaptionBackground
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 15
+        Top = 204
+        Width = 109
+        BorderSpacing.Left = 12
+        Caption = 'Caption background'
+        ParentColor = False
+      end
+      object Label13: TLabel
+        AnchorSideTop.Control = pPaneCaptionFont
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 27
+        Height = 15
+        Top = 295
+        Width = 94
+        Anchors = [akTop, akRight]
+        Caption = 'Pane caption font'
+        ParentColor = False
+      end
+      object sPaneRectangle: TShape
+        AnchorSideLeft.Control = LblPaneCaptionBackground
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = cbLinkPane
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = PaneHSpacer
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = bPaneCaptionBackgroundColor
+        Left = 133
+        Height = 164
+        Top = 27
+        Width = 143
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 12
+        BorderSpacing.Top = 4
+        BorderSpacing.Bottom = 8
+        Visible = False
+      end
+      object pPaneBorderDark: TPanel
+        AnchorSideLeft.Control = cbLinkPane
+        AnchorSideTop.Control = cbLinkPane
+        AnchorSideTop.Side = asrBottom
+        Left = 141
+        Height = 25
+        Top = 36
+        Width = 100
+        BorderSpacing.Top = 13
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 0
+        OnClick = pPaneBorderDarkClick
+      end
+      object pPaneBorderLight: TPanel
+        AnchorSideLeft.Control = pPaneBorderDark
+        AnchorSideTop.Control = pPaneBorderDark
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pPaneBorderDark
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 25
+        Top = 67
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 1
+        OnClick = pPaneBorderLightClick
+      end
+      object pPaneGradientFrom: TPanel
+        AnchorSideLeft.Control = pPaneBorderLight
+        AnchorSideTop.Control = pPaneBorderLight
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pPaneBorderLight
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 25
+        Top = 98
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 2
+        OnClick = pPaneGradientFromClick
+      end
+      object pPaneGradientTo: TPanel
+        AnchorSideLeft.Control = pPaneGradientFrom
+        AnchorSideTop.Control = pPaneGradientFrom
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pPaneGradientFrom
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 25
+        Top = 129
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 3
+        OnClick = pPaneGradientToClick
+      end
+      object cbPaneGradientKind: TComboBox
+        AnchorSideLeft.Control = pPaneGradientTo
+        AnchorSideTop.Control = pPaneGradientTo
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = bPaneGradientToColor
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 23
+        Top = 160
+        Width = 127
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'None'
+          'Horizontal'
+          'Vertical'
+          'Concave'
+        )
+        OnChange = cbPaneGradientKindChange
+        Style = csDropDownList
+        TabOrder = 4
+        Text = 'None'
+      end
+      object pPaneCaptionBackground: TPanel
+        AnchorSideLeft.Control = cbPaneGradientKind
+        AnchorSideTop.Control = cbPaneGradientKind
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pPaneGradientTo
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 25
+        Top = 199
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 16
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 5
+        OnClick = pPaneCaptionBackgroundClick
+      end
+      object pPaneCaptionFont: TPanel
+        AnchorSideLeft.Control = pPaneCaptionFontColor
+        AnchorSideTop.Control = pPaneCaptionFontColor
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = bPaneCaptionFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 25
+        Top = 290
+        Width = 127
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Font'
+        TabOrder = 6
+        OnClick = pPaneCaptionFontClick
+      end
+      object pPaneCaptionFontColor: TPanel
+        AnchorSideLeft.Control = pPaneCaptionBackground
+        AnchorSideTop.Control = edPaneHotTrackBrightnessChange
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 25
+        Top = 259
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 7
+        OnClick = pPaneCaptionFontColorClick
+      end
+      object cbLinkPane: TCheckBox
+        AnchorSideLeft.Control = LblPaneCaptionBackground
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TabSheet2
+        Left = 141
+        Height = 19
+        Top = 4
+        Width = 160
+        BorderSpacing.Left = 20
+        BorderSpacing.Top = 4
+        Caption = 'Link with tab and idle item'
+        OnClick = cbLinkPaneClick
+        TabOrder = 8
+      end
+      object cbPaneStyle: TComboBox
+        AnchorSideLeft.Control = pPaneCaptionFont
+        AnchorSideTop.Control = pPaneCaptionFont
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = bPaneCaptionFontColor
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 23
+        Top = 321
+        Width = 127
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BorderSpacing.Bottom = 6
+        ItemHeight = 15
+        ItemIndex = 1
+        Items.Strings = (
+          'Rectangle flat'
+          'Rectangle etched'
+          'Rectangle raised'
+          'Divider flat'
+          'Divider etched'
+          'Divider raised'
+        )
+        OnChange = cbPaneStyleChange
+        Style = csDropDownList
+        TabOrder = 9
+        Text = 'Rectangle etched'
+      end
+      object Label12: TLabel
+        AnchorSideTop.Control = cbPaneStyle
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 68
+        Height = 15
+        Top = 325
+        Width = 53
+        Anchors = [akTop, akRight]
+        Caption = 'Pane style'
+        ParentColor = False
+      end
+      object bPaneBorderDarkColor: TSpeedButton
+        AnchorSideLeft.Control = pPaneBorderDark
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pPaneBorderDark
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pPaneBorderDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 243
+        Height = 25
+        Top = 36
+        Width = 25
+        AllowAllUp = True
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bPaneBorderDarkColorClick
+      end
+      object bPaneBorderLightColor: TSpeedButton
+        AnchorSideLeft.Control = pPaneBorderDark
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pPaneBorderLight
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pPaneBorderDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 243
+        Height = 25
+        Top = 67
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bPaneBorderLightColorClick
+      end
+      object bPaneGradientFromColor: TSpeedButton
+        AnchorSideLeft.Control = pPaneBorderDark
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pPaneGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pPaneBorderDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 243
+        Height = 25
+        Top = 98
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bPaneGradientFromColorClick
+      end
+      object bPaneGradientToColor: TSpeedButton
+        AnchorSideLeft.Control = pPaneBorderDark
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pPaneGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pPaneBorderDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 243
+        Height = 25
+        Top = 129
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bPaneGradientToColorClick
+      end
+      object LblCaptionBackground1: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = pPaneCaptionFontColor
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 49
+        Height = 15
+        Top = 264
+        Width = 72
+        Anchors = [akTop, akRight]
+        BorderSpacing.Left = 12
+        Caption = 'Caption color'
+        ParentColor = False
+      end
+      object bPaneCaptionBackgroundColor: TSpeedButton
+        AnchorSideLeft.Control = pPaneBorderDark
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pPaneCaptionBackground
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pPaneBorderDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 243
+        Height = 25
+        Top = 199
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bPaneCaptionBackgroundColorClick
+      end
+      object bPaneCaptionFontColor: TSpeedButton
+        AnchorSideLeft.Control = pPaneBorderDark
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pPaneCaptionFontColor
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pPaneBorderDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 243
+        Height = 25
+        Top = 259
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bPaneCaptionFontColorClick
+      end
+      object PaneHSpacer: TBevel
+        AnchorSideLeft.Control = bPaneBorderDarkColor
+        AnchorSideLeft.Side = asrBottom
+        Left = 268
+        Height = 26
+        Top = 36
+        Width = 8
+        Shape = bsSpacer
+      end
+      object Label15: TLabel
+        AnchorSideTop.Control = edPaneHotTrackBrightnessChange
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 16
+        Height = 30
+        Top = 226
+        Width = 105
+        Alignment = taRightJustify
+        Anchors = [akTop, akLeft, akRight]
+        Caption = 'HotTrack brightness'#13#10'change'
+        ParentColor = False
+      end
+      object edPaneHotTrackBrightnessChange: TSpinEdit
+        AnchorSideLeft.Control = pPaneCaptionBackground
+        AnchorSideTop.Control = pPaneCaptionBackground
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pPaneCaptionBackground
+        AnchorSideRight.Side = asrBottom
+        Left = 141
+        Height = 23
+        Top = 230
+        Width = 100
+        Alignment = taRightJustify
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        MinValue = -100
+        OnChange = edPaneHotTrackBrightnessChangeChange
+        TabOrder = 10
+      end
+      object Label16: TLabel
+        AnchorSideLeft.Control = edPaneHotTrackBrightnessChange
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = edPaneHotTrackBrightnessChange
+        AnchorSideTop.Side = asrCenter
+        Left = 247
+        Height = 15
+        Top = 234
+        Width = 10
+        BorderSpacing.Left = 6
+        Caption = '%'
+        ParentColor = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Item'
+      ClientHeight = 355
+      ClientWidth = 544
+      ImageIndex = 2
+      object sItemRectangle: TShape
+        AnchorSideLeft.Control = LblLinkInnerLightColor
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = cbLinkItem
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = ItemHSpacer
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ItemVSpacer
+        AnchorSideBottom.Side = asrBottom
+        Left = 112
+        Height = 239
+        Top = 27
+        Width = 141
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 12
+        BorderSpacing.Top = 4
+        Visible = False
+      end
+      object Label1: TLabel
+        AnchorSideTop.Control = pItemIdleFrame
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 67
+        Height = 15
+        Top = 55
+        Width = 33
+        Anchors = [akTop, akRight]
+        Caption = 'Frame'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        AnchorSideTop.Control = pItemIdleGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 26
+        Height = 15
+        Top = 86
+        Width = 74
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient from'
+        ParentColor = False
+      end
+      object Label14: TLabel
+        AnchorSideTop.Control = pItemIdleGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 41
+        Height = 15
+        Top = 117
+        Width = 59
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient to'
+        ParentColor = False
+      end
+      object Label25: TLabel
+        AnchorSideTop.Control = cbItemIdleGradientKind
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 29
+        Height = 15
+        Top = 147
+        Width = 71
+        Anchors = [akTop, akRight]
+        Caption = 'Gradient kind'
+        ParentColor = False
+      end
+      object Label26: TLabel
+        AnchorSideTop.Control = pItemFont
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 51
+        Height = 15
+        Top = 278
+        Width = 49
+        Anchors = [akTop, akRight]
+        Caption = 'Item font'
+        ParentColor = False
+      end
+      object LblIdle: TLabel
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = cbLinkItem
+        AnchorSideTop.Side = asrBottom
+        Left = 161
+        Height = 15
+        Top = 31
+        Width = 19
+        Alignment = taCenter
+        BorderSpacing.Top = 8
+        Caption = 'Idle'
+        ParentColor = False
+      end
+      object Label28: TLabel
+        AnchorSideTop.Control = pItemIdleCaptionColor
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 28
+        Height = 15
+        Top = 177
+        Width = 72
+        Anchors = [akTop, akRight]
+        Caption = 'Caption color'
+        ParentColor = False
+      end
+      object Label29: TLabel
+        AnchorSideTop.Control = pItemIdleInnerDark
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 17
+        Height = 15
+        Top = 208
+        Width = 83
+        Anchors = [akTop, akRight]
+        Caption = 'Inner dark color'
+        ParentColor = False
+      end
+      object LblLinkInnerLightColor: TLabel
+        AnchorSideLeft.Control = TabSheet3
+        AnchorSideTop.Control = pItemIdleInnerLight
+        AnchorSideTop.Side = asrCenter
+        Left = 16
+        Height = 15
+        Top = 239
+        Width = 84
+        BorderSpacing.Left = 16
+        Caption = 'Inner light color'
+        ParentColor = False
+      end
+      object LblHotTrack: TLabel
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = LblIdle
+        AnchorSideBottom.Control = LblIdle
+        AnchorSideBottom.Side = asrBottom
+        Left = 290
+        Height = 15
+        Top = 31
+        Width = 46
+        Alignment = taCenter
+        Anchors = [akTop, akLeft, akBottom]
+        Caption = 'Hottrack'
+        ParentColor = False
+      end
+      object LblActive: TLabel
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = LblHotTrack
+        AnchorSideBottom.Control = LblHotTrack
+        AnchorSideBottom.Side = asrBottom
+        Left = 440
+        Height = 15
+        Top = 31
+        Width = 33
+        Alignment = taCenter
+        Anchors = [akTop, akLeft, akBottom]
+        Caption = 'Active'
+        ParentColor = False
+      end
+      object pItemFont: TPanel
+        AnchorSideLeft.Control = pItemIdleInnerLight
+        AnchorSideTop.Control = pItemIdleInnerLight
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleInnerLight
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 25
+        Top = 273
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 14
+        BorderSpacing.Bottom = 4
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Font'
+        TabOrder = 0
+        OnClick = pItemFontClick
+      end
+      object cbItemIdleGradientKind: TComboBox
+        AnchorSideLeft.Control = pItemIdleGradientFrom
+        AnchorSideTop.Control = pItemIdleGradientTo
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleGradientTo
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 23
+        Top = 143
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'None'
+          'Horizontal'
+          'Vertical'
+          'Concave'
+        )
+        OnChange = cbItemIdleGradientKindChange
+        Style = csDropDownList
+        TabOrder = 1
+        Text = 'None'
+      end
+      object pItemIdleGradientTo: TPanel
+        AnchorSideLeft.Control = pItemIdleGradientFrom
+        AnchorSideTop.Control = pItemIdleGradientFrom
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleGradientFrom
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 25
+        Top = 112
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 2
+        OnClick = pItemIdleGradientToClick
+      end
+      object pItemIdleGradientFrom: TPanel
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideTop.Control = pItemIdleFrame
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleFrame
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 25
+        Top = 81
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 3
+        OnClick = pItemIdleGradientFromClick
+      end
+      object pItemIdleFrame: TPanel
+        AnchorSideLeft.Control = cbLinkItem
+        AnchorSideTop.Control = LblIdle
+        AnchorSideTop.Side = asrBottom
+        Left = 120
+        Height = 25
+        Top = 50
+        Width = 100
+        BorderSpacing.Top = 4
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 4
+        OnClick = pItemIdleFrameClick
+      end
+      object pItemIdleCaptionColor: TPanel
+        AnchorSideLeft.Control = cbItemIdleGradientKind
+        AnchorSideTop.Control = cbItemIdleGradientKind
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleGradientTo
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 25
+        Top = 172
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 5
+        OnClick = pItemIdleCaptionColorClick
+      end
+      object pItemIdleInnerDark: TPanel
+        AnchorSideLeft.Control = pItemIdleCaptionColor
+        AnchorSideTop.Control = pItemIdleCaptionColor
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleCaptionColor
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 25
+        Top = 203
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 6
+        OnClick = pItemIdleInnerDarkClick
+      end
+      object pItemIdleInnerLight: TPanel
+        AnchorSideLeft.Control = pItemIdleInnerDark
+        AnchorSideTop.Control = pItemIdleInnerDark
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleInnerDark
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 25
+        Top = 234
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 7
+        OnClick = pItemIdleInnerLightClick
+      end
+      object cbItemHottrackGradientKind: TComboBox
+        AnchorSideLeft.Control = pItemHottrackGradientTo
+        AnchorSideTop.Control = pItemHottrackGradientTo
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemHottrackGradientTo
+        AnchorSideRight.Side = asrBottom
+        Left = 263
+        Height = 23
+        Top = 143
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'None'
+          'Horizontal'
+          'Vertical'
+          'Concave'
+        )
+        OnChange = cbItemHottrackGradientKindChange
+        Style = csDropDownList
+        TabOrder = 8
+        Text = 'None'
+      end
+      object pItemHottrackGradientTo: TPanel
+        AnchorSideLeft.Control = pItemHottrackGradientFrom
+        AnchorSideTop.Control = pItemHottrackGradientFrom
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemHottrackGradientFrom
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemIdleGradientTo
+        AnchorSideBottom.Side = asrBottom
+        Left = 263
+        Height = 25
+        Top = 112
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 9
+        OnClick = pItemHottrackGradientToClick
+      end
+      object pItemHottrackGradientFrom: TPanel
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideTop.Control = pItemHottrackFrame
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemHottrackFrame
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemIdleGradientFrom
+        AnchorSideBottom.Side = asrBottom
+        Left = 263
+        Height = 25
+        Top = 81
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 10
+        OnClick = pItemHottrackGradientFromClick
+      end
+      object pItemHottrackFrame: TPanel
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemIdleFrame
+        AnchorSideBottom.Control = pItemIdleFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 263
+        Height = 25
+        Top = 50
+        Width = 100
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Left = 43
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 11
+        OnClick = pItemHottrackFrameClick
+      end
+      object pItemHottrackCaptionColor: TPanel
+        AnchorSideLeft.Control = cbItemHottrackGradientKind
+        AnchorSideTop.Control = cbItemHottrackGradientKind
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemHottrackGradientTo
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemIdleCaptionColor
+        AnchorSideBottom.Side = asrBottom
+        Left = 263
+        Height = 25
+        Top = 172
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 12
+        OnClick = pItemHottrackCaptionColorClick
+      end
+      object pItemHottrackInnerDark: TPanel
+        AnchorSideLeft.Control = pItemHottrackCaptionColor
+        AnchorSideTop.Control = pItemHottrackCaptionColor
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemHottrackCaptionColor
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemIdleInnerDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 263
+        Height = 25
+        Top = 203
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 13
+        OnClick = pItemHottrackInnerDarkClick
+      end
+      object pItemHottrackInnerLight: TPanel
+        AnchorSideLeft.Control = pItemHottrackInnerDark
+        AnchorSideTop.Control = pItemHottrackInnerDark
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemHottrackInnerDark
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemIdleInnerLight
+        AnchorSideBottom.Side = asrBottom
+        Left = 263
+        Height = 25
+        Top = 234
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 14
+        OnClick = pItemHottrackInnerLightClick
+      end
+      object cbItemActiveGradientKind: TComboBox
+        AnchorSideLeft.Control = pItemActiveGradientTo
+        AnchorSideTop.Control = pItemActiveGradientTo
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemActiveGradientTo
+        AnchorSideRight.Side = asrBottom
+        Left = 406
+        Height = 23
+        Top = 143
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'None'
+          'Horizontal'
+          'Vertical'
+          'Concave'
+        )
+        OnChange = cbItemActiveGradientKindChange
+        Style = csDropDownList
+        TabOrder = 15
+        Text = 'None'
+      end
+      object pItemActiveGradientTo: TPanel
+        AnchorSideLeft.Control = pItemActiveGradientFrom
+        AnchorSideTop.Control = pItemActiveGradientFrom
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemActiveGradientFrom
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemHottrackGradientTo
+        AnchorSideBottom.Side = asrBottom
+        Left = 406
+        Height = 25
+        Top = 112
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 16
+        OnClick = pItemActiveGradientToClick
+      end
+      object pItemActiveGradientFrom: TPanel
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideTop.Control = pItemActiveFrame
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemActiveFrame
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemHottrackGradientFrom
+        AnchorSideBottom.Side = asrBottom
+        Left = 406
+        Height = 25
+        Top = 81
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 17
+        OnClick = pItemActiveGradientFromClick
+      end
+      object pItemActiveFrame: TPanel
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemHottrackFrame
+        AnchorSideBottom.Control = pItemHottrackFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 406
+        Height = 25
+        Top = 50
+        Width = 100
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Left = 43
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 18
+        OnClick = pItemActiveFrameClick
+      end
+      object pItemActiveCaptionColor: TPanel
+        AnchorSideLeft.Control = cbItemActiveGradientKind
+        AnchorSideTop.Control = cbItemActiveGradientKind
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = cbItemActiveGradientKind
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemHottrackCaptionColor
+        AnchorSideBottom.Side = asrBottom
+        Left = 406
+        Height = 25
+        Top = 172
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 19
+        OnClick = pItemActiveCaptionColorClick
+      end
+      object pItemActiveInnerDark: TPanel
+        AnchorSideLeft.Control = pItemActiveCaptionColor
+        AnchorSideTop.Control = pItemActiveCaptionColor
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemActiveCaptionColor
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemHottrackInnerDark
+        AnchorSideBottom.Side = asrBottom
+        Left = 406
+        Height = 25
+        Top = 203
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 20
+        OnClick = pItemActiveInnerDarkClick
+      end
+      object pItemActiveInnerLight: TPanel
+        AnchorSideLeft.Control = pItemActiveInnerDark
+        AnchorSideTop.Control = pItemActiveInnerDark
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemActiveInnerDark
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = pItemHottrackInnerLight
+        AnchorSideBottom.Side = asrBottom
+        Left = 406
+        Height = 25
+        Top = 234
+        Width = 100
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 6
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Caption = 'Color'
+        TabOrder = 21
+        OnClick = pItemActiveInnerLightClick
+      end
+      object cbLinkItem: TCheckBox
+        AnchorSideLeft.Control = LblLinkInnerLightColor
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TabSheet3
+        Left = 120
+        Height = 19
+        Top = 4
+        Width = 140
+        BorderSpacing.Left = 20
+        BorderSpacing.Top = 4
+        Caption = 'Link with tab and pane'
+        OnClick = cbLinkItemClick
+        TabOrder = 22
+      end
+      object bItemIdleFrameColor: TSpeedButton
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemIdleFrame
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 222
+        Height = 24
+        Top = 50
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemIdleFrameColorClick
+      end
+      object bItemHotTrackFrameColor: TSpeedButton
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemHottrackFrame
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 365
+        Height = 24
+        Top = 50
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemHotTrackFrameColorClick
+      end
+      object bItemActiveFrameColor: TSpeedButton
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemActiveFrame
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 508
+        Height = 24
+        Top = 50
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        BorderSpacing.Right = 16
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemActiveFrameColorClick
+      end
+      object bItemIdleGradientFromColor: TSpeedButton
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemHottrackGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 222
+        Height = 24
+        Top = 81
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemIdleGradientFromColorClick
+      end
+      object bItemHotTrackGradientFromColor: TSpeedButton
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemHottrackGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 365
+        Height = 24
+        Top = 81
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemHotTrackGradientFromColorClick
+      end
+      object bItemActiveGradientFromColor: TSpeedButton
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemActiveGradientFrom
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 508
+        Height = 24
+        Top = 81
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        BorderSpacing.Right = 16
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemActiveGradientFromColorClick
+      end
+      object bItemIdleGradientToColor: TSpeedButton
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemIdleGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 222
+        Height = 24
+        Top = 112
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemIdleGradientToColorClick
+      end
+      object bItemHotTrackGradientToColor: TSpeedButton
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemHottrackGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 365
+        Height = 24
+        Top = 112
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemHotTrackGradientToColorClick
+      end
+      object bItemActiveGradientToColor: TSpeedButton
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemActiveGradientTo
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 508
+        Height = 24
+        Top = 112
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        BorderSpacing.Right = 16
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemActiveGradientToColorClick
+      end
+      object bItemIdleCaptionColor: TSpeedButton
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemIdleCaptionColor
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 222
+        Height = 24
+        Top = 172
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemIdleCaptionColorClick
+      end
+      object bItemIdleInnerDarkColor: TSpeedButton
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemIdleInnerDark
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 222
+        Height = 24
+        Top = 203
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemIdleInnerDarkColorClick
+      end
+      object bItemIdleInnerLightColor: TSpeedButton
+        AnchorSideLeft.Control = pItemIdleFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemIdleInnerLight
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 222
+        Height = 24
+        Top = 234
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemIdleInnerLightColorClick
+      end
+      object bItemHotTrackCaptionColor: TSpeedButton
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemHottrackCaptionColor
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 365
+        Height = 24
+        Top = 172
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemHotTrackCaptionColorClick
+      end
+      object bItemActiveCaptionColor: TSpeedButton
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemActiveCaptionColor
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 508
+        Height = 24
+        Top = 172
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        BorderSpacing.Right = 16
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemActiveCaptionColorClick
+      end
+      object bItemHotTrackInnerDarkColor: TSpeedButton
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemHottrackInnerDark
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 365
+        Height = 24
+        Top = 203
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemHotTrackInnerDarkColorClick
+      end
+      object bItemActiveInnerDarkColor: TSpeedButton
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemActiveInnerDark
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 508
+        Height = 24
+        Top = 203
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        BorderSpacing.Right = 16
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemActiveInnerDarkColorClick
+      end
+      object bItemHotTrackInnerLightColor: TSpeedButton
+        AnchorSideLeft.Control = pItemHottrackFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemActiveInnerLight
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 365
+        Height = 24
+        Top = 234
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemHotTrackInnerLightColorClick
+      end
+      object bItemActiveInnerLightColor: TSpeedButton
+        AnchorSideLeft.Control = pItemActiveFrame
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemActiveInnerLight
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = pTabFrame
+        AnchorSideBottom.Side = asrBottom
+        Left = 508
+        Height = 24
+        Top = 234
+        Width = 25
+        AllowAllUp = True
+        BorderSpacing.Left = 2
+        BorderSpacing.Right = 16
+        Flat = True
+        GroupIndex = 1
+        OnClick = bItemActiveInnerLightColorClick
+      end
+      object cbItemStyle: TComboBox
+        AnchorSideLeft.Control = pItemIdleGradientFrom
+        AnchorSideTop.Control = pItemFont
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pItemIdleGradientTo
+        AnchorSideRight.Side = asrBottom
+        Left = 120
+        Height = 23
+        Top = 304
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 6
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'Rounded'
+          'Rectangle'
+        )
+        OnChange = cbItemStyleChange
+        Style = csDropDownList
+        TabOrder = 23
+        Text = 'Rounded'
+      end
+      object Label27: TLabel
+        AnchorSideTop.Control = cbItemStyle
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = LblLinkInnerLightColor
+        AnchorSideRight.Side = asrBottom
+        Left = 75
+        Height = 15
+        Top = 308
+        Width = 25
+        Anchors = [akTop, akRight]
+        Caption = 'Style'
+        ParentColor = False
+      end
+      object ItemVSpacer: TBevel
+        AnchorSideTop.Control = bItemIdleInnerLightColor
+        AnchorSideTop.Side = asrBottom
+        Left = 192
+        Height = 8
+        Top = 258
+        Width = 50
+        Shape = bsSpacer
+      end
+      object ItemHSpacer: TBevel
+        AnchorSideLeft.Control = bItemIdleFrameColor
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = pItemIdleFrame
+        AnchorSideBottom.Control = pItemIdleInnerLight
+        AnchorSideBottom.Side = asrBottom
+        Left = 247
+        Height = 209
+        Top = 50
+        Width = 6
+        Anchors = [akTop, akLeft, akBottom]
+        Shape = bsSpacer
+      end
+      object Label19: TLabel
+        AnchorSideLeft.Control = edItemHotTrackBrightnessChange
+        AnchorSideBottom.Control = edItemHotTrackBrightnessChange
+        Left = 263
+        Height = 15
+        Top = 285
+        Width = 97
+        Alignment = taRightJustify
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 4
+        Caption = 'Brightness change'
+        ParentColor = False
+      end
+      object edItemHotTrackBrightnessChange: TSpinEdit
+        AnchorSideLeft.Control = pItemHottrackInnerLight
+        AnchorSideTop.Control = cbItemStyle
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = pItemHottrackInnerLight
+        AnchorSideRight.Side = asrBottom
+        Left = 263
+        Height = 23
+        Top = 304
+        Width = 100
+        Alignment = taRightJustify
+        Anchors = [akTop, akLeft, akRight]
+        MinValue = -100
+        OnChange = edItemHotTrackBrightnessChangeChange
+        TabOrder = 24
+      end
+      object Label20: TLabel
+        AnchorSideLeft.Control = edItemHotTrackBrightnessChange
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = edItemHotTrackBrightnessChange
+        AnchorSideTop.Side = asrCenter
+        Left = 367
+        Height = 15
+        Top = 308
+        Width = 10
+        BorderSpacing.Left = 4
+        Caption = '%'
+        ParentColor = False
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Import / export'
+      ClientHeight = 355
+      ClientWidth = 544
+      ImageIndex = 3
+      object bImport: TButton
+        AnchorSideLeft.Control = bExportToXML
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TabSheet4
+        Left = 250
+        Height = 25
+        Top = 4
+        Width = 118
+        AutoSize = True
+        BorderSpacing.Left = 4
+        BorderSpacing.Top = 4
+        Caption = 'Import from XML'
+        OnClick = bImportClick
+        TabOrder = 0
+      end
+      object bExportToXML: TButton
+        AnchorSideLeft.Control = bExportToPascal
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TabSheet4
+        Left = 146
+        Height = 25
+        Top = 4
+        Width = 100
+        AutoSize = True
+        BorderSpacing.Left = 4
+        BorderSpacing.Top = 4
+        Caption = 'Export to XML'
+        OnClick = bExportToXMLClick
+        TabOrder = 1
+      end
+      object mXML: TMemo
+        AnchorSideLeft.Control = TabSheet4
+        AnchorSideTop.Control = bImport
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet4
+        AnchorSideBottom.Side = asrBottom
+        Left = 4
+        Height = 318
+        Top = 33
+        Width = 536
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 4
+        BorderSpacing.Top = 4
+        BorderSpacing.Right = 4
+        BorderSpacing.Bottom = 4
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Courier New'
+        ParentFont = False
+        ScrollBars = ssAutoBoth
+        TabOrder = 2
+      end
+      object bExportToPascal: TButton
+        AnchorSideLeft.Control = TabSheet4
+        AnchorSideTop.Control = TabSheet4
+        Left = 4
+        Height = 25
+        Top = 4
+        Width = 138
+        AutoSize = True
+        BorderSpacing.Left = 4
+        BorderSpacing.Top = 4
+        Caption = 'Export to Pascal code'
+        OnClick = bExportToPascalClick
+        TabOrder = 3
+      end
+      object bCopyToClipboard: TButton
+        AnchorSideTop.Control = TabSheet4
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        Left = 486
+        Height = 25
+        Top = 4
+        Width = 54
+        Anchors = [akTop, akRight]
+        AutoSize = True
+        BorderSpacing.Top = 4
+        BorderSpacing.Right = 4
+        Caption = 'Copy'
+        OnClick = bCopyToClipboardClick
+        TabOrder = 4
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Tools'
+      ClientHeight = 357
+      ClientWidth = 544
+      ImageIndex = 4
+      object Label17: TLabel
+        AnchorSideLeft.Control = TabSheet5
+        AnchorSideTop.Side = asrCenter
+        Left = 8
+        Height = 15
+        Top = 8
+        Width = 87
+        BorderSpacing.Left = 8
+        Caption = 'Reset to defaults'
+        ParentColor = False
+      end
+      object LbAppearanceStyle: TListBox
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = Label17
+        AnchorSideTop.Side = asrBottom
+        Left = 8
+        Height = 149
+        Top = 27
+        Width = 224
+        BorderSpacing.Top = 4
+        Items.Strings = (
+          'Office2007 blue'
+          'Office2007 silver'
+          'Office2007 silver / turquoise'
+          'Metro light'
+          'Metro dark'
+        )
+        ItemHeight = 15
+        OnClick = LbAppearanceStyleClick
+        TabOrder = 0
+      end
+    end
+  end
+  object ButtonPanel: TPanel
+    Left = 8
+    Height = 33
+    Top = 518
+    Width = 535
+    Align = alBottom
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 9
+    BorderSpacing.Bottom = 4
+    BevelOuter = bvNone
+    ClientHeight = 33
+    ClientWidth = 535
+    TabOrder = 2
+    object bOK: TButton
+      AnchorSideTop.Control = bCancel
+      AnchorSideRight.Control = bCancel
+      AnchorSideBottom.Control = bCancel
+      AnchorSideBottom.Side = asrBottom
+      Left = 425
+      Height = 25
+      Top = 4
+      Width = 42
+      Anchors = [akTop, akRight, akBottom]
+      BorderSpacing.Right = 6
+      Caption = 'OK'
+      Default = True
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object bCancel: TButton
+      AnchorSideTop.Control = ButtonPanel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = ButtonPanel
+      AnchorSideRight.Side = asrBottom
+      Left = 473
+      Height = 25
+      Top = 4
+      Width = 62
+      Anchors = [akTop, akRight]
+      AutoSize = True
+      BorderSpacing.Top = 10
+      BorderSpacing.Bottom = 4
+      Cancel = True
+      Caption = 'Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+    object LblRGB: TLabel
+      AnchorSideLeft.Control = ColorView
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = bOK
+      AnchorSideTop.Side = asrCenter
+      Left = 30
+      Height = 15
+      Top = 9
+      Width = 38
+      BorderSpacing.Left = 5
+      Caption = 'LblRGB'
+      ParentColor = False
+      Visible = False
+    end
+    object ColorView: TShape
+      AnchorSideLeft.Control = ButtonPanel
+      AnchorSideTop.Control = bOK
+      AnchorSideBottom.Control = bCancel
+      AnchorSideBottom.Side = asrBottom
+      Left = 0
+      Height = 25
+      Top = 4
+      Width = 25
+      Anchors = [akTop, akLeft, akBottom]
+      Visible = False
+    end
+  end
+  object cdColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 280
+    top = 504
+  end
+  object fdFontDialog: TFontDialog
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 376
+    top = 504
+  end
+  object Images_200: TImageList
+    Height = 32
+    Width = 32
+    left = 344
+    Bitmap = {
+      4C69010000002000000020000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000006305171FF2E506FFF2E506FFF305272FF000000060000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000062D4E6DFFC7DEF2FFC2D7EAFFC1D6E8FFC3D8E9FF2D4E6EFF0000
+      0006000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00062D4E6DFFC2D9EFFF467FB4FF447DAEFF4278A7FF3B72A1FFBACEE1FF3153
+      72FF000000060000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000063152
+      72FFBCD5EDFF4680B4FF4A81B0FF4A7EABFF4679A6FF3C709DFFAEC5D6FF2F51
+      71FF000000110000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000112F50
+      70FFB1CCE4FF457DAFFF4A7EABFF477AA6FF4476A1FF396C97FFA8BFD1FF3051
+      71FF000000160000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000162D4E
+      6DFFACC5DDFF457BA9FF477AA6FF4476A1FF41729BFF386B93FFA3BCCDFF3253
+      73FF000000160000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000006305171FF305171FF0000000B2F506FFFA9C5
+      DFFF447AA9FF4579A5FF4476A1FF41729BFF3E6F96FF3A6B93FF335473FF0000
+      0037000000110000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000006305171FFC2DCF1FFBDD5EAFF264868FFA2C1DDFF447B
+      AAFF4579A6FF4476A2FF41749DFF3E7198FF3C6D94FF375775FF0000003D0000
+      001C000000060000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000112D5072FFB9D4EDFFDAE6F2FFB5CCDFFF366590FF4478
+      A6FF4476A2FF41749EFF375673FF385775FF385776FF0000003D0000001C0000
+      0006000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000165B5753FF224669FF4480B5FF3E76A7FFB2C7D8FF3763
+      8AFF3F739EFF375674FF0000004800000043000000370000001C000000060000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000006515151FFFFFFFFFFDDD6D0FF254869FF467DAEFF3C719DFFA5BC
+      CEFF2D4E6DFF0000003D00000022000000160000001100000006000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0006515151FFFFFFFFFFCCCAC8FFC4C2BFFFC5C0BAFF284B6DFF3E74A2FFABC2
+      D4FF99B3C7FF325473FF0000000B000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000065151
+      51FFFFFFFFFFCCCAC7FFC1C0BEFFB7B6B4FFB0ADAAFFAFA9A2FF2A4E70FF376D
+      99FF95B0C4FF335473FF00000011000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000006515151FFFFFF
+      FFFFCCCAC7FFC1C0BEFFB7B6B4FFADABA9FFA19F9DFFDBD9D6FF605B57FF3355
+      76FF345574FF0000003700000011000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000006515151FFFFFFFFFFCAC7
+      C6FFBFBEBCFFB5B4B3FFACAAA8FFA19F9DFFD6D5D3FF565656FF000000480000
+      0043000000370000001C00000006000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000006515356FFFFFFFFFFEAEDF4FFDFE2
+      EAFFCDD2D9FFBFC2CAFFB0B1B4FFD3D2D2FF565656FF0000003D000000220000
+      0016000000110000000600000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000006505459FFFFF4D2FFE3AA4CFFDDA13FFFD99A
+      30FFD79320FFD58908FFF6C46FFF54575AFF0000003D0000001C000000060000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000004535557B0FFF2CEFFE3AB50FFDDA549FFD99F3CFFD697
+      2CFFD38D15FFF2C475FF535861FF0000003D0000001C00000006000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000D52555BFFFFE8C2FFDCA343FFD99F3CFFD6972DFFD38D
+      16FFF1C371FF525862FF0000003D0000001C0000000600000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000148A7554FFFAE2BCFFD89C35FFD69529FFD38C15FFF1C1
+      6CFF535862FF0000003D0000001C000000060000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000650545CFFFFE6BAFFDB9D33FFDB9826FFEFC273FFF1BE65FF5358
+      63FF0000003D0000001C00000006000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000655595FFFFFE6B4FFDD9D31FFE09B26FF85704BFF535963FF4C4F54C30000
+      003B0000001C0000000600000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00114A5467FFFEDFACFFE49B21FF505968FF000000480000003F000000300000
+      0018000000060000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000001A66E
+      0E59D78B07FF766648FF545A65FF0000003D00000022000000140000000D0000
+      0004000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000007C68B
+      27B2D69526FFB9801EB70000003B0000001C0000000600000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000EE8C0
+      7FFFE7BC76FFE5AE58FF0000001D000000060000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000004BB7300B2F3DA
+      B2FFF1D6ABFFE7B66CFFBD7600B1000000040000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000DC77B00FFE6BC
+      76FFE4B971FFDCA243FFC77D00FF0000000D0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000014C77D00FFD494
+      27FFD39224FFD59529FFC77D00FF000000140000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000001152370A53CC86
+      0EFACC870CFFCC860EFA52370A53000000110000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000070000001E0000
+      003900000042000000390000001E000000070000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000001000000070000
+      0011000000160000001100000007000000010000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000
+    }
+  end
+  object Images_100: TImageList
+    left = 488
+    Bitmap = {
+      4C69010000001000000010000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000032537266325372FF3253
+      72FF365675FF3253726600000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000325372FFA7C5DBFFA4BD
+      D2FF8DAEC7E4365675FF00000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000002F4F6EFF9BB8D2FF346A
+      95FF96B0C4FF335473FF00000000000000000000000000000000000000000000
+      0000000000000000000035577699335372FF2F4F6DFF98B9D8FF4277A6FF3B70
+      9AFF8AA8BFFF335474FF00000000000000000000000000000000000000000000
+      00000000000000000000294D6FFF92B9DCFF93B8DAFF42729DFF477DABFF3554
+      72FF355574FF2640588500000000000000000000000000000000000000000000
+      000000000000535251FFF8F8F7E8306491FF457DADFF4C82B2FF365472FF0000
+      0033000000330000001400000000000000000000000000000000000000000000
+      0000535353FFFFFFFFFFC9C7C4FFA7A19B9E30618CFF4278A5FF375775FF0000
+      0000000000000000000000000000000000000000000000000000000000005252
+      53FFDEDEDCFFC5C4C2FFB5B4B3FFABA8A5FFD5CFC8D52F5272FF314E69AD0000
+      0000000000000000000000000000000000000000000000000000515357FFFEFF
+      FFFFE7EBF2FFD3D7DEFFC1C3C7FFDDDCDBFF595654FF000000330000001F0000
+      0000000000000000000000000000000000000000000057595BA8FFF1CCFFE1A5
+      43FFDA992FFFD78F14FFF3C169FF545659FF0000003300000000000000000000
+      0000000000000000000000000000000000000000000054575BFFFFE7BDFFD999
+      30FFD6921FFFF1C26FFF525861FF000000330000000000000000000000000000
+      0000000000000000000000000000000000000000000051545AFFFFE2AFFFEFC2
+      73FFF2C067FF525862FF00000033000000000000000000000000000000000000
+      00000000000000000000000000000000000054575BFFFFEAAEFF51555BFF5559
+      5FFF505358B90000003300000000000000000000000000000000000000000000
+      0000000000000000000000000000555659FFFFE8A8FF54575CFF000000330000
+      0033000000220000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000B3B2B1BF545659FF00000033000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000003300000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000
+    }
+  end
+  object Images_150: TImageList
+    Height = 24
+    Width = 24
+    left = 416
+    Bitmap = {
+      4C69010000001800000018000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000003426180F240607DFF426280FF2E4D
+      6A42000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000005086BB010000000258738ED28EB4D7FF8CB2D3FF8BB0D0FE7590
+      ABFF2648676B0000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000426180F188B0D4FF4981B2FF487CAAFF386E9DFFABC4
+      D8FF26496AE50000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000003E5E7DFF83ACD0FF487DAAFF4679A4FF376B97FFA2BC
+      D0FF28496AE50000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000406C9601000000001E40
+      62891B3C5C3113324E707593AFFF5F8EB7FF4578A4FF42739DFF396C95FE6686
+      A0FF213B54860000000200000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000264768C5B6D1
+      E7FF5F7D99F08FACC8FE4C81AFFF4377A4FF4276A0FF3E729AFF3B6589FF1B2D
+      3E6F0000001805090C0200000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000284764E2B0CB
+      E4FFC6DAEBFF4D779DFF4275A2FF4275A0FF365571EC36536FEB293F568C0000
+      0019000000020000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000C0D0F37AEA8A3F2697E
+      92FF256196FF789EBEFF6486A4FF294D6ECE0000003600000020000000140406
+      0803000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000858585010D0D0D129B9B9BFFDAD8D7FFC8C5
+      C1FF687B8DFF326A9AFFB5C9D8FF5C7A94FF1B32472700000002000000010000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000D0D0D12787878FFF0EFEDFEC0BFBDFFB3B2
+      B0FFBDB6ADFF415970FF3C6F99FF638098FF1A2E422B00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000F0F0E32999999FFEDEBEAFEBBBAB7FFB2B1AFFFA7A5
+      A3FFB2B1B0FF5E564EB2243F5AA415293C5E0000000D00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000838A92010E0F1312989BA0FFF2F7FFFFD9E0EDFFC3CCDAFFABAFB8FFC9C7
+      C6FF4A4A4AB30000002A000000180000000E0204050100000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000002030509767773FFFED68DFEDC9D35FFD89422FFD88B07FFECB85FFF3B42
+      4AD0000000180303030500000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000404651C6FFF6C5FFDA9E3BFFD89D39FFD6921EFFCAA460FF464B55B40000
+      00180C0C0D070000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000736247E1FFE5BBFFD49428FFD08811FFE6B867FF464B55B4000000240202
+      0306000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000010151B025155
+      5D9BEFD8AEFFD89420FFD6A551FFEABC6BFB39445BD100000018020303060000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000172B4F27A7A2
+      98FFF4AA2EFE8D754BFF424345A028324382000000170C0D0E07000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000AB700A65A97D
+      32FF6A665FFF040C18460000001C000000110203030400000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000D09635D2D495
+      2CEA2E19003B0505041300000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000009B520047F2D3A3FFEDC3
+      81FFB57A19790000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000C27500DBEBC68AFFE4B4
+      67FFC98108FF0000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000BF7700CFD39121FFD492
+      22FFC67E05F90000000400000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000400000A24A56C08A2A46B
+      08A63B290A3E0000000800000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000007000000160000
+      00180000000B0000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000
+    }
+  end
+  object LargeImages: TImageList
+    Height = 32
+    Width = 32
+    left = 192
+  end
+  object SmallImages: TImageList
+    left = 272
+  end
+end

@@ -1,0 +1,22 @@
+
+* Números:
+  del 0 al 9
+  pueden tener . (reales)
+
+** Ejemplos:
+   1234
+   9
+   0
+   0.12345
+   2355.1824
+
+* Operadores:
+  ( )
+  + - * / ^
+  !
+
+* Funciones:
+  sin, cos, ...
+
+* Otros:
+  pi, ...

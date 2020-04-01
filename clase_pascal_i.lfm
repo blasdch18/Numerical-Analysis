@@ -1,0 +1,110 @@
+object Form1: TForm1
+  Left = 10
+  Height = 261
+  Top = 13
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '1.6.4.0'
+  object ediName: TEdit
+    Left = 38
+    Height = 23
+    Top = 36
+    Width = 176
+    TabOrder = 0
+    Text = ' '
+  end
+  object btnAddClick: TButton
+    Left = 240
+    Height = 23
+    Top = 36
+    Width = 64
+    Caption = 'Add'
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 35
+    Height = 15
+    Top = 21
+    Width = 32
+    Caption = 'Name'
+    ParentColor = False
+  end
+  object cboPerson: TComboBox
+    Left = 41
+    Height = 23
+    Top = 188
+    Width = 92
+    ItemHeight = 15
+    OnChange = cboPersonChange
+    TabOrder = 2
+  end
+  object GroupBox1: TGroupBox
+    Left = 41
+    Height = 105
+    Top = 72
+    Width = 263
+    Caption = 'Datos'
+    ClientHeight = 85
+    ClientWidth = 259
+    TabOrder = 3
+    OnClick = GroupBox1Click
+    object Label2: TLabel
+      Left = 20
+      Height = 15
+      Top = 10
+      Width = 82
+      Caption = 'Primer Nombre'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 20
+      Height = 15
+      Top = 32
+      Width = 94
+      Caption = 'SEgundo Nombre'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 20
+      Height = 15
+      Top = 56
+      Width = 117
+      Caption = 'Cantidad de  Personas'
+      ParentColor = False
+    end
+  end
+  object lblFirstName: TLabel
+    Left = 208
+    Height = 15
+    Top = 96
+    Width = 67
+    Caption = 'lblFirstName'
+    ParentColor = False
+  end
+  object lblLastName: TLabel
+    Left = 208
+    Height = 15
+    Top = 120
+    Width = 66
+    Caption = 'lblLastName'
+    ParentColor = False
+  end
+  object lblCount: TLabel
+    Left = 208
+    Height = 15
+    Top = 144
+    Width = 46
+    Caption = 'lblCount'
+    ParentColor = False
+  end
+  object lblName: TLabel
+    Left = 169
+    Height = 15
+    Top = 192
+    Width = 45
+    Caption = 'lblName'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="clases_pascal.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="clase_pascal_i.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="19"/>
+        <CursorPos X="72" Y="53"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="persona.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="73" Y="16"/>
+        <FoldState Value=" T3bE320"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="23" HistoryIndex="22">
+      <Position1>
+        <Filename Value="persona.pas"/>
+        <Caret Line="8" Column="28" TopLine="4"/>
+      </Position1>
+      <Position2>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="8" Column="75"/>
+      </Position2>
+      <Position3>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="9" Column="10"/>
+      </Position3>
+      <Position4>
+        <Filename Value="persona.pas"/>
+        <Caret Line="11" Column="7"/>
+      </Position4>
+      <Position5>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="9" Column="10"/>
+      </Position5>
+      <Position6>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="39" Column="3" TopLine="16"/>
+      </Position6>
+      <Position7>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="40" Column="3" TopLine="40"/>
+      </Position7>
+      <Position8>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="41" Column="3" TopLine="41"/>
+      </Position8>
+      <Position9>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="42" Column="3" TopLine="42"/>
+      </Position9>
+      <Position10>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="45" Column="3" TopLine="45"/>
+      </Position10>
+      <Position11>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="44" Column="3" TopLine="44"/>
+      </Position11>
+      <Position12>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="43" Column="3" TopLine="43"/>
+      </Position12>
+      <Position13>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="42" Column="3" TopLine="42"/>
+      </Position13>
+      <Position14>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="45" Column="3" TopLine="45"/>
+      </Position14>
+      <Position15>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="47" Column="3" TopLine="47"/>
+      </Position15>
+      <Position16>
+        <Filename Value="persona.pas"/>
+        <Caret Line="16" Column="37" TopLine="12"/>
+      </Position16>
+      <Position17>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="63" Column="5" TopLine="39"/>
+      </Position17>
+      <Position18>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="43" TopLine="39"/>
+      </Position18>
+      <Position19>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="55" Column="3" TopLine="39"/>
+      </Position19>
+      <Position20>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="56" Column="43" TopLine="39"/>
+      </Position20>
+      <Position21>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="48" Column="3" TopLine="39"/>
+      </Position21>
+      <Position22>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="17" Column="14" TopLine="9"/>
+      </Position22>
+      <Position23>
+        <Filename Value="clase_pascal_i.pas"/>
+        <Caret Line="52" Column="29" TopLine="40"/>
+      </Position23>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="clase_pascal_i.pas"/>
+        <Line Value="44"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

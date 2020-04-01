@@ -1,0 +1,248 @@
+object Form1: TForm1
+  Left = 1766
+  Height = 705
+  Top = 204
+  Width = 1366
+  Caption = 'Form1'
+  ClientHeight = 705
+  ClientWidth = 1366
+  OnCreate = FormCreate
+  LCLVersion = '1.8.0.6'
+  object Chart1: TChart
+    Left = 688
+    Height = 705
+    Top = 0
+    Width = 678
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Align = alRight
+    object EJEX: TConstantLine
+      Position = 0
+    end
+    object EJEY: TConstantLine
+      LineStyle = lsVertical
+      Position = 0
+    end
+    object Plotear: TLineSeries
+      LinePen.Cosmetic = False
+      LinePen.Style = psClear
+      Pointer.Brush.Color = clHighlight
+      Pointer.Brush.Style = bsPattern
+      Pointer.Pen.Color = clMenuHighlight
+      Pointer.Style = psCircle
+    end
+    object Funtion: TFuncSeries
+      Shadow.Color = clRed
+      Active = False
+      OnCalculate = FuncionCalculate
+      Pen.Color = clRed
+      Pen.Width = 2
+    end
+    object FuntionGr: TLineSeries
+      LinePen.Color = clRed
+      LinePen.Width = 2
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 504
+    Height = 705
+    Top = 0
+    Width = 177
+    Align = alCustom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.CellAlignHorizontal = ccaCenter
+    BorderSpacing.CellAlignVertical = ccaCenter
+    ColCount = 2
+    DefaultRowHeight = 15
+    FixedCols = 0
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Height = -11
+    TitleFont.Name = 'Consolas'
+    TitleFont.Pitch = fpFixed
+    TitleFont.Quality = fqDraft
+    ColWidths = (
+      86
+      86
+    )
+    Cells = (
+      2
+      0
+      0
+      'X'
+      1
+      0
+      'Y'
+    )
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 705
+    Top = 0
+    Width = 497
+    Align = alLeft
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ClientHeight = 705
+    ClientWidth = 497
+    TabOrder = 2
+    object Button1: TButton
+      Left = 200
+      Height = 24
+      Top = 32
+      Width = 96
+      Caption = 'Load CSV'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Memo1: TMemo
+      Left = 8
+      Height = 136
+      Top = 128
+      Width = 472
+      Lines.Strings = (
+        'Memo1'
+      )
+      TabOrder = 1
+    end
+    object Memo2: TMemo
+      Left = 8
+      Height = 120
+      Top = 272
+      Width = 470
+      Lines.Strings = (
+        'Memo1'
+      )
+      TabOrder = 2
+    end
+    object Edit1: TEdit
+      Left = 8
+      Height = 23
+      Top = 32
+      Width = 176
+      OnChange = Edit1Change
+      TabOrder = 3
+      Text = '.txt'
+    end
+    object Label1: TLabel
+      Left = 10
+      Height = 15
+      Top = 448
+      Width = 45
+      Caption = 'f ( x ) = ?'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 15
+      Top = 64
+      Width = 43
+      Caption = 'Funcion'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 88
+      Caption = 'Nombre Archivo'
+      ParentColor = False
+    end
+    object Memo4: TMemo
+      Left = 8
+      Height = 34
+      Top = 472
+      Width = 245
+      Lines.Strings = (
+        'Memo1'
+      )
+      TabOrder = 4
+    end
+    object Edit3: TEdit
+      Left = 64
+      Height = 23
+      Top = 440
+      Width = 98
+      TabOrder = 5
+    end
+    object Edit2: TEdit
+      Left = 8
+      Height = 23
+      Top = 416
+      Width = 288
+      TabOrder = 6
+    end
+    object Button2: TButton
+      Left = 344
+      Height = 26
+      Top = 416
+      Width = 144
+      Caption = 'graficarFuncion'
+      OnClick = Button2Click
+      TabOrder = 7
+    end
+    object Button3: TButton
+      Left = 360
+      Height = 26
+      Top = 480
+      Width = 104
+      Caption = 'Valor a evaluar'
+      OnClick = Button3Click
+      TabOrder = 8
+    end
+    object Button4: TButton
+      Left = 336
+      Height = 25
+      Top = 8
+      Width = 144
+      Caption = 'Lineal'
+      OnClick = Button4Click
+      TabOrder = 9
+    end
+    object Button5: TButton
+      Left = 336
+      Height = 25
+      Top = 40
+      Width = 142
+      Caption = 'Exponencial'
+      OnClick = Button5Click
+      TabOrder = 10
+    end
+    object Label4: TLabel
+      Left = 16
+      Height = 15
+      Top = 392
+      Width = 47
+      Caption = 'Modelo .'
+      ParentColor = False
+    end
+    object Button6: TButton
+      Left = 336
+      Height = 25
+      Top = 72
+      Width = 142
+      Caption = 'Logaritmical'
+      OnClick = Button6Click
+      TabOrder = 11
+    end
+  end
+end

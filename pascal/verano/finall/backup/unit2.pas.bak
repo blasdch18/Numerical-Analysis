@@ -1,0 +1,50 @@
+unit Unit2;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, TAGraph, TASeries, Forms, Controls, StdCtrls,
+  Grids, ExtCtrls, Dialogs, ComCtrls;
+
+type
+
+  { TFrame1 }
+
+  TFrame1 = class(TFrame)
+    Button1: TButton;
+    Button2: TButton;
+    Chart1: TChart;
+    Chart1ConstantLine1: TConstantLine;
+    Chart1ConstantLine2: TConstantLine;
+    Chart1LineSeries1: TLineSeries;
+    colorbtnFunction: TColorButton;
+    ediMax: TEdit;
+    ediMin: TEdit;
+    ediStep: TEdit;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    TrackBar1: TTrackBar;
+    procedure RadioGroup1Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+implementation
+
+{$R *.lfm}
+
+{ TFrame1 }
+
+procedure TFrame1.RadioGroup1Click(Sender: TObject);
+begin
+
+end;
+
+end.
+

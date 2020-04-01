@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 469
+  Height = 389
+  Top = 133
+  Width = 713
+  Caption = 'Form1'
+  ClientHeight = 389
+  ClientWidth = 713
+  LCLVersion = '1.6.4.0'
+  object StringGrid1: TStringGrid
+    Left = 16
+    Height = 160
+    Top = 176
+    Width = 648
+    ColCount = 8
+    Columns = <    
+      item
+        Alignment = taCenter
+        Title.Alignment = taCenter
+        Title.Caption = 'n'
+        Width = 50
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'a'
+        Width = 90
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'b'
+        Width = 90
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Sgn'
+        Width = 50
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Xn'
+        Width = 90
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'EA*'
+        Width = 90
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'ER*'
+        Width = 90
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'EP*'
+        Width = 90
+      end>
+    FixedCols = 0
+    RowCount = 7
+    TabOrder = 0
+    Cells = (
+      5
+      0
+      0
+      '       n'
+      1
+      0
+      'a'
+      2
+      0
+      'b'
+      3
+      0
+      'sgn'
+      4
+      0
+      'xn'
+    )
+  end
+end

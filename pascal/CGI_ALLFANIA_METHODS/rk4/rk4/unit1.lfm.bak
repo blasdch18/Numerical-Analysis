@@ -1,0 +1,272 @@
+object Form1: TForm1
+  Left = 188
+  Height = 496
+  Top = 164
+  Width = 1093
+  Caption = 'Form1'
+  ClientHeight = 496
+  ClientWidth = 1093
+  LCLVersion = '1.6.0.4'
+  object StringGrid1: TStringGrid
+    Left = 50
+    Height = 166
+    Top = 203
+    Width = 328
+    ColCount = 3
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 0
+    ColWidths = (
+      33
+      115
+      123
+    )
+    Cells = (
+      4
+      0
+      0
+      'n'
+      0
+      1
+      '0'
+      1
+      0
+      'x_n'
+      2
+      0
+      'y_n'
+    )
+  end
+  object Edit1: TEdit
+    Left = 90
+    Height = 23
+    Top = 67
+    Width = 240
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 50
+    Height = 15
+    Top = 67
+    Width = 31
+    Caption = 'f''(x) ='
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 50
+    Height = 23
+    Top = 107
+    Width = 57
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 170
+    Height = 23
+    Top = 107
+    Width = 56
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 322
+    Height = 23
+    Top = 107
+    Width = 56
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Left = 122
+    Height = 15
+    Top = 115
+    Width = 21
+    Caption = '<x<'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 48
+    Height = 15
+    Top = 163
+    Width = 234
+    Caption = 'Escriba los valores de  x_0    y   y_0 en la tabla'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 290
+    Height = 15
+    Top = 115
+    Width = 18
+    Caption = 'n ='
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 296
+    Height = 25
+    Top = 163
+    Width = 75
+    Caption = 'Euler'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Label5: TLabel
+    Left = 50
+    Height = 15
+    Top = 32
+    Width = 26
+    Caption = 'Euler'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 384
+    Height = 25
+    Top = 163
+    Width = 75
+    Caption = 'Heum'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object Edit5: TEdit
+    Left = 616
+    Height = 23
+    Top = 67
+    Width = 360
+    TabOrder = 7
+  end
+  object Label6: TLabel
+    Left = 600
+    Height = 15
+    Top = 32
+    Width = 20
+    Caption = 'RK4'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 576
+    Height = 15
+    Top = 67
+    Width = 31
+    Caption = 'f''(x) ='
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 613
+    Height = 15
+    Top = 108
+    Width = 48
+    Caption = '(x0,y0) = '
+    ParentColor = False
+  end
+  object RKx0: TEdit
+    Left = 672
+    Height = 23
+    Top = 107
+    Width = 72
+    TabOrder = 8
+  end
+  object RKy0: TEdit
+    Left = 768
+    Height = 23
+    Top = 107
+    Width = 72
+    TabOrder = 9
+  end
+  object Label9: TLabel
+    Left = 752
+    Height = 15
+    Top = 112
+    Width = 3
+    Caption = ','
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 888
+    Height = 15
+    Top = 108
+    Width = 15
+    Caption = 'h='
+    ParentColor = False
+  end
+  object Edit6: TEdit
+    Left = 917
+    Height = 23
+    Top = 107
+    Width = 59
+    TabOrder = 10
+    Text = '0.1'
+  end
+  object StringGrid2: TStringGrid
+    Left = 480
+    Height = 216
+    Top = 192
+    Width = 576
+    ColCount = 7
+    FixedCols = 0
+    RowCount = 2
+    TabOrder = 11
+    ColWidths = (
+      21
+      75
+      100
+      102
+      88
+      92
+      90
+    )
+    Cells = (
+      7
+      0
+      0
+      'n'
+      1
+      0
+      '           x'
+      2
+      0
+      '            k1'
+      3
+      0
+      '            k2'
+      4
+      0
+      '            k3'
+      5
+      0
+      '              k4'
+      6
+      0
+      '             y'
+    )
+  end
+  object ButtonRK4: TButton
+    Left = 981
+    Height = 25
+    Top = 147
+    Width = 75
+    Caption = 'RK4'
+    OnClick = ButtonRK4Click
+    TabOrder = 12
+  end
+  object Edit7: TEdit
+    Left = 672
+    Height = 23
+    Top = 157
+    Width = 80
+    TabOrder = 13
+  end
+  object Label11: TLabel
+    Left = 616
+    Height = 15
+    Top = 157
+    Width = 36
+    Caption = 'Li''mite'
+    ParentColor = False
+  end
+  object ButtonRK3: TButton
+    Left = 880
+    Height = 25
+    Top = 147
+    Width = 75
+    Caption = 'RK3'
+    OnClick = ButtonRK3Click
+    TabOrder = 14
+  end
+end

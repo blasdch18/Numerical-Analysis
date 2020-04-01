@@ -1,0 +1,688 @@
+object frmMain: TfrmMain
+  Left = 577
+  Height = 671
+  Top = 65
+  Width = 759
+  Caption = 'frmMain'
+  ClientHeight = 671
+  ClientWidth = 759
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.6.0.4'
+  object SpkToolbar1: TSpkToolbar
+    Left = 0
+    Top = 0
+    Width = 759
+    Appearance.Tab.TabHeaderFont.Color = 9126421
+    Appearance.Tab.TabHeaderFont.Height = -13
+    Appearance.Tab.TabHeaderFont.Name = 'Calibri'
+    Appearance.Tab.BorderColor = 14922381
+    Appearance.Tab.GradientFromColor = 16115934
+    Appearance.Tab.GradientToColor = 15587527
+    Appearance.Tab.GradientType = bkConcave
+    Appearance.Pane.CaptionFont.Color = 11168318
+    Appearance.Pane.CaptionFont.Height = -12
+    Appearance.Pane.CaptionFont.Name = 'Calibri'
+    Appearance.Pane.BorderDarkColor = 14335646
+    Appearance.Pane.BorderLightColor = 16315117
+    Appearance.Pane.GradientFromColor = 16115934
+    Appearance.Pane.GradientToColor = 15587527
+    Appearance.Pane.GradientType = bkConcave
+    Appearance.Pane.CaptionBgColor = 15849922
+    Appearance.Element.CaptionFont.Color = 9126421
+    Appearance.Element.CaptionFont.Height = -12
+    Appearance.Element.CaptionFont.Name = 'Calibri'
+    Appearance.Element.IdleFrameColor = 14727067
+    Appearance.Element.IdleGradientFromColor = 15653832
+    Appearance.Element.IdleGradientToColor = 15323324
+    Appearance.Element.IdleGradientType = bkConcave
+    Appearance.Element.IdleInnerLightColor = 15852501
+    Appearance.Element.IdleInnerDarkColor = 15520702
+    Appearance.Element.IdleCaptionColor = 11631958
+    Appearance.Element.HotTrackFrameColor = 10211293
+    Appearance.Element.HotTrackGradientFromColor = 14351615
+    Appearance.Element.HotTrackGradientToColor = 5101567
+    Appearance.Element.HotTrackGradientType = bkConcave
+    Appearance.Element.HotTrackInnerLightColor = 12972543
+    Appearance.Element.HotTrackInnerDarkColor = 8045272
+    Appearance.Element.HotTrackCaptionColor = 8864367
+    Appearance.Element.ActiveFrameColor = 5535371
+    Appearance.Element.ActiveGradientFromColor = 7126014
+    Appearance.Element.ActiveGradientToColor = 4035324
+    Appearance.Element.ActiveGradientType = bkConcave
+    Appearance.Element.ActiveInnerLightColor = 961020
+    Appearance.Element.ActiveInnerDarkColor = 961020
+    Appearance.Element.ActiveCaptionColor = 8405614
+    TabIndex = 0
+    Tabs = (
+      'SpkTab1'
+    )
+    object SpkTab1: TSpkTab
+      CustomAppearance.Tab.TabHeaderFont.Color = 9126421
+      CustomAppearance.Tab.TabHeaderFont.Height = -13
+      CustomAppearance.Tab.TabHeaderFont.Name = 'Calibri'
+      CustomAppearance.Tab.BorderColor = 14922381
+      CustomAppearance.Tab.GradientFromColor = 16115934
+      CustomAppearance.Tab.GradientToColor = 15587527
+      CustomAppearance.Tab.GradientType = bkConcave
+      CustomAppearance.Pane.CaptionFont.Color = 11168318
+      CustomAppearance.Pane.CaptionFont.Height = -12
+      CustomAppearance.Pane.CaptionFont.Name = 'Calibri'
+      CustomAppearance.Pane.BorderDarkColor = 14335646
+      CustomAppearance.Pane.BorderLightColor = 16315117
+      CustomAppearance.Pane.GradientFromColor = 16115934
+      CustomAppearance.Pane.GradientToColor = 15587527
+      CustomAppearance.Pane.GradientType = bkConcave
+      CustomAppearance.Pane.CaptionBgColor = 15849922
+      CustomAppearance.Element.CaptionFont.Color = 9126421
+      CustomAppearance.Element.CaptionFont.Height = -12
+      CustomAppearance.Element.CaptionFont.Name = 'Calibri'
+      CustomAppearance.Element.IdleFrameColor = 14727067
+      CustomAppearance.Element.IdleGradientFromColor = 15653832
+      CustomAppearance.Element.IdleGradientToColor = 15323324
+      CustomAppearance.Element.IdleGradientType = bkConcave
+      CustomAppearance.Element.IdleInnerLightColor = 15852501
+      CustomAppearance.Element.IdleInnerDarkColor = 15520702
+      CustomAppearance.Element.IdleCaptionColor = 11631958
+      CustomAppearance.Element.HotTrackFrameColor = 10211293
+      CustomAppearance.Element.HotTrackGradientFromColor = 14351615
+      CustomAppearance.Element.HotTrackGradientToColor = 5101567
+      CustomAppearance.Element.HotTrackGradientType = bkConcave
+      CustomAppearance.Element.HotTrackInnerLightColor = 12972543
+      CustomAppearance.Element.HotTrackInnerDarkColor = 8045272
+      CustomAppearance.Element.HotTrackCaptionColor = 8864367
+      CustomAppearance.Element.ActiveFrameColor = 5535371
+      CustomAppearance.Element.ActiveGradientFromColor = 7126014
+      CustomAppearance.Element.ActiveGradientToColor = 4035324
+      CustomAppearance.Element.ActiveGradientType = bkConcave
+      CustomAppearance.Element.ActiveInnerLightColor = 961020
+      CustomAppearance.Element.ActiveInnerDarkColor = 961020
+      CustomAppearance.Element.ActiveCaptionColor = 8405614
+      Caption = 'INICIO'
+      OverrideAppearance = False
+      Visible = True
+      Panes = (
+        'SpkPane1'
+        'SpkPane2'
+        'SpkPane3'
+      )
+      object SpkPane1: TSpkPane
+        Caption = 'Archivo'
+        Visible = True
+        Items = (
+          'SpkLargeButton1'
+          'SpkLargeButton2'
+        )
+        object SpkLargeButton1: TSpkLargeButton
+          Visible = True
+          Enabled = True
+          Caption = 'Nuevo script'
+          ButtonKind = bkButton
+        end
+        object SpkLargeButton2: TSpkLargeButton
+          Visible = True
+          Enabled = True
+          Caption = 'Abrir'
+          ButtonKind = bkButton
+        end
+      end
+      object SpkPane2: TSpkPane
+        Caption = 'Constantes'
+        Visible = True
+        Items = (
+          'SpkLargeButton3'
+          'SpkLargeButton4'
+          'SpkLargeButton5'
+        )
+        object SpkLargeButton3: TSpkLargeButton
+          Visible = True
+          Enabled = True
+          Caption = 'Matemáticas'
+          ButtonKind = bkButtonDropdown
+          DropdownMenu = DM.popConstMat
+        end
+        object SpkLargeButton4: TSpkLargeButton
+          Visible = True
+          Enabled = True
+          Caption = 'Físicas'
+          ButtonKind = bkButton
+        end
+        object SpkLargeButton5: TSpkLargeButton
+          Visible = True
+          Enabled = True
+          Caption = 'Químicas'
+          ButtonKind = bkButton
+        end
+      end
+      object SpkPane3: TSpkPane
+        Caption = 'Plot'
+        Visible = True
+        Items = (
+          'spkRdoPlotIn'
+          'spkRdoPlotEx'
+          'spkcheckSeePlot'
+        )
+        object spkRdoPlotIn: TSpkRadioButton
+          Visible = True
+          Enabled = True
+          Caption = 'Plot Interno'
+          Checked = True
+          State = cbChecked
+          TableBehaviour = tbBeginsRow
+          GroupBehaviour = gbBeginsGroup
+        end
+        object spkRdoPlotEx: TSpkRadioButton
+          Visible = True
+          Enabled = True
+          Caption = 'Plot externo'
+          Checked = False
+          State = cbUnchecked
+          TableBehaviour = tbBeginsRow
+          GroupBehaviour = gbSingleItem
+        end
+        object spkcheckSeePlot: TSpkCheckbox
+          Visible = True
+          Enabled = True
+          Caption = 'Ver plot'
+          OnClick = spkcheckSeePlotClick
+          Checked = False
+          State = cbUnchecked
+          TableBehaviour = tbBeginsColumn
+          GroupBehaviour = gbSingleItem
+        end
+      end
+    end
+  end
+  object pgcRight: TPageControl
+    Left = 536
+    Height = 536
+    Top = 112
+    Width = 223
+    ActivePage = tshcomandos
+    Align = alRight
+    TabIndex = 1
+    TabOrder = 1
+    object tshVariables: TTabSheet
+      Caption = 'Variables'
+      ClientHeight = 508
+      ClientWidth = 215
+      object ValueListEditor1: TValueListEditor
+        Left = 0
+        Height = 165
+        Top = 15
+        Width = 215
+        Align = alTop
+        FixedCols = 0
+        RowCount = 2
+        TabOrder = 0
+        Strings.Strings = (
+          ''
+        )
+        ColWidths = (
+          64
+          130
+        )
+      end
+      object Splitter1: TSplitter
+        Cursor = crVSplit
+        Left = 0
+        Height = 5
+        Top = 180
+        Width = 215
+        Align = alTop
+        ResizeAnchor = akTop
+      end
+      object tvwHistory: TTreeView
+        Left = 0
+        Height = 308
+        Top = 200
+        Width = 215
+        Align = alClient
+        DefaultItemHeight = 18
+        TabOrder = 2
+        Items.Data = {
+          F9FFFFFF020001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+          00000015000000486973746F7269616C20646520636F6D616E646F73
+        }
+      end
+      object lblCommandHistory: TLabel
+        Left = 0
+        Height = 15
+        Top = 185
+        Width = 215
+        Align = alTop
+        Caption = 'Historial de comandos'
+        Color = clSilver
+        ParentColor = False
+        Transparent = False
+      end
+      object lblCommandHistory1: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 215
+        Align = alTop
+        Caption = 'Variables ingresadas'
+        Color = clSilver
+        ParentColor = False
+        Transparent = False
+      end
+    end
+    object tshcomandos: TTabSheet
+      Caption = 'Comandos'
+      ClientHeight = 508
+      ClientWidth = 215
+      object Memo1: TMemo
+        Left = 0
+        Height = 450
+        Top = 8
+        Width = 198
+        Lines.Strings = (
+          ''
+          '-------------------------------'
+          'Graficar funciones'
+          '-------------------------------'
+          'grafic(fx, x0, xf)   '
+          ''
+          '//NOTA!'
+          'En este caso la funcion no ira'' '
+          'entre '' ''.'
+          'Ej:'
+          #9'grafic(2*x,2,3)'
+          ''
+          ''
+          '---------------------------------'
+          '-'
+          'EDO:'
+          '---------------------------------'
+          '-'
+          ''
+          'rungekutta3(''fx'', x_0, y_0, x_f, n )'
+          'Ej:'
+          '  rungekutta3(''2*x'',-2,2,4,10)'
+          ''
+          ''
+          'rungekutta4(''fx'', x_0, y_0, x_f, n )'
+          'Ej:'
+          '  rungekutta4(''2*x'',-2,2,4,10)'
+          ''
+          ''
+          'euler(''fx'', x_0 , x_f, y_0, n)'
+          'Ej:'
+          '  euler(''2*x'',-2,2,4,10)'
+          ''
+          ''
+          'heun (''fx'', x_0, x_f, y_0 , n)'
+          'Ej:'
+          '  heun(''2*x'',-2,2,4,10)'
+          ''
+          '-------------------------------'
+          'EDO con gra''fica:'
+          '-------------------------------'
+          ''
+          '    EDO(funcion , x0 , xf , y0 , '
+          'n_iteraciones ,tipo)'#9
+          ''
+          'Tipos'
+          #9'1 ....... Euler'
+          #9'2 ....... Heun'
+          #9'3 ....... Rk3'
+          #9'4 ....... Rk4'
+          ''
+          ' Edo Euler  con   x e [0 , 0.5]  :  '
+          #9'EDO(''x-y'
+          '+1'',0,0.5,1,5,1)'
+          ''
+          ' Edo Heun con   x e [0 , 0.5]  :'
+          #9'EDO(''x-y'
+          '+1'',0,0.5,1,5,2) '
+          ''
+          ' Edo RK3 con   x e [0 , 0.5]  :'
+          #9'EDO(''x-y'
+          '+1'',0,0.5,1,5,3)'
+          ''
+          ' Edo RK4 con   x e [0 , 0.5]  :'
+          #9'EDO(''x-y'
+          '+1'',0,0.5,1,5,4) '
+          ''
+          ''
+          ''
+          ''
+          '------------------------------'
+          'Me''todos'
+          '------------------------------'
+          ''
+          'biseccion(''2*x'',-2,2,0.01)'
+          'fposicion(''2*x'',-2,2,0.01)'
+          'newton(''2*x*x'',4*x,2,0.01)'
+          'secante(''2*x'',-2,2,0.01)'
+          ''
+          '------------------------------'
+          ' Matrices'
+          '------------------------------'
+          ''
+          'Salvar Matrices: '
+          '   a=[1 2 4 5 , 3 5 6 7 ]'
+          ''
+          'Operaciones:'
+          '   traza(a)'
+          '   multmatriz(a,b)'
+          '   multescalar(a,2)'
+          '   det(a)'
+          '   suma(a,b)'
+          '   resta(a,b)'
+          '   inv(a,2)'
+          ''
+          '------------------------------'
+          'Integrales y A''reas'
+          '------------------------------'
+          'integral(funcion, intervalo_x, '
+          'intervalo_y, iteraciones, Tipo, '
+          'BOOL)'
+          ''
+          'Tipo:'
+          #9'1 ....... Trapecio'
+          #9'2 ....... Simpson 1/3'
+          '        3 ....... Simpson 3/8'
+          #9'4 ....... Simpson '
+          'Compuesto'
+          'Bool:'
+          #9'True ....... A''rea'
+          #9'False ....... Intgral'
+          ''
+          'Ej:'
+          #9'integral'
+          '(''2*x'',2,6,1,3,True)'
+          ''
+          '---------------------------------'
+          'Ma''s m''etodos'
+          '---------------------------------'
+          ''
+          'simpson13(fx, a, b, n)'
+          'Ej:'
+          '   simpson13(''2*x'',-1,1,100)'
+          ''
+          'simpson38(fx, a, b, n)'
+          'Ej:'
+          '   simpson38(''2*x'',-1,1,100)'
+          ''
+          'simpsonsimple(fx, a, b, n)'
+          'Ej:'
+          '   simpsonsimple(''2*x'',-1,1,100)'
+          ''
+          'trapecio(fx, a, b, n)'
+          'Ej:'
+          '   trapecio(''2*x'',-1,1,100)'
+          ''
+          '---------------------------------'
+          'Newton Generalizado'
+          '---------------------------------'
+          ''
+          'Ej:'
+          '   gnewton("[x ;y ]","[power'
+          '(x,2)+x*y-10 ;y+3*x*power'
+          '(y,2)-57 ]","[2.036 ;2.845 '
+          ']",0.001)'
+          ''
+        )
+        ScrollBars = ssVertical
+        TabOrder = 0
+      end
+    end
+  end
+  object pnlArvhivos: TPanel
+    Left = 0
+    Height = 536
+    Top = 112
+    Width = 170
+    Align = alLeft
+    ClientHeight = 536
+    ClientWidth = 170
+    TabOrder = 2
+    object slvFiles: TShellListView
+      Left = 1
+      Height = 338
+      Top = 197
+      Width = 168
+      Align = alClient
+      Color = clDefault
+      TabOrder = 0
+      ObjectTypes = [otNonFolders]
+      Root = 'c:\'
+      ShellTreeView = stvDirectories
+    end
+    object stvDirectories: TShellTreeView
+      Left = 1
+      Height = 153
+      Top = 39
+      Width = 168
+      Align = alTop
+      FileSortType = fstNone
+      HotTrack = True
+      Root = 'c:\'
+      TabOrder = 1
+      Options = [tvoAutoItemHeight, tvoHideSelection, tvoHotTrack, tvoKeepCollapsedNodes, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+      ObjectTypes = [otFolders]
+      ShellListView = slvFiles
+    end
+    object dEdit: TDirectoryEdit
+      Left = 1
+      Height = 23
+      Top = 16
+      Width = 168
+      Directory = 'c:\'
+      ShowHidden = False
+      ButtonWidth = 23
+      NumGlyphs = 1
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 2
+      OnChange = dEditChange
+      Text = 'c:\'
+    end
+    object Splitter2: TSplitter
+      Cursor = crVSplit
+      Left = 1
+      Height = 5
+      Top = 192
+      Width = 168
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+    object lblFileManager: TLabel
+      Left = 1
+      Height = 15
+      Top = 1
+      Width = 168
+      Align = alTop
+      Caption = 'Navegador de archivos'
+      Color = clSilver
+      ParentColor = False
+      Transparent = False
+    end
+  end
+  object Splitter3: TSplitter
+    Left = 170
+    Height = 536
+    Top = 112
+    Width = 5
+  end
+  object Splitter4: TSplitter
+    Left = 531
+    Height = 536
+    Top = 112
+    Width = 5
+    Align = alRight
+    ResizeAnchor = akRight
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 648
+    Width = 759
+    Panels = <>
+  end
+  object pnlCommand: TPanel
+    Left = 175
+    Height = 536
+    Top = 112
+    Width = 356
+    Align = alClient
+    Caption = 'pnlCommand'
+    ClientHeight = 536
+    ClientWidth = 356
+    TabOrder = 6
+    object CmdBox: TCmdBox
+      Left = 1
+      Height = 103
+      Top = 432
+      Width = 354
+      Align = alClient
+      CaretColor = clBlue
+      CaretType = cartUser
+      CaretWidth = 1
+      CaretHeight = 12
+      CaretYShift = 3
+      OnInput = CmdBoxInput
+      LineCount = 1000
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Courier New'
+      BackGroundColor = clWhite
+      TabWidth = 60
+      HistoryMax = 20
+      InputSelColor = clBlue
+      InputSelBackGround = clWhite
+      CaretInterval = 500
+      EscapeCodeType = esctCmdBox
+      GraphicalCharacterWidth = 10
+    end
+    object pnlPlot: TPanel
+      Left = 1
+      Height = 431
+      Top = 1
+      Width = 354
+      Align = alTop
+      ClientHeight = 431
+      ClientWidth = 354
+      TabOrder = 1
+      Visible = False
+      object tBarPlot: TToolBar
+        Left = 1
+        Height = 26
+        Top = 1
+        Width = 352
+        Caption = 'tbarPlot'
+        ShowCaptions = True
+        TabOrder = 0
+        object tbtnClosePlot: TToolButton
+          Left = 1
+          Top = 2
+          Caption = 'Cerrar'
+          OnClick = tbtnClosePlotClick
+        end
+      end
+      object Plotchar: TChart
+        Left = 1
+        Height = 403
+        Top = 27
+        Width = 352
+        AxisList = <        
+          item
+            Grid.Color = clSilver
+            AxisPen.Color = clSilver
+            Minors = <>
+            Title.LabelFont.Orientation = 900
+          end        
+          item
+            Grid.Color = clSilver
+            Alignment = calBottom
+            AxisPen.Color = clSilver
+            Minors = <>
+          end>
+        BackColor = clWhite
+        Foot.Brush.Color = clBtnFace
+        Foot.Font.Color = clBlue
+        Title.Brush.Color = clBtnFace
+        Title.Font.Color = clBlue
+        Title.Text.Strings = (
+          'TAChart'
+        )
+        Align = alClient
+        object EjeX: TConstantLine
+          Position = 0
+        end
+        object EjeY: TConstantLine
+          Position = 0
+        end
+        object Plotear: TLineSeries
+        end
+        object Funcion: TFuncSeries
+        end
+      end
+    end
+  end
+  object cboxColorFuncion: TColorBox
+    Left = 472
+    Height = 22
+    Top = 32
+    Width = 100
+    DefaultColorColor = clInactiveBorder
+    Selected = clBlue
+    ItemHeight = 16
+    TabOrder = 7
+    Visible = False
+  end
+  object chkUsarPloteo: TCheckBox
+    Left = 472
+    Height = 19
+    Top = 76
+    Width = 96
+    Caption = 'chkUsarPloteo'
+    OnChange = chkUsarPloteoChange
+    TabOrder = 8
+    Visible = False
+  end
+  object Panel1: TPanel
+    Left = 581
+    Height = 72
+    Top = 32
+    Width = 170
+    ClientHeight = 72
+    ClientWidth = 170
+    Enabled = False
+    TabOrder = 9
+    object chkMostrarPuntos: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 0
+      Width = 101
+      Caption = 'Mostrar Puntos'
+      TabOrder = 0
+    end
+    object chkEscogerN: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 24
+      Width = 73
+      Caption = 'Escoger N'
+      TabOrder = 1
+    end
+    object chkMostrarValores: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 48
+      Width = 102
+      Caption = 'Mostrar Valores'
+      TabOrder = 2
+    end
+    object ediN: TEdit
+      Left = 96
+      Height = 23
+      Top = 20
+      Width = 64
+      TabOrder = 3
+      Text = '100'
+    end
+  end
+end

@@ -1,0 +1,186 @@
+object Form1: TForm1
+  Left = 1926
+  Height = 569
+  Top = 284
+  Width = 507
+  Caption = 'Form1'
+  ClientHeight = 569
+  ClientWidth = 507
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object DerF: TComboBox
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 122
+    ItemHeight = 15
+    TabOrder = 0
+    Text = 'x*y*y'
+  end
+  object Xo: TEdit
+    Left = 178
+    Height = 23
+    Top = 16
+    Width = 48
+    TabOrder = 1
+    Text = '0'
+  end
+  object Yo: TEdit
+    Left = 178
+    Height = 23
+    Top = 41
+    Width = 47
+    TabOrder = 2
+    Text = '1'
+  end
+  object Fx: TEdit
+    Left = 254
+    Height = 23
+    Top = 13
+    Width = 43
+    TabOrder = 3
+    Text = 'Fx'
+  end
+  object h: TEdit
+    Left = 254
+    Height = 23
+    Top = 40
+    Width = 44
+    TabOrder = 4
+    Text = 'h'
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 31
+    Top = 40
+    Width = 108
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 160
+    Height = 15
+    Top = 21
+    Width = 14
+    Caption = 'Xo'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 160
+    Height = 15
+    Top = 41
+    Width = 14
+    Caption = 'Yo'
+    ParentColor = False
+  end
+  object Chart1: TChart
+    Left = 8
+    Height = 232
+    Top = 72
+    Width = 440
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object EjeX: TConstantLine
+      Pen.Color = clRed
+      Position = 0
+    end
+    object EjeY: TConstantLine
+      LineStyle = lsVertical
+      Pen.Color = clRed
+      Position = 0
+    end
+    object FunPlot: TLineSeries
+      Active = False
+      LinePen.Color = clBlue
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 160
+    Top = 336
+    Width = 507
+    ColCount = 12
+    FixedCols = 0
+    FixedRows = 0
+    TabOrder = 7
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 15
+    Top = 319
+    Width = 7
+    Caption = 'n'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 88
+    Height = 15
+    Top = 320
+    Width = 12
+    Caption = 'xn'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 160
+    Height = 15
+    Top = 319
+    Width = 13
+    Caption = 'yn'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 224
+    Height = 15
+    Top = 320
+    Width = 12
+    Caption = 'k1'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 296
+    Height = 15
+    Top = 320
+    Width = 12
+    Caption = 'k2'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 360
+    Height = 15
+    Top = 320
+    Width = 12
+    Caption = 'k3'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 408
+    Height = 15
+    Top = 319
+    Width = 12
+    Caption = 'k4'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 464
+    Height = 15
+    Top = 319
+    Width = 11
+    Caption = 'm'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,45 @@
+object Frame2: TFrame2
+  Left = 0
+  Height = 508
+  Top = 0
+  Width = 431
+  ClientHeight = 508
+  ClientWidth = 431
+  TabOrder = 0
+  DesignLeft = 2783
+  DesignTop = 272
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 508
+    Top = 0
+    Width = 431
+    Align = alClient
+    FixedCols = 0
+    TabOrder = 0
+    ColWidths = (
+      28
+      64
+      64
+      64
+      64
+    )
+    Cells = (
+      5
+      0
+      0
+      'n'
+      1
+      0
+      'a'
+      2
+      0
+      'b'
+      3
+      0
+      'Xn'
+      4
+      0
+      'Error'
+    )
+  end
+end

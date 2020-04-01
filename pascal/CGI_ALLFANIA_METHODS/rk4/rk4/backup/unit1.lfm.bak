@@ -1,0 +1,187 @@
+object Form1: TForm1
+  Left = 129
+  Height = 496
+  Top = 63
+  Width = 600
+  Caption = 'Form1'
+  ClientHeight = 496
+  ClientWidth = 600
+  LCLVersion = '1.6.4.0'
+  object Edit5: TEdit
+    Left = 88
+    Height = 23
+    Top = 56
+    Width = 472
+    TabOrder = 0
+  end
+  object Label6: TLabel
+    Left = 192
+    Height = 21
+    Top = 8
+    Width = 202
+    Caption = 'Metodo de RungeKutra 4'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Berlin Sans FB'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 16
+    Height = 21
+    Top = 56
+    Width = 44
+    Caption = 'f''(x) ='
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Berlin Sans FB'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 8
+    Height = 21
+    Top = 87
+    Width = 75
+    Caption = '(x0,y0) = '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Berlin Sans FB'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object RKx0: TEdit
+    Left = 104
+    Height = 23
+    Top = 87
+    Width = 72
+    TabOrder = 1
+  end
+  object RKy0: TEdit
+    Left = 200
+    Height = 23
+    Top = 87
+    Width = 72
+    TabOrder = 2
+  end
+  object Label9: TLabel
+    Left = 184
+    Height = 15
+    Top = 89
+    Width = 3
+    Caption = ','
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 192
+    Height = 18
+    Top = 120
+    Width = 15
+    Caption = 'h='
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Berlin Sans FB'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit6: TEdit
+    Left = 232
+    Height = 23
+    Top = 119
+    Width = 40
+    TabOrder = 3
+    Text = '0.1'
+  end
+  object StringGrid2: TStringGrid
+    Left = 8
+    Height = 336
+    Top = 152
+    Width = 576
+    ColCount = 7
+    FixedCols = 0
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Berlin Sans FB'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    RowCount = 2
+    TabOrder = 4
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Height = -12
+    TitleFont.Name = 'Berlin Sans FB'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+    ColWidths = (
+      21
+      75
+      100
+      102
+      88
+      92
+      90
+    )
+    Cells = (
+      7
+      0
+      0
+      'n'
+      1
+      0
+      '           x'
+      2
+      0
+      '            k1'
+      3
+      0
+      '            k2'
+      4
+      0
+      '            k3'
+      5
+      0
+      '              k4'
+      6
+      0
+      '             y'
+    )
+  end
+  object ButtonRK4: TButton
+    Left = 392
+    Height = 53
+    Top = 87
+    Width = 168
+    Caption = 'Go!'
+    OnClick = ButtonRK4Click
+    TabOrder = 5
+  end
+  object Edit7: TEdit
+    Left = 104
+    Height = 23
+    Top = 120
+    Width = 72
+    TabOrder = 6
+  end
+  object Label11: TLabel
+    Left = 24
+    Height = 21
+    Top = 120
+    Width = 63
+    Caption = 'Limite ='
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Berlin Sans FB'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end

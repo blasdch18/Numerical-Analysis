@@ -1,0 +1,144 @@
+object Form1: TForm1
+  Left = 863
+  Height = 581
+  Top = 108
+  Width = 487
+  Caption = 'Form1'
+  ClientHeight = 581
+  ClientWidth = 487
+  LCLVersion = '1.6.4.0'
+  object StringGrid1: TStringGrid
+    Left = 51
+    Height = 384
+    Top = 160
+    Width = 280
+    ColCount = 3
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 0
+    ColWidths = (
+      33
+      115
+      123
+    )
+    Cells = (
+      4
+      0
+      0
+      'n'
+      0
+      1
+      '0'
+      1
+      0
+      'x_n'
+      2
+      0
+      'y_n'
+    )
+  end
+  object Edit1: TEdit
+    Left = 88
+    Height = 23
+    Top = 67
+    Width = 352
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 21
+    Top = 67
+    Width = 55
+    Caption = 'f''(x) ='
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Bauhaus 93'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 88
+    Height = 23
+    Top = 93
+    Width = 57
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 200
+    Height = 23
+    Top = 93
+    Width = 56
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 88
+    Height = 23
+    Top = 120
+    Width = 72
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Left = 152
+    Height = 28
+    Top = 88
+    Width = 37
+    Caption = '<x<'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Name = 'Bauhaus 93'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 56
+    Height = 21
+    Top = 120
+    Width = 29
+    Caption = 'n ='
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Bauhaus 93'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 264
+    Height = 55
+    Top = 97
+    Width = 67
+    Caption = 'Euler'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Label5: TLabel
+    Left = 144
+    Height = 33
+    Top = 24
+    Width = 209
+    Caption = 'Metodo de Euler'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Bauhaus 93'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label5Click
+  end
+  object Button2: TButton
+    Left = 371
+    Height = 56
+    Top = 96
+    Width = 69
+    Caption = 'Heum'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+end

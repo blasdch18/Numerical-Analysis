@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="10">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="10"/>
+        <UsageCount Value="122"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="344"/>
+        <CursorPos X="3" Y="392"/>
+        <UsageCount Value="122"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="mextrapolacion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MExtrapolacion"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="228"/>
+        <CursorPos X="19" Y="230"/>
+        <UsageCount Value="122"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="parsemath.pas"/>
+        <UnitName Value="ParseMath"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="44"/>
+        <CursorPos X="25" Y="57"/>
+        <UsageCount Value="48"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\components\tachart\tacustomfuncseries.pas"/>
+        <UnitName Value="TACustomFuncSeries"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="169"/>
+        <CursorPos X="45" Y="196"/>
+        <UsageCount Value="7"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Regresiom\unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="24" Y="57"/>
+        <UsageCount Value="26"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9317"/>
+        <CursorPos X="20" Y="9338"/>
+        <UsageCount Value="26"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\lcl\lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="88"/>
+        <CursorPos Y="114"/>
+        <UsageCount Value="11"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2847"/>
+        <CursorPos Y="2865"/>
+        <UsageCount Value="9"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="39"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="9"/>
+      </Unit9>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="158" TopLine="135"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="159" TopLine="135"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="160" TopLine="135"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="161" TopLine="135"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="158" TopLine="135"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="159" TopLine="135"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="160" TopLine="135"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="161" TopLine="135"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="158" TopLine="135"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="159" TopLine="135"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="160" TopLine="135"/>
+      </Position11>
+      <Position12>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="161" TopLine="135"/>
+      </Position12>
+      <Position13>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="158" TopLine="135"/>
+      </Position13>
+      <Position14>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="159" TopLine="135"/>
+      </Position14>
+      <Position15>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="160" TopLine="135"/>
+      </Position15>
+      <Position16>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="161" TopLine="135"/>
+      </Position16>
+      <Position17>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="158" TopLine="135"/>
+      </Position17>
+      <Position18>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="159" TopLine="135"/>
+      </Position18>
+      <Position19>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="160" TopLine="135"/>
+      </Position19>
+      <Position20>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="161" TopLine="135"/>
+      </Position20>
+      <Position21>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="163" TopLine="137"/>
+      </Position21>
+      <Position22>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="164" TopLine="138"/>
+      </Position22>
+      <Position23>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="156" Column="63" TopLine="142"/>
+      </Position23>
+      <Position24>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="161" Column="53" TopLine="145"/>
+      </Position24>
+      <Position25>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="105" Column="27" TopLine="91"/>
+      </Position25>
+      <Position26>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="112" TopLine="91"/>
+      </Position26>
+      <Position27>
+        <Filename Value="mextrapolacion.pas"/>
+        <Caret Line="154" Column="19" TopLine="146"/>
+      </Position27>
+      <Position28>
+        <Filename Value="main.pas"/>
+        <Caret Line="349" Column="36" TopLine="323"/>
+      </Position28>
+      <Position29>
+        <Filename Value="main.pas"/>
+        <Caret Line="351" Column="36" TopLine="325"/>
+      </Position29>
+      <Position30>
+        <Filename Value="main.pas"/>
+        <Caret Line="262" Column="73" TopLine="243"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

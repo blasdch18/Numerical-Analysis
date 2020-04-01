@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 294
+  Height = 240
+  Top = 170
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.6.4.0'
+  object execute: TButton
+    Left = 194
+    Height = 25
+    Top = 39
+    Width = 78
+    Caption = 'execute'
+    OnClick = executeClick
+    TabOrder = 0
+  end
+  object Edin: TEdit
+    Left = 37
+    Height = 23
+    Top = 38
+    Width = 92
+    Alignment = taRightJustify
+    NumbersOnly = True
+    OnChange = EdinChange
+    TabOrder = 1
+    Text = '0'
+  end
+  object lblbutton: TLabel
+    Left = 120
+    Height = 15
+    Top = 88
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object par: TLabel
+    Left = 123
+    Height = 15
+    Top = 128
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object impar: TLabel
+    Left = 92
+    Height = 15
+    Top = 168
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,55 @@
+unit persona;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils,Dialogs;
+type
+  TPerson=class
+  Name:TStringList;
+  Count:Integer;
+  procedure AddName(  sName:string  );
+  function FirstPerson:string;
+  function LastPerson:string;
+  function GetPerson(  Position:integer  ):string;
+
+  constructor Create;
+  destructor Destroy;override;
+
+  end;
+
+implementation
+              constructor TPerson.Create;
+              begin
+                Name:=TStringList.Create;
+                Count:=0;
+                end;
+              destructor TPerson.Destroy;
+              begin
+                Name.Destroy;
+                end;
+              procedure TPerson.AddName(sName:string);
+              begin
+                Name.Add(sName);
+                count:=Count+1;
+                end;
+              function TPerson.FirstPerson:String;
+              begin
+                Result:=Name[0];
+                end;
+              function.TPerson.LastPerson:String;
+              begin
+                Result:=Name[Count-1];
+                end;
+              function TPerson.GetPerson(Position:integer):string;
+              begin
+                if(Position>=Count) or (Position<0)then begin
+                  ShowMessage('La posicion  no se encuentra en el rando de  cantidad de personas');
+                  exit;
+                  end;
+                result:=Name[Position];
+                end;
+end.
+
